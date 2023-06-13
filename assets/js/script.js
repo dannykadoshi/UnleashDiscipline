@@ -501,7 +501,66 @@ copyBtn.addEventListener('click', function () {
     notification.classList.add('show');
 
     //Hide notification message after 3 seconds
-    setTimeout(function() {
+    setTimeout(function () {
         notification.classList.remove('show');
     }, 3000);
 });
+
+// Function to share the quote and author to Twitter
+function shareToTwitter() {
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; 
+
+    // Create the share message
+    const message = `${quote} - ${author}`;
+
+    // Create the Twitter share link
+    const shareLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}&url=${encodeURIComponent(
+        shareUrl
+    )}`;
+
+    // Open the Twitter share link in a new window
+    window.open(shareLink, "_blank");
+}
+
+// Function to share the quote and author to WhatsApp
+function shareToWhatsApp() {
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#";
+
+    // Create the share message
+    const message = `${quote} - ${author}`;
+
+    // Create the WhatsApp share link
+    const shareLink = `https://wa.me/?text=${encodeURIComponent(message + " " + shareUrl)}`;
+
+    // Open the WhatsApp share link in a new window
+    window.open(shareLink, "_blank");
+}
+
+// Function to share the quote and author to Facebook
+function shareToFacebook() {
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
+
+    // Create the share message
+    const message = `${quote} - ${author}`;
+
+    // Create the Facebook share link
+    const shareLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(message)}`;
+
+    // Open the Facebook share link in a new window
+    window.open(shareLink, "_blank");
+}
+
+// Event listener for the Twitter icon
+document.getElementById("twitter-icon").addEventListener("click", shareToTwitter);
+
+// Event listener for the WhatsApp icon
+document.getElementById("whatsapp-icon").addEventListener("click", shareToWhatsApp);
+
+// Event listener for the Facebook icon
+document.getElementById("facebook-icon").addEventListener("click", shareToFacebook);
