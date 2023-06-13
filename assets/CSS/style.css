@@ -153,9 +153,35 @@ footer {
     color: #333;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 #notification.show {
     display: block;
 }
+
+/* Social media icons to share quotes */
+#social-media-icons {
+    margin-top: 10px;
+}
+
+.social-media-icon {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.social-media-icon:hover {
+    color: #ffa500;
+    cursor: pointer;
+}
+
+#share-description {
+    color: #FFC845;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 30px 0 20px;
+    text-shadow: 2px 2px 4px rgba(7, 7, 7, 0.5);
+    text-transform: uppercase;
+  }
