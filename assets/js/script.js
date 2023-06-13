@@ -352,6 +352,90 @@ const quotes = [
         text: "Get comfortable with being uncomfortable!",
         author: "Jillian Michaels"
     },
+    {
+        text: "Stop wishing. Start doing. And next time you fix your lips to say 'I wish', perhaps consider replacing it with 'I will'",
+        author: "Lita Lewis"
+    },
+    {
+        text: "Discipline is the bridge between goals and accomplishments.",
+        author: "Jim Rohn"
+    },
+    {
+        text: "We all have dreams. But in order to make dreams come into reality, it takes an awful lot of determination, dedication, self-discipline, and effort.",
+        author: "Jesse Owens"
+    },
+    {
+        text: "Nothing will work unless you do.",
+        author: "Unknown"
+    },
+    {
+        text: "You are not defeated when you lose. You are defeated when you quit.",
+        author: "Paulo Coelho"
+    },
+    {
+        text: "There is no luck except where there is discipline.",
+        author: "Irish proverb"
+    },
+    {
+        text: "Day by day, what you choose, what you think, and what you do is who you become.",
+        author: "Heraclitus"
+    },
+    {
+        text: "The only bad workout is the one you didn't do.",
+        author: "Unknown"
+    },
+    {
+        text: "What you do today can improve all your tomorrows.",
+        author: "Ralph Marston"
+    },
+    {
+        text: "Motivation is what gets you started. Habit is what keeps you going.",
+        author: "Jim Rohn"
+    },
+    {
+        text: "Self-discipline is when your conscience tells you to do something and you don't talk back.",
+        author: "W. K. Hope"
+    },
+    {
+        text: "With self-discipline, most anything is possible.",
+        author: "Theodore Roosevelt"
+    },
+    {
+        text: "If the plan doesn't work, change the plan, not the goal.",
+        author: "Unknown"
+    },
+    {
+        text: "My rituals keep me consistent, and consistency is the key to achieving goals.",
+        author: "Kelsey Heenan"
+    },
+    {
+        text: "Today I will do what others won't, so tomorrow I can accomplish what others can't.",
+        author: "Jerry Rice"
+    },
+    {
+        text: "If you could get up the courage to begin, you have the courage to succeed.",
+        author: "David Viscott"
+    },
+    {
+        text: "Self-discipline is the ability to make yourself do what you should do, when you should do it, whether you feel like it or not.",
+        author: "Elbert Hubbard"
+    },
+    {
+        text: "The price of excellence is discipline.",
+        author: "William Arthur Ward"
+    },
+    {
+        text: "Self-discipline starts with the mastery of your thoughts. If you don't control what you think, you can't control what you do.",
+        author: ""
+    },
+    {
+        text: "Discipline is choosing between what you want now and what you want most.",
+        author: "Abraham Lincoln"
+    },
+    {
+        text: "Don't stop until you're proud.",
+        author: "Unknown"
+    },
 
 ];
 
