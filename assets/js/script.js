@@ -441,25 +441,25 @@ let quotes = [
 ];
 
 // Get the quote text element
-let quoteText = document.getElementById('quote-text');
+const quoteText = document.getElementById('quote-text');
 
 // Function to add quotation marks to the quote text
 function addQuotationMarks() {
-    let text = quoteText.textContent;
+    const text = quoteText.textContent;
     quoteText.textContent = `"${text}"`;
 }
 
 // Get quote container elements
-let quoteAuthor = document.getElementById('quote-author');
+const quoteAuthor = document.getElementById('quote-author');
 
 // Get new quote button element
-let newQuoteBtn = document.getElementById('new-quote-btn');
+const newQuoteBtn = document.getElementById('new-quote-btn');
 
 // Get copy button element
-let copyBtn = document.getElementById('copy-btn');
+const copyBtn = document.getElementById('copy-btn');
 
 // Get notification message element
-let notification = document.getElementById('notification');
+const notification = document.getElementById('notification');
 
 // Function to generate a random quote
 function generateRandomQuote() {
@@ -493,7 +493,7 @@ function copyToClipboard(text) {
 
 // Event listener for the "Copy" button
 copyBtn.addEventListener('click', function () {
-    let textToCopy = quoteText.textContent + ' - ' + quoteAuthor.textContent;
+    const textToCopy = quoteText.textContent + ' - ' + quoteAuthor.textContent;
     copyToClipboard(textToCopy);
     console.log('Text copied to clipboard: ' + textToCopy);
 
@@ -509,9 +509,9 @@ copyBtn.addEventListener('click', function () {
 
 // Function to share the quote and author to Twitter
 function shareToTwitter() {
-    let quote = quoteText.textContent;
-    let author = quoteAuthor.textContent;
-    let shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; 
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; 
 
     // Create the share message
     let message = `${quote} - ${author}`;
@@ -527,9 +527,9 @@ function shareToTwitter() {
 
 // Function to share the quote and author to WhatsApp
 function shareToWhatsApp() {
-    let quote = quoteText.textContent;
-    let author = quoteAuthor.textContent;
-    let shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#";
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#";
 
     // Create the share message
     let message = `${quote} - ${author}`;
@@ -543,9 +543,9 @@ function shareToWhatsApp() {
 
 // Function to share the quote and author to Facebook
 function shareToFacebook() {
-    let quote = quoteText.textContent;
-    let author = quoteAuthor.textContent;
-    let shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
 
     // Create the share message
     let message = `${quote} - ${author}`;
