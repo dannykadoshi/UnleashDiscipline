@@ -457,6 +457,9 @@ const quoteAuthor = document.getElementById('quote-author');
 //Get new quote buttom element
 const newQuoteBtn = document.getElementById('new-quote-btn');
 
+//Get share button element
+const shareBtn = document.getElementById('share-btn');
+
 //Function to Generate a random quote
 function generateRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -475,3 +478,22 @@ window.addEventListener('load', generateRandomQuote);
 
 //Generate a random quote when the new quote button is clicked
 newQuoteBtn.addEventListener('click', generateRandomQuote);
+
+//Share the quote when the share button is clicked
+shareBtn.addEventListener('click', () => {
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareText = `${quote} - ${author}`;
+
+    //Check if the Web Share API is supported by the browser
+    if (navigator.share) {
+        navigator.share({
+            title: 'Quote',
+            text: shareText
+        })
+        .then(() => console.log('Shared successfully'))
+        .catch((error) => console.log('Error sharing:', error));
+    } else {
+        console.log('Web Share API not supported');
+    }
+});
