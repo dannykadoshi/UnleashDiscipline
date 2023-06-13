@@ -25,11 +25,12 @@ header img {
 }
 
 h1 {
-    color: #fff;
+    color: #ffa500;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: bold;
     margin: 0 auto 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
 }
 
@@ -50,7 +51,7 @@ h1 {
 }
 
 #quote-author {
-    color: #ffa500;
+    color: #FFC845;
     font-size: 16px;
     font-style: italic;
     text-align: right;
@@ -60,14 +61,17 @@ h1 {
 #new-quote-btn, #share-btn {
     border: none;
     border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    font-size: 16px;
-    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 20px;
     margin-top: 40px;
+    text-transform: uppercase;
 }
 
 #new-quote-btn {
-    background-color: #ffa500;
+    background-color: #ED5737;
     color: #fff;
     margin-right: 5px;
 }
@@ -75,6 +79,14 @@ h1 {
 #share-btn {
     background-color: #2196f3;
     color: #fff;
+}
+
+#new-quote-btn:hover {
+    background-color: #ff6f00;
+}
+
+#share-btn:hover {
+    background-color: #122D4A;
 }
 
 /* Colour palette for website */
