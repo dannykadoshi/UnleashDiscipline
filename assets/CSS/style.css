@@ -6,3 +6,25 @@ h1 {
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Colour palette for website */
+/* Primary Color */
+.logo {
+    color: #12284C;
+  }
+  
+  /* Secondary Colors */
+  .nav-menu a {
+    color: #3BA0F2;
+  }
+  
+  /* Accent Color */
+  .button {
+    background-color: #FFA500;
+    color: #ffffff;
+  }
+  
+  /* Background Color */
+  .main-container {
+    background-color: #D3D3D3;
+  }
