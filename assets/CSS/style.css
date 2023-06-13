@@ -1,31 +1,128 @@
-/* Heading and Body  */
-h1 {
-    font-family: 'Montserrat', sans-serif;
-}
+/* Overall layout  */
 
 body {
+    align-items: center;
     background: url('../images/background3.jpg') no-repeat center center;
+    display: flex;
     font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    text-align: center;
 }
+
+/* Colour palette for website */
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Quote Display */
+#quote-conteiner {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+
+#quote-text {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+#quote-author {
+    color: #888;
+    font-size: 16px;
+    text-align: right;
+}
+
+/* Buttons */
+#new-quote-btn, #share-btn {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+#new-quote-btn {
+    background-color: #ffa500;
+    color: #fff;
+    margin-right: 5px;
+}
+
+#share-btn {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+
 
 /* Colour palette for website */
 /* Primary Color */
 .logo {
-    color: #12284C;
+    color: #12284c;
+    margin-top: 2rem;
 }
 
 /* Secondary Colors */
 .nav-menu a {
-    color: #12284C;
+    color: #12284c;
 }
 
 /* Accent Color */
 .button {
-    background-color: #FFA500;
+    background-color: #ffa500;
     color: #ffffff;
 }
 
 /* Background Color */
 .main-container {
-    background-color: #D3D3D3;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 2rem auto;
+    padding: 2rem;
 }
+
+/* Footer */
+footer {
+    background-color: #12284c;
+    color:#fff;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.social-media {
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 20px;
+}
+
+.mission-statement {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsiveness - Media Queries */
+@media (max-width: 768px) {
+    body {
+      padding: 2rem;
+    }
+  }
+
