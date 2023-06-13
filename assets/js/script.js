@@ -1,5 +1,6 @@
+/*jshint esversion: 6 */
 // Array of quotes
-const quotes = [
+let quotes = [
     {
         text: '"The only way to do great work is to love what you do."',
         author: "Steve Jobs"
@@ -440,30 +441,30 @@ const quotes = [
 ];
 
 // Get the quote text element
-const quoteText = document.getElementById('quote-text');
+let quoteText = document.getElementById('quote-text');
 
 // Function to add quotation marks to the quote text
 function addQuotationMarks() {
-    const text = quoteText.textContent;
+    let text = quoteText.textContent;
     quoteText.textContent = `"${text}"`;
 }
 
 // Get quote container elements
-const quoteAuthor = document.getElementById('quote-author');
+let quoteAuthor = document.getElementById('quote-author');
 
 // Get new quote button element
-const newQuoteBtn = document.getElementById('new-quote-btn');
+let newQuoteBtn = document.getElementById('new-quote-btn');
 
 // Get copy button element
-const copyBtn = document.getElementById('copy-btn');
+let copyBtn = document.getElementById('copy-btn');
 
 // Get notification message element
-const notification = document.getElementById('notification');
+let notification = document.getElementById('notification');
 
 // Function to generate a random quote
 function generateRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const randomQuote = quotes[randomIndex];
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+    let randomQuote = quotes[randomIndex];
 
     // Set the quote text and author
     quoteText.textContent = randomQuote.text;
@@ -481,7 +482,7 @@ newQuoteBtn.addEventListener('click', generateRandomQuote);
 
 // Function to copy the quote to clipboard
 function copyToClipboard(text) {
-    const textArea = document.createElement('textarea');
+    let textArea = document.createElement('textarea');
     textArea.value = text;
 
     document.body.appendChild(textArea);
@@ -492,7 +493,7 @@ function copyToClipboard(text) {
 
 // Event listener for the "Copy" button
 copyBtn.addEventListener('click', function () {
-    const textToCopy = quoteText.textContent + ' - ' + quoteAuthor.textContent;
+    let textToCopy = quoteText.textContent + ' - ' + quoteAuthor.textContent;
     copyToClipboard(textToCopy);
     console.log('Text copied to clipboard: ' + textToCopy);
 
@@ -508,15 +509,15 @@ copyBtn.addEventListener('click', function () {
 
 // Function to share the quote and author to Twitter
 function shareToTwitter() {
-    const quote = quoteText.textContent;
-    const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; 
+    let quote = quoteText.textContent;
+    let author = quoteAuthor.textContent;
+    let shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; 
 
     // Create the share message
-    const message = `${quote} - ${author}`;
+    let message = `${quote} - ${author}`;
 
     // Create the Twitter share link
-    const shareLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}&url=${encodeURIComponent(
+    let shareLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}&url=${encodeURIComponent(
         shareUrl
     )}`;
 
@@ -526,15 +527,15 @@ function shareToTwitter() {
 
 // Function to share the quote and author to WhatsApp
 function shareToWhatsApp() {
-    const quote = quoteText.textContent;
-    const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#";
+    let quote = quoteText.textContent;
+    let author = quoteAuthor.textContent;
+    let shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#";
 
     // Create the share message
-    const message = `${quote} - ${author}`;
+    let message = `${quote} - ${author}`;
 
     // Create the WhatsApp share link
-    const shareLink = `https://wa.me/?text=${encodeURIComponent(message + " " + shareUrl)}`;
+    let shareLink = `https://wa.me/?text=${encodeURIComponent(message + " " + shareUrl)}`;
 
     // Open the WhatsApp share link in a new window
     window.open(shareLink, "_blank");
@@ -542,15 +543,15 @@ function shareToWhatsApp() {
 
 // Function to share the quote and author to Facebook
 function shareToFacebook() {
-    const quote = quoteText.textContent;
-    const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
+    let quote = quoteText.textContent;
+    let author = quoteAuthor.textContent;
+    let shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
 
     // Create the share message
-    const message = `${quote} - ${author}`;
+    let message = `${quote} - ${author}`;
 
     // Create the Facebook share link
-    const shareLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(message)}`;
+    let shareLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(message)}`;
 
     // Open the Facebook share link in a new window
     window.open(shareLink, "_blank");
