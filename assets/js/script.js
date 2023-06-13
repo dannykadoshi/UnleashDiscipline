@@ -439,42 +439,69 @@ const quotes = [
 
 ];
 
-//Get the quote text element
+// Get the quote text element
 const quoteText = document.getElementById('quote-text');
 
-//Function to add quotation marks to the quote text
+// Function to add quotation marks to the quote text
 function addQuotationMarks() {
     const text = quoteText.textContent;
     quoteText.textContent = `"${text}"`;
 }
 
-//Call the function to add quotation marks
-addQuotationMarks()
-
 // Get quote container elements
 const quoteAuthor = document.getElementById('quote-author');
 
-//Get new quote buttom element
+// Get new quote button element
 const newQuoteBtn = document.getElementById('new-quote-btn');
 
-//Get share button element
-const shareBtn = document.getElementById('share-btn');
+// Get copy button element
+const copyBtn = document.getElementById('copy-btn');
 
-//Function to Generate a random quote
+// Get notification message element
+const notification = document.getElementById('notification');
+
+// Function to generate a random quote
 function generateRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const randomQuote = quotes[randomIndex];
 
-    //Set the quote text and author
+    // Set the quote text and author
     quoteText.textContent = randomQuote.text;
     quoteAuthor.textContent = randomQuote.author;
 
-    //Add quotation marks after setting the quote text
+    // Add quotation marks after setting the quote text
     addQuotationMarks();
 }
 
-//Generate a random quote when the page loads
+// Generate a random quote when the page loads
 window.addEventListener('load', generateRandomQuote);
 
-//Generate a random quote when the new quote button is clicked
+// Generate a random quote when the new quote button is clicked
 newQuoteBtn.addEventListener('click', generateRandomQuote);
+
+// Function to copy the quote to clipboard
+function copyToClipboard(text) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+}
+
+// Event listener for the "Copy" button
+copyBtn.addEventListener('click', function () {
+    const textToCopy = quoteText.textContent + ' - ' + quoteAuthor.textContent;
+    copyToClipboard(textToCopy);
+    console.log('Text copied to clipboard: ' + textToCopy);
+
+    //Show notification message
+    notification.textContent = 'Copied to clipboard succesfully!';
+    notification.classList.add('show');
+
+    //Hide notification message after 3 seconds
+    setTimeout(function() {
+        notification.classList.remove('show');
+    }, 3000);
+});
