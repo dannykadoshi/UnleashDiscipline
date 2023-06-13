@@ -31,6 +31,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: bold;
+    margin: 0 auto 70px;
     text-transform: uppercase;
 }
 
@@ -43,14 +44,17 @@ h1 {
 }
 
 #quote-text {
+    color: #fff;
     font-size: 24px;
     font-style: italic;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 #quote-author {
-    color: #888;
+    color: #ffa500;
     font-size: 16px;
+    font-style: italic;
     text-align: right;
 }
 
