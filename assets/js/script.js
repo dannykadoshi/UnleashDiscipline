@@ -1,11 +1,11 @@
 // Array of quotes
 const quotes = [
     {
-        text: "The only way to do great work is to love what you do.",
+        text: '"The only way to do great work is to love what you do."',
         author: "Steve Jobs"
     },
     {
-        text: "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+        text: '"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."',
         author: "Albert Schweitzer"
     },
     {

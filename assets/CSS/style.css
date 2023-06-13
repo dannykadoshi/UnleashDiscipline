@@ -13,8 +13,6 @@ body {
     text-align: center;
 }
 
-
-
 /* Colour palette for website */
 header {
     margin-bottom: 2rem;
@@ -65,6 +63,7 @@ h1 {
     cursor: pointer;
     font-size: 16px;
     padding: 5px 10px;
+    margin-top: 40px;
 }
 
 #new-quote-btn {
@@ -93,7 +92,9 @@ h1 {
     border: 2px solid #ccc;
     box-shadow: 5px 5px 100px #fff9e6;
     border-radius: 5px;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
+    height: auto;
+    max-width: 1000px;
     padding: 2rem;
 }
 
@@ -131,11 +132,4 @@ footer {
     font-size: 12px;
     text-transform: uppercase;
 }
-
-/* Responsiveness - Media Queries */
-@media (max-width: 768px) {
-    body {
-      padding: 2rem;
-    }
-  }
 
