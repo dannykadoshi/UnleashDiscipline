@@ -1,9 +1,10 @@
-/* Heading and Body Font */
+/* Heading and Body  */
 h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
+    background: url('../images/background3.jpg') no-repeat center center;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -11,20 +12,20 @@ body {
 /* Primary Color */
 .logo {
     color: #12284C;
-  }
-  
-  /* Secondary Colors */
-  .nav-menu a {
+}
+
+/* Secondary Colors */
+.nav-menu a {
     color: #12284C;
-  }
-  
-  /* Accent Color */
-  .button {
+}
+
+/* Accent Color */
+.button {
     background-color: #FFA500;
     color: #ffffff;
-  }
-  
-  /* Background Color */
-  .main-container {
+}
+
+/* Background Color */
+.main-container {
     background-color: #D3D3D3;
-  }
+}
