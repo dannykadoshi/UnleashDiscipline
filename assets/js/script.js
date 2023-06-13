@@ -439,8 +439,19 @@ const quotes = [
 
 ];
 
-// Get quote container elements
+//Get the quote text element
 const quoteText = document.getElementById('quote-text');
+
+//Function to add quotation marks to the quote text
+function addQuotationMarks() {
+    const text = quoteText.textContent;
+    quoteText.textContent = `"${text}"`;
+}
+
+//Call the function to add quotation marks
+addQuotationMarks()
+
+// Get quote container elements
 const quoteAuthor = document.getElementById('quote-author');
 
 //Get new quote buttom element
@@ -454,6 +465,9 @@ function generateRandomQuote() {
     //Set the quote text and author
     quoteText.textContent = randomQuote.text;
     quoteAuthor.textContent = randomQuote.author;
+
+    //Add quotation marks after setting the quote text
+    addQuotationMarks();
 }
 
 //Generate a random quote when the page loads
