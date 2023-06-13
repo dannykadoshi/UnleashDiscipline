@@ -13,9 +13,17 @@ body {
     text-align: center;
 }
 
+
+
 /* Colour palette for website */
 header {
     margin-bottom: 2rem;
+}
+
+header img {
+    height: auto;
+    margin-top: -40px;
+    width: 400px;
 }
 
 h1 {
@@ -65,27 +73,16 @@ h1 {
     color: #fff;
 }
 
-
-
 /* Colour palette for website */
-/* Primary Color */
-.logo {
-    color: #12284c;
-    margin-top: 2rem;
-}
-
-/* Secondary Colors */
 .nav-menu a {
     color: #12284c;
 }
 
-/* Accent Color */
 .button {
     background-color: #ffa500;
     color: #ffffff;
 }
 
-/* Background Color */
 .main-container {
     background-color: #fff;
     border: 2px solid #ccc;
@@ -111,12 +108,21 @@ footer {
 .social-media a {
     color: #fff;
     margin: 0 0.5rem;
-    font-size: 20px;
+    font-size: 40px;
+}
+
+.social-media a:hover {
+    color: #ffa500;
 }
 
 .mission-statement {
     font-size: 14px;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.copyright {
+    font-size: 12px;
 }
 
 /* Responsiveness - Media Queries */
