@@ -14,10 +14,6 @@ body {
 }
 
 /* Colour palette for website */
-header {
-    margin-bottom: 2rem;
-}
-
 header img {
     height: auto;
     margin-top: -40px;
@@ -104,11 +100,15 @@ h1 {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
     box-shadow: 5px 5px 100px #fff9e6;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-bottom: 80px;
     height: auto;
     max-width: 1000px;
     padding: 2rem;
+}
+
+.main-container h1 i {
+    color: #ED5737;
 }
 
 /* Footer */
