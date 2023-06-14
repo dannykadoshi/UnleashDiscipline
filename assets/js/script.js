@@ -437,66 +437,159 @@ let quotes = [
         text: "Don't stop until you're proud.",
         author: "Unknown"
     },
+    {
+        text: "Lots of people wanting everything and doing nothing.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Quit feeling sorry for yourself, make shit happen.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Dream so big everyone thinks you're crazy, no matter what they think about it. The only person that limits you stares back at you in the mirror every single day.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "This is about legacy. This is about service. This is about giving far more than you take. This is about inspiring the warrior attitude and taking responsibility for your life. This is about picking each other up.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Did you do what you needed to do today?",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Your mind & focus are far more powerful than you could ever comprehend.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "99% of people let others opinions and beliefs keep them from ever living the life they want.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "A lot of people think of it like… if I do all this work and what if it doesn't happen? No. If you do the work and you make a plan it will f***ing happen. There is no question.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Be brave enough to go after what you really want. Be strong enough to pick people up and bring them with you.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "You are the only one who can stop you.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "You are where you are because of you.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Most people in life wait. They wait and put off the things they truly want to be in their heart for 'Tomorrow' the mystical place where 99% of all dreams, human achievement & potential greatness goes to die.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Nothing great is given, it's earned.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Free your mind to dream huge. Free your heart to believe its possible.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "There are two types of people in this world: anchors and propellors.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "There is no what if, if you do the work on a worthy plan the result will be there.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Inside every self-made man is a poor kid who followed his dreams.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Will your story be one of ultimate fulfillment and success through the maximization of your potential by overcoming tremendous difficulty and inspiring millions to be better?. Or will it be one of what could have been?",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Don't let the constant pursuit of and drive for success keep you from appreciating and being grateful for what you have now.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Now what? Are you going to run and cry like a little bitch and blame everyone?. Or are you going to take a deep breath, think, act and move forward?.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The only thing relevant to your success is your actions.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Find out what it is you f***ing stand for in your heart and f***ing stand for it!",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Everything you see, touch or use in your daily life started as just a single thought.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The reason people don't succeed is because they don't do the work.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "There are no super-humans, just humans, and what one man can do, another can do.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "What you think about, dream about, talk about and focus on will become your life.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Honest gratitude for what you have is one of the biggest accelerators for future success.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Yes, finding success is going to require you to make sacrifices and be uncomfortable.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "I've made mistakes that have cost us millions of dollars… but the reality is, I've got a PHD in entrepreneurship now. What would you rather have?",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Maybe I shouldn't have dreamed so much. Maybe I shouldn't have worked all those crazy hours. Maybe I should have been more realistic. I mean… it doesn't even have cupholders (Andy's Lamborghini).",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Remember the days you prayed for the things you have now.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "I'm a regular dude who made a daily list of critical tasks that needed to get done, and I did them.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "It's not luck, it's not magic, it's not circumstances. It's developing a great plan and EXECUTING on it, day in and day out until the visions in your head become your reality.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Everyday is a win or a loss.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Stop. Look around. Breath in that greatness. Breath out that gratitude.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Things to never budge on: Your work ethic, your quality of work, your attention to detail, your integrity, your morals, your drive. Treating your employees/people who help you like gold. Treating customers like gold.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Accepting responsibility even when it's not your fault and fixing the problem; you will have unlimited income potential in your life.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "They told me I'd never get this far. They were right, I got further.",
+        author: "Andy Frisella"
+    }
 
-];
-
-// Define an array of quotes by Andy Frisella for the entire week
-let quotesOfWeek = [
-    "Lots of people wanting everything and doing nothing.",
-    "Quit feeling sorry for yourself, make shit happen.",
-    "Dream so big everyone thinks you're crazy, no matter what they think about it. The only person that limits you stares back at you in the mirror every single day.",
-    "This is about legacy. This is about service. This is about giving far more than you take. This is about inspiring the warrior attitude and taking responsibility for your life. This is about picking each other up.",
-    "Did you do what you needed to do today?",
-    "Your mind & focus are far more powerful than you could ever comprehend.",
-    "99% of people let others opinions and beliefs keep them from ever living the life they want.",
-    "A lot of people think of it like… if I do all this work and what if it doesn't happen? No. If you do the work and you make a plan it will f***ing happen. There is no question.",
-    "Be brave enough to go after what you really want. Be strong enough to pick people up and bring them with you.",
-    "You are the only one who can stop you.",
-    "You are where you are because of you.",
-    "Most people in life wait. They wait and put off the things they truly want to be in their heart for 'Tomorrow' the mystical place where 99% of all dreams, human achievement & potential greatness goes to die.",
-    "Nothing great is given, it's earned.",
-    "Free your mind to dream huge. Free your heart to believe its possible.",
-    "There are two types of people in this world: anchors and propellors.",
-    "There is no what if, if you do the work on a worthy plan the result will be there.",
-    "Inside every self-made man is a poor kid who followed his dreams.",
-    "Lots of people wanting everything and doing nothing.",
-    "Quit feeling sorry for yourself, make shit happen.",
-    "Dream so big everyone thinks you're crazy, no matter what they think about it. The only person that limits you stares back at you in the mirror every single day.",
-    "This is about legacy. This is about service. This is about giving far more than you take. This is about inspiring the warrior attitude and taking responsibility for your life. This is about picking each other up.",
-    "Did you do what you needed to do today?",
-    "Your mind & focus are far more powerful than you could ever comprehend.",
-    "99% of people let others opinions and beliefs keep them from ever living the life they want.",
-    "A lot of people think of it like… if I do all this work and what if it doesn't happen? No. If you do the work and you make a plan it will f***ing happen. There is no question.",
-    "Be brave enough to go after what you really want. Be strong enough to pick people up and bring them with you.",
-    "You are the only one who can stop you.",
-    "You are where you are because of you.",
-    "Most people in life wait. They wait and put off the things they truly want to be in their heart for 'Tomorrow' the mystical place where 99% of all dreams, human achievement & potential greatness goes to die.",
-    "Nothing great is given, it's earned.",
-    "Free your mind to dream huge. Free your heart to believe its possible.",
-    "There are two types of people in this world: anchors and propellors.",
-    "There is no what if, if you do the work on a worthy plan the result will be there.",
-    "Inside every self-made man is a poor kid who followed his dreams.",
-    "Will your story be one of ultimate fulfillment and success through the maximization of your potential by overcoming tremendous difficulty and inspiring millions to be better?. Or will it be one of what could have been?",
-    "Don't let the constant pursuit of and drive for success keep you from appreciating and being grateful for what you have now.",
-    "Now what? Are you going to run and cry like a little bitch and blame everyone?. Or are you going to take a deep breath, think, act and move forward?.",
-    "The only thing relevant to your success is your actions.",
-    "Find out what it is you f***ing stand for in your heart and f***ing stand for it!",
-    "Everything you see, touch or use in your daily life started as just a single thought.",
-    "The reason people don't succeed is because they don't do the work.",
-    "There are no super-humans, just humans, and what one man can do, another can do.",
-    "What you think about, dream about, talk about and focus on will become your life.",
-    "Honest gratitude for what you have is one of the biggest accelerators for future success.",
-    "Yes, finding success is going to require you to make sacrifices and be uncomfortable.",
-    "I've made mistakes that have cost us millions of dollars… but the reality is, I've got a PHD in entrepreneurship now. What would you rather have?",
-    "Maybe I shouldn't have dreamed so much. Maybe I shouldn't have worked all those crazy hours. Maybe I should have been more realistic. I mean… it doesn't even have cupholders (Andy's Lamborghini).",
-    "Remember the days you prayed for the things you have now.",
-    "I'm a regular dude who made a daily list of critical tasks that needed to get done, and I did them.",
-    "It's not luck, it's not magic, it's not circumstances. It's developing a great plan and EXECUTING on it, day in and day out until the visions in your head become your reality.",
-    "Everyday is a win or a loss.",
-    "Stop. Look around. Breath in that greatness. Breath out that gratitude.",
-    "Things to never budge on: Your work ethic, your quality of work, your attention to detail, your integrity, your morals, your drive. Treating your employees/people who help you like gold. Treating customers like gold.",
-    "Accepting responsibility even when it's not your fault and fixing the problem; you will have unlimited income potential in your life.",
-    "They told me I'd never get this far. They were right, I got further."
 ];
 
 // Get the quote text element
@@ -521,21 +614,59 @@ const copyBtn = document.getElementById('copy-btn');
 // Get notification message element
 const notification = document.getElementById('notification');
 
-// Function to generate a random quote
+// Function to generate a random quote excluding Andy Frisella.
 function generateRandomQuote() {
-    let randomIndex = Math.floor(Math.random() * quotes.length);
-    let randomQuote = quotes[randomIndex];
+    let randomQuote;
 
-    // Set the quote text and author
+    do {
+        let randomIndex = Math.floor(Math.random() * quotes.length);
+        randomQuote = quotes[randomIndex];
+    } while (randomQuote.author === 'Andy Frisella');
+
     quoteText.textContent = randomQuote.text;
     quoteAuthor.textContent = randomQuote.author;
+
+    addQuotationMarks();
+}
+
+// Function to generate the quote of the week (Andy Frisella quotes)
+function generateQuoteOfWeek() {
+    let andyQuotes = quotes.filter((quote) => quote.author === 'Andy Frisella');
+
+    // Get the current week number
+    let currentWeekNumber = getWeekNumber(new Date());
+
+    // Calculate the index based on the current week number
+    let quoteIndex = (currentWeekNumber - 1) % andyQuotes.length;
+
+    // Get the quote for the current week
+    let quoteOfTheWeek = andyQuotes[quoteIndex];
+
+    // Set the quote text and author for the quote of the week
+    quoteOfWeekText.textContent = `"${quoteOfTheWeek.text}"`;
+    quoteAuthor.textContent = quoteOfTheWeek.author;
 
     // Add quotation marks after setting the quote text
     addQuotationMarks();
 }
 
-// Generate a random quote when the page loads
-window.addEventListener('load', generateRandomQuote);
+// Helper function to get the week number of a given date
+function getWeekNumber(date) {
+    const onejan = new Date(date.getFullYear(), 0, 1);
+    const millisecondsInWeek = 7 * 24 * 60 * 60 * 1000;
+    return Math.ceil(((date - onejan) / millisecondsInWeek) + onejan.getDay() / 7);
+}
+
+// Start updating the quote of the week
+generateQuoteOfWeek();
+
+// Generate a random quote when the page loads, excluding Andy Frisella quotes
+window.addEventListener('load', function () {
+    generateRandomQuote();
+});
+
+// Generate the quote of the week when the page loads
+window.addEventListener('load', generateQuoteOfWeek);
 
 // Generate a random quote when the new quote button is clicked
 newQuoteBtn.addEventListener('click', generateRandomQuote);
@@ -557,11 +688,11 @@ copyBtn.addEventListener('click', function () {
     copyToClipboard(textToCopy);
     console.log('Text copied to clipboard: ' + textToCopy);
 
-    //Show notification message
-    notification.textContent = 'Copied to clipboard succesfully!';
+    // Show notification message
+    notification.textContent = 'Copied to clipboard successfully!';
     notification.classList.add('show');
 
-    //Hide notification message after 3 seconds
+    // Hide notification message after 3 seconds
     setTimeout(function () {
         notification.classList.remove('show');
     }, 3000);
@@ -571,7 +702,7 @@ copyBtn.addEventListener('click', function () {
 function shareToTwitter() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#";
+    const shareUrl = 'https://dannykadoshi.github.io/UnleashDiscipline/#';
 
     // Create the share message
     let message = `${quote} - ${author}`;
@@ -582,99 +713,107 @@ function shareToTwitter() {
     )}`;
 
     // Open the Twitter share link in a new window
-    window.open(shareLink, "_blank");
+    window.open(shareLink, '_blank');
 }
 
 // Function to share the quote and author to WhatsApp
 function shareToWhatsApp() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#";
+    const shareUrl = 'https://dannykadoshi.github.io/UnleashDiscipline/#';
 
     // Create the share message
     let message = `${quote} - ${author}`;
 
     // Create the WhatsApp share link
-    let shareLink = `https://wa.me/?text=${encodeURIComponent(message + " " + shareUrl)}`;
+    let shareLink = `https://wa.me/?text=${encodeURIComponent(message + ' ' + shareUrl)}`;
 
     // Open the WhatsApp share link in a new window
-    window.open(shareLink, "_blank");
+    window.open(shareLink, '_blank');
 }
 
 // Function to share the quote and author to Facebook
 function shareToFacebook() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
+    const shareUrl = 'https://dannykadoshi.github.io/UnleashDiscipline/#'; // Share the webpage and not the quote
 
     // Create the share message
     let message = `${quote} - ${author}`;
 
     // Create the Facebook share link
-    let shareLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(message)}`;
+    let shareLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(
+        message
+    )}`;
 
     // Open the Facebook share link in a new window
-    window.open(shareLink, "_blank");
+    window.open(shareLink, '_blank');
 }
 
 // Function to share the quote and author to LinkedIn
 function shareToLinkedIn() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
+    const shareUrl = 'https://dannykadoshi.github.io/UnleashDiscipline/#'; // Share the webpage and not the quote
 
     // Create the share message
     let message = `${quote} - ${author}`;
 
     // Create the LinkedIn share link
-    let shareLink = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&summary=${encodeURIComponent(message)}`;
+    let shareLink = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+        shareUrl
+    )}&summary=${encodeURIComponent(message)}`;
 
     // Open the LinkedIn share link in a new window
-    window.open(shareLink, "_blank");
+    window.open(shareLink, '_blank');
 }
 
 // Function to share the quote and author to Pinterest
 function shareToPinterest() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
+    const shareUrl = 'https://dannykadoshi.github.io/UnleashDiscipline/#'; // Share the webpage and not the quote
 
     // Create the share message
     let message = `${quote} - ${author}`;
 
     // Create the Pinterest share link
-    let shareLink = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(shareUrl)}&description=${encodeURIComponent(message)}`;
+    let shareLink = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(
+        shareUrl
+    )}&description=${encodeURIComponent(message)}`;
 
     // Open the Pinterest share link in a new window
-    window.open(shareLink, "_blank");
+    window.open(shareLink, '_blank');
 }
 
 // Function to share the quote and author via email
 function shareViaEmail() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
-    const subject = "Check out this inspiring quote!";
+    const subject = 'Check out this inspiring quote!';
     const body = `${quote} - ${author}`;
-    const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:?subject=${encodeURIComponent(
+        subject
+    )}&body=${encodeURIComponent(body)}`;
 
     // Open the mailto link in a new window or redirect to the default email client
     window.open(mailtoLink);
 }
 
 // Event listener for the Twitter icon
-document.getElementById("twitter-icon").addEventListener("click", shareToTwitter);
+document.getElementById('twitter-icon').addEventListener('click', shareToTwitter);
 
 // Event listener for the WhatsApp icon
-document.getElementById("whatsapp-icon").addEventListener("click", shareToWhatsApp);
+document.getElementById('whatsapp-icon').addEventListener('click', shareToWhatsApp);
 
 // Event listener for the Facebook icon
-document.getElementById("facebook-icon").addEventListener("click", shareToFacebook);
+document.getElementById('facebook-icon').addEventListener('click', shareToFacebook);
 
 // Event listener for the LinkedIn icon
-document.getElementById("linkedin-icon").addEventListener("click", shareToLinkedIn);
+document.getElementById('linkedin-icon').addEventListener('click', shareToLinkedIn);
 
 // Event listener for the Pinterest icon
-document.getElementById("pinterest-icon").addEventListener("click", shareToPinterest);
+document.getElementById('pinterest-icon').addEventListener('click', shareToPinterest);
 
 // Event listener for the email icon
-document.getElementById("email-icon").addEventListener("click", shareViaEmail);
+document.getElementById('email-icon').addEventListener('click', shareViaEmail);
