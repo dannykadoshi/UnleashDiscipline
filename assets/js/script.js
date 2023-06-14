@@ -635,7 +635,7 @@ const copyBtn = document.getElementById('copy-btn');
 const notification = document.getElementById('notification');
 
 // Function to generate the quote of the week (Andy Frisella quotes)
-// Function to generate the quote of the week (Andy Frisella quotes)
+
 function generateQuoteOfWeek() {
     let andyQuotes = quotes.filter((quote) => quote.author === 'Andy Frisella');
 
@@ -841,8 +841,9 @@ function updateTimer() {
     const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
-    // Display the remaining time in the timer element
-    timerElement.textContent = `next quote in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    // Update the timer elements with the corresponding values
+    document.getElementById('timer-days').innerHTML = `<span class="timer-text">Next quote in: </span>`;
+    document.getElementById('timer-countdown').innerHTML = `<span class="timer-component">${days}d ${hours}h ${minutes}m ${seconds}s</span>`;
 
     // Update the timer every second
     setTimeout(updateTimer, 1000);

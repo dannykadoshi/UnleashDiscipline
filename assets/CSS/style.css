@@ -18,7 +18,6 @@ header img {
     height: auto;
     margin-bottom: 30px;
     width: 400px;
-
 }
 
 h1 {
@@ -26,6 +25,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: bold;
+    letter-spacing: 3px;
     margin: 0 auto 70px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
@@ -34,7 +34,7 @@ h1 {
 /* style for Quote of the week section */
 
 #quote-of-the-week {
-    background-color: #ed5837d5;
+    background-color: #ffa500;
     border-radius: 10px;
     color: #fff;
     padding: 10px;
@@ -66,9 +66,19 @@ h1 {
   
   #timer {
     font-size: 16px;
-    color: #000;
+    color: #122D4A;
     margin-top: 10px;
     text-transform: uppercase;
+  }
+
+  #timer-days {
+    color: #12284c; 
+    font-weight: bold;
+  }
+  
+  #timer-countdown {
+    color: #fff; 
+    font-weight: bold;
   }
 
 /* Quote Display */
@@ -91,7 +101,7 @@ h1 {
     color: #FFC845;
     font-size: 16px;
     font-style: italic;
-    text-align: right;
+    text-align: center;
 }
 
 /* Buttons */
@@ -244,3 +254,26 @@ footer {
     text-shadow: 2px 2px 4px rgba(7, 7, 7, 0.5);
     text-transform: uppercase;
 }
+
+/* Media querie for screen bellow 375px */
+
+@media screen and (max-width: 375px) {
+
+    header img {
+        width: 325px;
+    }
+
+    .social-media {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    
+    #footer-socials {
+      margin-bottom: 10px;
+    }
+    
+    .social-media a {
+      margin: 5px 0;
+    }
+  }
