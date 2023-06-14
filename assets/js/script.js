@@ -592,14 +592,34 @@ let quotes = [
 
 ];
 
-// Get the quote text element
-const quoteText = document.getElementById('quote-text');
-
 // Function to add quotation marks to the quote text
 function addQuotationMarks() {
     const text = quoteText.textContent;
     quoteText.textContent = `"${text}"`;
 }
+
+// Function to generate a random quote excluding Andy Frisella
+function generateRandomQuote() {
+    let nonAndyQuotes = quotes.filter((quote) => quote.author !== 'Andy Frisella');
+
+    // Check if there are non-Andy quotes available
+    if (nonAndyQuotes.length > 0) {
+        let randomIndex = Math.floor(Math.random() * nonAndyQuotes.length);
+        let randomQuote = nonAndyQuotes[randomIndex];
+
+        quoteText.textContent = randomQuote.text;
+        quoteAuthor.textContent = randomQuote.author;
+
+        addQuotationMarks();
+    } else {
+        // Handle the case when there are no non-Andy quotes available
+        quoteText.textContent = "No quotes available";
+        quoteAuthor.textContent = "";
+    }
+}
+
+// Get the quote text element
+const quoteText = document.getElementById('quote-text');
 
 // Get quote container elements
 const quoteOfWeekText = document.querySelector('.quote-text-week');
@@ -614,21 +634,7 @@ const copyBtn = document.getElementById('copy-btn');
 // Get notification message element
 const notification = document.getElementById('notification');
 
-// Function to generate a random quote excluding Andy Frisella.
-function generateRandomQuote() {
-    let randomQuote;
-
-    do {
-        let randomIndex = Math.floor(Math.random() * quotes.length);
-        randomQuote = quotes[randomIndex];
-    } while (randomQuote.author === 'Andy Frisella');
-
-    quoteText.textContent = randomQuote.text;
-    quoteAuthor.textContent = randomQuote.author;
-
-    addQuotationMarks();
-}
-
+// Function to generate the quote of the week (Andy Frisella quotes)
 // Function to generate the quote of the week (Andy Frisella quotes)
 function generateQuoteOfWeek() {
     let andyQuotes = quotes.filter((quote) => quote.author === 'Andy Frisella');
@@ -648,6 +654,9 @@ function generateQuoteOfWeek() {
 
     // Add quotation marks after setting the quote text
     addQuotationMarks();
+
+    // Generate a random quote excluding Andy Frisella
+    generateRandomQuote();
 }
 
 // Helper function to get the week number of a given date
@@ -659,14 +668,6 @@ function getWeekNumber(date) {
 
 // Start updating the quote of the week
 generateQuoteOfWeek();
-
-// Generate a random quote when the page loads, excluding Andy Frisella quotes
-window.addEventListener('load', function () {
-    generateRandomQuote();
-});
-
-// Generate the quote of the week when the page loads
-window.addEventListener('load', generateQuoteOfWeek);
 
 // Generate a random quote when the new quote button is clicked
 newQuoteBtn.addEventListener('click', generateRandomQuote);
