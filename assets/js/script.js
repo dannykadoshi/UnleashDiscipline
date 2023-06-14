@@ -817,3 +817,35 @@ document.getElementById('pinterest-icon').addEventListener('click', shareToPinte
 
 // Event listener for the email icon
 document.getElementById('email-icon').addEventListener('click', shareViaEmail);
+
+// Get the timer element
+const timerElement = document.getElementById('timer');
+
+// Function to update the timer
+function updateTimer() {
+    // Get the current date and time
+    const now = new Date();
+
+    // Get the next Monday
+    const nextMonday = new Date();
+    nextMonday.setDate(now.getDate() + ((1 + 7 - now.getDay()) % 7));
+    nextMonday.setHours(0, 0, 0, 0);
+
+    // Calculate the remaining time in milliseconds
+    const remainingTime = nextMonday.getTime() - now.getTime();
+
+    // Calculate the remaining days, hours, minutes, and seconds
+    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+    // Display the remaining time in the timer element
+    timerElement.textContent = `Next Quote of the Week in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    // Update the timer every second
+    setTimeout(updateTimer, 1000);
+}
+
+// Call the updateTimer function to start the timer
+updateTimer();
