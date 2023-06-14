@@ -31,6 +31,46 @@ h1 {
     text-transform: uppercase;
 }
 
+/* style for Quote of the week section */
+
+#quote-of-the-week {
+    background-color: #ed5837d5;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #quote-of-the-week h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  #quote-of-the-week h2 span {
+    color: #122D4A;
+  }
+
+  #quote-of-the-week h2 em {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .quote-text-week {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  #timer {
+    font-size: 16px;
+    color: #000;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
 /* Quote Display */
 #quote-conteiner {
     background-color: #fff;
@@ -133,7 +173,7 @@ h1 {
 
 /* Footer */
 footer {
-    background-color: #12284c;
+    background-color: #12284ce1;
     color: #fff;
     margin-top: 2rem;
     padding: 1rem 0;

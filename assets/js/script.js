@@ -842,7 +842,7 @@ function updateTimer() {
     const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
     // Display the remaining time in the timer element
-    timerElement.textContent = `Next Quote of the Week in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    timerElement.textContent = `next quote in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
 
     // Update the timer every second
     setTimeout(updateTimer, 1000);
