@@ -571,7 +571,7 @@ copyBtn.addEventListener('click', function () {
 function shareToTwitter() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
-    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; 
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#";
 
     // Create the share message
     let message = `${quote} - ${author}`;
@@ -617,6 +617,50 @@ function shareToFacebook() {
     window.open(shareLink, "_blank");
 }
 
+// Function to share the quote and author to LinkedIn
+function shareToLinkedIn() {
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
+
+    // Create the share message
+    let message = `${quote} - ${author}`;
+
+    // Create the LinkedIn share link
+    let shareLink = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&summary=${encodeURIComponent(message)}`;
+
+    // Open the LinkedIn share link in a new window
+    window.open(shareLink, "_blank");
+}
+
+// Function to share the quote and author to Pinterest
+function shareToPinterest() {
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const shareUrl = "https://dannykadoshi.github.io/UnleashDiscipline/#"; // Share the webpage and not the quote
+
+    // Create the share message
+    let message = `${quote} - ${author}`;
+
+    // Create the Pinterest share link
+    let shareLink = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(shareUrl)}&description=${encodeURIComponent(message)}`;
+
+    // Open the Pinterest share link in a new window
+    window.open(shareLink, "_blank");
+}
+
+// Function to share the quote and author via email
+function shareViaEmail() {
+    const quote = quoteText.textContent;
+    const author = quoteAuthor.textContent;
+    const subject = "Check out this inspiring quote!";
+    const body = `${quote} - ${author}`;
+    const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open the mailto link in a new window or redirect to the default email client
+    window.open(mailtoLink);
+}
+
 // Event listener for the Twitter icon
 document.getElementById("twitter-icon").addEventListener("click", shareToTwitter);
 
@@ -625,3 +669,12 @@ document.getElementById("whatsapp-icon").addEventListener("click", shareToWhatsA
 
 // Event listener for the Facebook icon
 document.getElementById("facebook-icon").addEventListener("click", shareToFacebook);
+
+// Event listener for the LinkedIn icon
+document.getElementById("linkedin-icon").addEventListener("click", shareToLinkedIn);
+
+// Event listener for the Pinterest icon
+document.getElementById("pinterest-icon").addEventListener("click", shareToPinterest);
+
+// Event listener for the email icon
+document.getElementById("email-icon").addEventListener("click", shareViaEmail);
