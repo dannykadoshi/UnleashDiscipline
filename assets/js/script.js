@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-// Array of quotes
+// Define an array of quotes for the random quotes generator.
 let quotes = [
     {
         text: '"The only way to do great work is to love what you do."',
@@ -440,6 +440,65 @@ let quotes = [
 
 ];
 
+// Define an array of quotes by Andy Frisella for the entire week
+let quotesOfWeek = [
+    "Lots of people wanting everything and doing nothing.",
+    "Quit feeling sorry for yourself, make shit happen.",
+    "Dream so big everyone thinks you're crazy, no matter what they think about it. The only person that limits you stares back at you in the mirror every single day.",
+    "This is about legacy. This is about service. This is about giving far more than you take. This is about inspiring the warrior attitude and taking responsibility for your life. This is about picking each other up.",
+    "Did you do what you needed to do today?",
+    "Your mind & focus are far more powerful than you could ever comprehend.",
+    "99% of people let others opinions and beliefs keep them from ever living the life they want.",
+    "A lot of people think of it like… if I do all this work and what if it doesn't happen? No. If you do the work and you make a plan it will f***ing happen. There is no question.",
+    "Be brave enough to go after what you really want. Be strong enough to pick people up and bring them with you.",
+    "You are the only one who can stop you.",
+    "You are where you are because of you.",
+    "Most people in life wait. They wait and put off the things they truly want to be in their heart for 'Tomorrow' the mystical place where 99% of all dreams, human achievement & potential greatness goes to die.",
+    "Nothing great is given, it's earned.",
+    "Free your mind to dream huge. Free your heart to believe its possible.",
+    "There are two types of people in this world: anchors and propellors.",
+    "There is no what if, if you do the work on a worthy plan the result will be there.",
+    "Inside every self-made man is a poor kid who followed his dreams.",
+    "Lots of people wanting everything and doing nothing.",
+    "Quit feeling sorry for yourself, make shit happen.",
+    "Dream so big everyone thinks you're crazy, no matter what they think about it. The only person that limits you stares back at you in the mirror every single day.",
+    "This is about legacy. This is about service. This is about giving far more than you take. This is about inspiring the warrior attitude and taking responsibility for your life. This is about picking each other up.",
+    "Did you do what you needed to do today?",
+    "Your mind & focus are far more powerful than you could ever comprehend.",
+    "99% of people let others opinions and beliefs keep them from ever living the life they want.",
+    "A lot of people think of it like… if I do all this work and what if it doesn't happen? No. If you do the work and you make a plan it will f***ing happen. There is no question.",
+    "Be brave enough to go after what you really want. Be strong enough to pick people up and bring them with you.",
+    "You are the only one who can stop you.",
+    "You are where you are because of you.",
+    "Most people in life wait. They wait and put off the things they truly want to be in their heart for 'Tomorrow' the mystical place where 99% of all dreams, human achievement & potential greatness goes to die.",
+    "Nothing great is given, it's earned.",
+    "Free your mind to dream huge. Free your heart to believe its possible.",
+    "There are two types of people in this world: anchors and propellors.",
+    "There is no what if, if you do the work on a worthy plan the result will be there.",
+    "Inside every self-made man is a poor kid who followed his dreams.",
+    "Will your story be one of ultimate fulfillment and success through the maximization of your potential by overcoming tremendous difficulty and inspiring millions to be better?. Or will it be one of what could have been?",
+    "Don't let the constant pursuit of and drive for success keep you from appreciating and being grateful for what you have now.",
+    "Now what? Are you going to run and cry like a little bitch and blame everyone?. Or are you going to take a deep breath, think, act and move forward?.",
+    "The only thing relevant to your success is your actions.",
+    "Find out what it is you f***ing stand for in your heart and f***ing stand for it!",
+    "Everything you see, touch or use in your daily life started as just a single thought.",
+    "The reason people don't succeed is because they don't do the work.",
+    "There are no super-humans, just humans, and what one man can do, another can do.",
+    "What you think about, dream about, talk about and focus on will become your life.",
+    "Honest gratitude for what you have is one of the biggest accelerators for future success.",
+    "Yes, finding success is going to require you to make sacrifices and be uncomfortable.",
+    "I've made mistakes that have cost us millions of dollars… but the reality is, I've got a PHD in entrepreneurship now. What would you rather have?",
+    "Maybe I shouldn't have dreamed so much. Maybe I shouldn't have worked all those crazy hours. Maybe I should have been more realistic. I mean… it doesn't even have cupholders (Andy's Lamborghini).",
+    "Remember the days you prayed for the things you have now.",
+    "I'm a regular dude who made a daily list of critical tasks that needed to get done, and I did them.",
+    "It's not luck, it's not magic, it's not circumstances. It's developing a great plan and EXECUTING on it, day in and day out until the visions in your head become your reality.",
+    "Everyday is a win or a loss.",
+    "Stop. Look around. Breath in that greatness. Breath out that gratitude.",
+    "Things to never budge on: Your work ethic, your quality of work, your attention to detail, your integrity, your morals, your drive. Treating your employees/people who help you like gold. Treating customers like gold.",
+    "Accepting responsibility even when it's not your fault and fixing the problem; you will have unlimited income potential in your life.",
+    "They told me I'd never get this far. They were right, I got further."
+];
+
 // Get the quote text element
 const quoteText = document.getElementById('quote-text');
 
@@ -450,6 +509,7 @@ function addQuotationMarks() {
 }
 
 // Get quote container elements
+const quoteOfWeekText = document.querySelector('.quote-text-week');
 const quoteAuthor = document.getElementById('quote-author');
 
 // Get new quote button element
