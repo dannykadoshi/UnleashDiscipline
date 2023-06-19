@@ -38,55 +38,56 @@
     </header>
 
     <!-- Main content body -->
-<div class="main-container">
-    <!-- Quiz Section -->
-    <div class="quiz-container">
-      <h1>The quiz to test your quotes knowledge <i id="hourglass-icon" class="fas fa-hourglass-start rotate"></i></h1>
-      <div id="name-container">
-        <input type="text" id="name" placeholder="Enter Your Name">
-      </div>
-      <div id="ready-container">
-        <h3>Are you ready to test your knowledge?</h3>
-        <div class="quiz-buttons">
-          <button id="start-btn">Start Game</button>
-          <button id="rules-btn">Rules</button>
-        </div>
-      </div>
-      <div id="quiz-questions-section" style="display: none;">
-        <div id="question-container">
-          <div id="quiz">
-            <div id="player-info">
-              <span id="player-name"></span>
-              <span id="score"></span>
+    <div class="main-container">
+        <!-- Quiz Section -->
+        <div class="quiz-container">
+            <h1>The quiz to test your quotes knowledge <i id="hourglass-icon" class="fas fa-hourglass-start rotate"></i>
+            </h1>
+            <div id="name-container">
+                <input type="text" id="name" placeholder="Enter Your Name">
             </div>
-            <h2 id="question"></h2>
-            <ul id="options"></ul>
-            <p id="result"></p>
-          </div>
+            <div id="ready-container">
+                <h3>Are you ready to test your knowledge?</h3>
+                <div class="quiz-buttons">
+                    <button id="start-btn">Start Game</button>
+                    <button id="rules-btn">Rules</button>
+                </div>
+            </div>
+            <div id="quiz-questions-section" style="display: none;">
+                <div id="question-container">
+                    <div id="quiz">
+                        <div id="player-info">
+                            <span id="player-name"></span>
+                        </div>
+                        <span id="score"></span>
+                        <h2 id="question"></h2>
+                        <ul id="options"></ul>
+                        <p id="result"></p>
+                    </div>
+                </div>
+                <div class="quiz-buttons">
+                    <button id="new-game-btn">New Game</button>
+                    <button id="back-home-btn">Back Home</button>
+                </div>
+            </div>
+            <div id="results-section" style="display: none;">
+                <h1 id="result-message"></h1>
+                <div id="result-score"></div>
+                <div id="result-image"></div>
+                <button id="return-btn">Return to Quiz</button>
+            </div>
         </div>
-        <div class="quiz-buttons">
-          <button id="new-game-btn">New Game</button>
-          <button id="back-home-btn">Back Home</button>
+    </div>
+
+    <!-- Rules Section -->
+    <div class="main-container" id="rules-section" style="display: none;">
+        <h1 class="rules-header">Rules</h1>
+        <div class="rules-container">
+            <ol id="rules-list" class="rules-list"></ol>
+            <button id="close-btn">Close</button>
         </div>
-      </div>
-      <div id="results-section" style="display: none;">
-        <h1 id="result-message"></h1>
-        <div id="result-score"></div>
-        <div id="result-image"></div>
-        <button id="return-btn">Return to Quiz</button>
-      </div>
     </div>
-  </div>
-  
-  <!-- Rules Section -->
-  <div class="main-container" id="rules-section" style="display: none;">
-    <h1 class="rules-header">Rules</h1>
-    <div class="rules-container">
-      <ol id="rules-list" class="rules-list"></ol>
-      <button id="close-btn">Close</button>
-    </div>
-  </div>
-  
+
 
     <!-- Font awesome script-->
     <script src="https://kit.fontawesome.com/50b3ac31b9.js" crossorigin="anonymous"></script>

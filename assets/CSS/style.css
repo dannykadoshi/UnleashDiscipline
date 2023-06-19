@@ -273,7 +273,8 @@ footer {
   
   #question {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+    font-style: italic;
     margin-bottom: 20px;
   }
   
@@ -309,16 +310,21 @@ footer {
     font-size: 18px;
     margin-top: 10px;
   }
+
+  #player-info {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
   
   #player-name {
-    color: white;
-    font-size: 18px;
+    color: #fff;
     font-weight: bold;
   }
   
   #score {
-    color: white;
-    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
   }
   
 .quiz-section {
