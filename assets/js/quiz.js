@@ -98,7 +98,7 @@ function checkAnswer(selectedButton) {
         } else {
             showResult();
         }
-    }, 3000);
+    }, 1500);
 
     const buttons = Array.from(optionsElement.getElementsByClassName("option"));
     buttons.forEach((button) => {
@@ -122,8 +122,10 @@ function showResult() {
       resultMessageElement.classList.add("wow");
   
       const wowImage = document.createElement("img");
-      wowImage.src = "../../images/smashed-it.png";
-      wowImage.alt = "Wow Image";
+      wowImage.src = "https://i.ibb.co/LYrC0LW/smashed-it.png";
+      wowImage.alt = "Female background with quote 'You absolutely smashed it!'";
+      wowImage.style.maxWidth = "500px"; // Set the desired width
+      wowImage.style.maxHeight = "500px"; // Set the desired height
       resultImageElement.innerHTML = "";
       resultImageElement.appendChild(wowImage);
     } else {
@@ -131,8 +133,10 @@ function showResult() {
       resultMessageElement.classList.add("luck");
   
       const luckImage = document.createElement("img");
-      luckImage.src = "../../images/better-lucky.png";
-      luckImage.alt = "Luck Image";
+      luckImage.src = "https://i.ibb.co/MSMsPNY/better-luck.jpg";
+      luckImage.alt = "Never give up and good luck will find you quote";
+      luckImage.style.maxWidth = "500px"; // Set the desired width
+      luckImage.style.maxHeight = "500px"; // Set the desired height
       resultImageElement.innerHTML = "";
       resultImageElement.appendChild(luckImage);
     }
@@ -140,7 +144,7 @@ function showResult() {
     newGameBtn.style.display = "block";
   }
   
-
+  
 // Function to shuffle an array using the Fisher-Yates algorithm
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
