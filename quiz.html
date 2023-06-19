@@ -39,22 +39,30 @@
 
     <!-- Main content body-->
     <!-- Quiz Section -->
-    <div class="main-container">
-        <h1> Discipline Quotes Quiz <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
-        <div class="quiz-container">
-            <div id="name-container">
-                <label for="name">Enter Your Name:</label>
-                <input type="text" id="name" placeholder="Your Name">
-            </div>
-            <h3 id="question"></h3>
-            <ul id="options"></ul>
-            <button id="submit-btn">Submit</button>
-            <p id="result"></p>
-            <p id="score"></p>
-            <p id="timer"></p>
+    <!-- Quiz Section -->
+<div class="main-container">
+    <h1>Discipline Quotes Quiz <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
+    <div class="quiz-container">
+      <div id="name-container">
+        <input type="text" id="name" placeholder="Enter Your Name">
+      </div>
+      <h3>Choose a Category</h3>
+      <div class="category-options">
+        <div class="category">
+          <input type="radio" id="category1" name="category" value="who-am-i">
+          <label for="category1">Who am I?</label>
         </div>
+        <div class="category">
+          <input type="radio" id="category2" name="category" value="guess-the-quote">
+          <label for="category2">Guess the Quote</label>
+        </div>
+      </div>
+      <div class="quiz-buttons">
+        <button id="start-btn">Start Game</button>
+        <button id="rules-btn">Rules</button>
+      </div>
     </div>
-
+  </div>
 
     <!-- Font awesome script-->
     <script src="https://kit.fontawesome.com/50b3ac31b9.js" crossorigin="anonymous"></script>
