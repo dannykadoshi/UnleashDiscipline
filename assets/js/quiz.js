@@ -166,6 +166,13 @@ document.getElementById("return-btn").addEventListener("click", function () {
     document.getElementById("results-section").style.display = "none";
 });
 
+// Event listener for the Enter key press
+document.getElementById("name").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        startGame();
+    }
+});
+
 // Rules content
 const rules = [
     "Enter your name",
@@ -196,6 +203,20 @@ document.getElementById("close-btn").addEventListener("click", function () {
 // Event listener for the Rules button
 document.getElementById("rules-btn").addEventListener("click", function () {
     document.getElementById("rules-section").style.display = "block";
+});
+
+// Show the "Back Home" button on the initial page
+const backHomeBtn = document.getElementById("back-home-btn");
+backHomeBtn.style.display = "inline-block";
+
+// Event listener for the "Back Home" button
+backHomeBtn.addEventListener("click", function () {
+    window.location.href = "index.html";
+});
+
+// Event listener for the "Back Home" button beside the "New Game" button
+document.getElementById("back-home-btn-2").addEventListener("click", function () {
+    window.location.href = "index.html";
 });
 
 // Create the rules list on page load
