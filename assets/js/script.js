@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+/*  jshint esversion: 11 */
 
 // JavaScript for Main Page
 const quizButton = document.getElementById('quiz-btn');

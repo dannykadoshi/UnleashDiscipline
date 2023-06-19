@@ -266,7 +266,61 @@ footer {
 }
 
 /* Quiz Section */
-
+#quiz-questions-section {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #question {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    background-color: #ffa500; 
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option:hover {
+    background-color: #122D4A; 
+  }
+  
+  .option.correct {
+    background-color: #27ae60; 
+  }
+  
+  .option.incorrect {
+    background-color: #c0392b; 
+  }
+  
+  #result {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  #player-name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #score {
+    color: white;
+    font-size: 18px;
+  }
+  
 .quiz-section {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
