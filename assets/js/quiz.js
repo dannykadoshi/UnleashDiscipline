@@ -183,11 +183,16 @@ document.getElementById("name").addEventListener("keypress", function (event) {
 
 // Rules content
 const rules = [
-    "Enter your name",
-    "Click Start",
+    "Enter your name (mandatory field)",
+    "Click START GAME",
+    "Your score will be displayed at the top showing how many message you have got right",
     "Read the question carefully and select your answer",
-    "Your result will be displayed at the end",
+    "If your answer is correct it will turn green",
+    "If your answer is incorrect, it will turn red, and the right answer will be displayed in green",
+    "The next question will be displayed automatically after 2 seconds",
+    "Your result will be displayed at the end of question 10",
     "Select Home to go back to the main page",
+    "Click CLOSE to close the rules and start your game",
 ];
 
 // Function to create the rules list
