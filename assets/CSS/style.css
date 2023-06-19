@@ -436,26 +436,22 @@ h3 {
     text-transform: uppercase;
 }
 
-.rotate {
-    animation: rotate-hourglass 4s linear infinite;
-}
-
-@keyframes rotate-hourglass {
+@keyframes graduation {
     0% {
-        transform: rotate(0deg);
+        transform: scale(1);
     }
 
     50% {
-        transform: rotate(180deg);
-    }
-
-    54% {
-        transform: rotate(180deg);
+        transform: scale(1.3);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: scale(1);
     }
+}
+
+#graduation-icon {
+    animation: heartbeat 1.5s infinite;
 }
 
 /* Quiz Rules Section */
