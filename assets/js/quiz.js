@@ -170,8 +170,7 @@ document.getElementById("back-home-btn").addEventListener("click", function () {
     window.location.href = "index.html";
 });
 document.getElementById("return-btn").addEventListener("click", function () {
-    document.getElementById("quiz-questions-section").style.display = "block";
-    document.getElementById("results-section").style.display = "none";
+    window.location.href = "index.html";
 });
 
 // Event listener for the Enter key press
