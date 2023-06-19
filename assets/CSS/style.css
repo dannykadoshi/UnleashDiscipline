@@ -309,28 +309,6 @@ h3 {
     text-transform: uppercase;
 }
 
-.category-options {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.category {
-    margin-right: 1.5rem;
-}
-
-.category input[type="radio"] {
-    display: none;
-}
-
-.category label {
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #FFC845;
-    text-transform: uppercase;
-}
-
 .quiz-buttons {
     margin-top: 2rem;
 }
@@ -373,7 +351,25 @@ h3 {
     text-transform: uppercase;
 }
 
-
+.rotate {
+    animation: rotate-hourglass 4s linear infinite;
+  }
+  
+  @keyframes rotate-hourglass {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    54% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 /* Media querie for screen bellow 375px */
 
 @media screen and (max-width: 375px) {
