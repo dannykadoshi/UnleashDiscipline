@@ -14,7 +14,10 @@ function loadQuestion() {
 
     optionsElement.innerHTML = "";
 
-    question.options.forEach(function (option, index) {
+    // Shuffle the options array
+    const shuffledOptions = shuffleArray(question.options);
+
+    shuffledOptions.forEach(function (option, index) {
         const button = document.createElement("button");
         button.textContent = option;
         button.classList.add("option");
@@ -24,6 +27,15 @@ function loadQuestion() {
 
     playerNameElement.textContent = `Welcome ${playerName}!`;
     scoreElement.textContent = `Score: ${score}/${guessWhoSaid.length}`;
+}
+
+// Function to shuffle an array using the Fisher-Yates algorithm
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 function checkAnswer(selectedButton) {
