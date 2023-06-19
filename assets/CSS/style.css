@@ -106,7 +106,8 @@ h1 {
 
 /* Buttons */
 #new-quote-btn,
-#copy-btn {
+#copy-btn,
+#quiz-btn {
     border: none;
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -119,7 +120,7 @@ h1 {
 }
 
 #new-quote-btn {
-    background-color: #ED5737;
+    background-color: #ff6f00;
     color: #fff;
     margin-right: 5px;
 }
@@ -129,12 +130,21 @@ h1 {
     color: #fff;
 }
 
+#quiz-btn {
+    background-color: #122D4A;
+    color: #fff;
+}
+
 #new-quote-btn:hover {
-    background-color: #ff6f00;
+    background-color: #FFC845;
 }
 
 #copy-btn:hover {
-    background-color: #122D4A;
+    background-color: #FFC845;
+}
+
+#quiz-btn:hover {
+    background-color: #FFC845;
 }
 
 /* Colour palette for website */
