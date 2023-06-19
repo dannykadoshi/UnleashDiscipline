@@ -237,28 +237,31 @@ document.getElementById('email-icon').addEventListener('click', shareViaEmail);
 // Get the timer element
 const timerElement = document.getElementById('timer');
 
-// Function to update the timer
+// Function to update the timer and generate a new quote of the day
 function updateTimer() {
     // Get the current date and time
     const now = new Date();
 
-    // Get the next Monday
-    const nextMonday = new Date();
-    nextMonday.setDate(now.getDate() + ((1 + 7 - now.getDay()) % 7));
-    nextMonday.setHours(0, 0, 0, 0);
+    // Get the next day
+    const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    tomorrow.setHours(0, 0, 0, 0);
 
     // Calculate the remaining time in milliseconds
-    const remainingTime = nextMonday.getTime() - now.getTime();
+    const remainingTime = tomorrow.getTime() - now.getTime();
 
-    // Calculate the remaining days, hours, minutes, and seconds
-    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    // Calculate the remaining hours, minutes, and seconds
     const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
     // Update the timer elements with the corresponding values
     document.getElementById('timer-days').innerHTML = `<span class="timer-text">Next quote in: </span>`;
-    document.getElementById('timer-countdown').innerHTML = `<span class="timer-component">${days}d ${hours}h ${minutes}m ${seconds}s</span>`;
+    document.getElementById('timer-countdown').innerHTML = `<span class="timer-component">${hours}h ${minutes}m ${seconds}s</span>`;
+
+    // Generate a new quote of the day when the timer reaches 00:00:00
+    if (hours === 0 && minutes === 0 && seconds === 0) {
+        generateQuoteOfDay();
+    }
 
     // Update the timer every second
     setTimeout(updateTimer, 1000);
@@ -266,3 +269,4 @@ function updateTimer() {
 
 // Call the updateTimer function to start the timer
 updateTimer();
+
