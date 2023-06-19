@@ -267,82 +267,91 @@ footer {
 
 /* Quiz Section */
 #quiz-questions-section {
+    display: none;
     text-align: center;
     text-transform: uppercase;
-  }
-  
-  #question {
+}
+
+#question {
     color: white;
     font-size: 20px;
     font-style: italic;
     margin-bottom: 20px;
-  }
-  
-  .option {
+}
+
+.option {
     display: block;
     width: 100%;
     max-width: 400px;
     margin: 10px auto;
     padding: 10px;
     color: white;
-    background-color: #ffa500; 
+    background-color: #ffa500;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .option:hover {
-    background-color: #122D4A; 
-  }
-  
-  .option.correct {
-    background-color: #27ae60; 
-  }
-  
-  .option.incorrect {
-    background-color: #c0392b; 
-  }
-  
-  #result {
+}
+
+.option:hover {
+    background-color: #122D4A;
+}
+
+.option.correct {
+    background-color: #27ae60;
+}
+
+.option.incorrect {
+    background-color: #c0392b;
+}
+
+#result {
     color: white;
     font-size: 18px;
     margin-top: 10px;
-  }
+}
 
-  .result-score {
+.result-score {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #fff;
-  }
+}
 
-  #player-info {
+#results-section {
+    display: none;
+}
+
+#back-home-btn {
+    display: none;
+}
+
+#player-info {
     font-size: 30px;
     margin-bottom: 10px;
-  }
-  
-  #player-name {
+}
+
+#player-name {
     color: #fff;
     font-weight: bold;
-  }
+}
 
-  .feedback {
+.feedback {
     display: none;
     color: #ffa500;
     font-size: 14px;
     font-weight: bold;
     margin-top: 5px;
-  }
-  
-  #score {
+}
+
+#score {
     color: #fff;
     font-weight: bold;
     font-size: 30px;
-  }
-  
+}
+
 .quiz-section {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
@@ -399,7 +408,7 @@ h3 {
     font-size: 17px;
     font-weight: bold;
     padding: 10px 20px;
-    margin-right: 10px;
+    margin: 10px 10px 0 0;
     text-transform: uppercase;
 }
 
@@ -429,24 +438,34 @@ h3 {
 
 .rotate {
     animation: rotate-hourglass 4s linear infinite;
-  }
-  
-  @keyframes rotate-hourglass {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(180deg);
-    }
-    54% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+}
 
-  /* Quiz Rules Section */
+@keyframes rotate-hourglass {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    54% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Quiz Rules Section */
+ul#options {
+    padding-left: initial;
+}
+
+#rules-section {
+    display: none;
+}
 
 .rules-header {
     text-align: center;
