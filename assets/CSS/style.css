@@ -311,6 +311,14 @@ footer {
     margin-top: 10px;
   }
 
+  .result-score {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
   #player-info {
     font-size: 30px;
     margin-bottom: 10px;
@@ -479,7 +487,7 @@ h3 {
     background-color: #FFC845;
 }
 
-  
+
 /* Media querie for screen bellow 375px */
 
 @media screen and (max-width: 375px) {

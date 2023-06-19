@@ -116,27 +116,28 @@ function showResult() {
     const newGameBtn = document.getElementById("new-game-btn");
   
     resultScoreElement.textContent = `You got ${score} points out of ${numQuestions}!`;
-  
+    resultScoreElement.classList.add("result-score");
+
     if (score >= numQuestions * 0.6) {
-      resultMessageElement.textContent = "Wow! You killed it.";
+      resultMessageElement.textContent = "Wow! You killed it 🎉";
       resultMessageElement.classList.add("wow");
   
       const wowImage = document.createElement("img");
-      wowImage.src = "https://i.ibb.co/LYrC0LW/smashed-it.png";
-      wowImage.alt = "Female background with quote 'You absolutely smashed it!'";
-      wowImage.style.maxWidth = "500px"; // Set the desired width
-      wowImage.style.maxHeight = "500px"; // Set the desired height
+      wowImage.src = "https://i.ibb.co/Tvj42zT/congratulations.png";
+      wowImage.alt = "Quote You've shown incredible dedication and knowledge. Don't stop now, because you're doing awesome! displayed in a background with white flower'";
+      wowImage.style.maxWidth = "500px"; 
+      wowImage.style.maxHeight = "500px"; 
       resultImageElement.innerHTML = "";
       resultImageElement.appendChild(wowImage);
     } else {
-      resultMessageElement.textContent = "Better luck next time.";
+      resultMessageElement.textContent = "Better luck next time ☘️";
       resultMessageElement.classList.add("luck");
   
       const luckImage = document.createElement("img");
-      luckImage.src = "https://i.ibb.co/MSMsPNY/better-luck.jpg";
-      luckImage.alt = "Never give up and good luck will find you quote";
-      luckImage.style.maxWidth = "500px"; // Set the desired width
-      luckImage.style.maxHeight = "500px"; // Set the desired height
+      luckImage.src = "https://i.ibb.co/gDq2yTr/better-luck.png";
+      luckImage.alt = "Quote about never giving up displayed on a background with white flower";
+      luckImage.style.maxWidth = "500px"; 
+      luckImage.style.maxHeight = "500px"; 
       resultImageElement.innerHTML = "";
       resultImageElement.appendChild(luckImage);
     }
