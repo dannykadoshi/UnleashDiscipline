@@ -4,6 +4,7 @@ const optionsElement = document.getElementById("options");
 const resultElement = document.getElementById("result");
 const playerNameElement = document.getElementById("player-name");
 const scoreElement = document.getElementById("score");
+const feedbackMessage = document.getElementById("feedback-message");
 
 const numQuestions = 10; // Number of questions in each game
 let currentQuestion = 0;
@@ -50,10 +51,11 @@ function startGame() {
     playerName = document.getElementById("name").value.trim();
 
     if (playerName === "") {
-        alert("Please enter your name to start the game.");
+        displayFeedbackMessage("Name is required to start a new game.");
         return;
     }
 
+    feedbackMessage.style.display = "none";
     document.getElementById("name-container").style.display = "none";
     document.getElementById("ready-container").style.display = "none";
     document.getElementById("quiz-questions-section").style.display = "block";
@@ -109,43 +111,49 @@ function checkAnswer(selectedButton) {
 function showResult() {
     document.getElementById("quiz-questions-section").style.display = "none";
     document.getElementById("results-section").style.display = "block";
-  
+
     const resultMessageElement = document.getElementById("result-message");
     const resultScoreElement = document.getElementById("result-score");
     const resultImageElement = document.getElementById("result-image");
     const newGameBtn = document.getElementById("new-game-btn");
-  
+
     resultScoreElement.textContent = `You got ${score} points out of ${numQuestions}!`;
     resultScoreElement.classList.add("result-score");
 
     if (score >= numQuestions * 0.6) {
-      resultMessageElement.textContent = "Wow! You killed it 🎉";
-      resultMessageElement.classList.add("wow");
-  
-      const wowImage = document.createElement("img");
-      wowImage.src = "https://i.ibb.co/Tvj42zT/congratulations.png";
-      wowImage.alt = "Quote You've shown incredible dedication and knowledge. Don't stop now, because you're doing awesome! displayed in a background with white flower'";
-      wowImage.style.maxWidth = "500px"; 
-      wowImage.style.maxHeight = "500px"; 
-      resultImageElement.innerHTML = "";
-      resultImageElement.appendChild(wowImage);
+        resultMessageElement.textContent = "Wow! You killed it 🎉";
+        resultMessageElement.classList.add("wow");
+
+        const wowImage = document.createElement("img");
+        wowImage.src = "https://i.ibb.co/Tvj42zT/congratulations.png";
+        wowImage.alt =
+            "Quote You've shown incredible dedication and knowledge. Don't stop now, because you're doing awesome! displayed in a background with white flower'";
+        wowImage.style.maxWidth = "500px";
+        wowImage.style.maxHeight = "500px";
+        resultImageElement.innerHTML = "";
+        resultImageElement.appendChild(wowImage);
     } else {
-      resultMessageElement.textContent = "Better luck next time ☘️";
-      resultMessageElement.classList.add("luck");
-  
-      const luckImage = document.createElement("img");
-      luckImage.src = "https://i.ibb.co/gDq2yTr/better-luck.png";
-      luckImage.alt = "Quote about never giving up displayed on a background with white flower";
-      luckImage.style.maxWidth = "500px"; 
-      luckImage.style.maxHeight = "500px"; 
-      resultImageElement.innerHTML = "";
-      resultImageElement.appendChild(luckImage);
+        resultMessageElement.textContent = "Better luck next time ☘️";
+        resultMessageElement.classList.add("luck");
+
+        const luckImage = document.createElement("img");
+        luckImage.src = "https://i.ibb.co/gDq2yTr/better-luck.png";
+        luckImage.alt = "Quote about never giving up displayed on a background with white flower";
+        luckImage.style.maxWidth = "500px";
+        luckImage.style.maxHeight = "500px";
+        resultImageElement.innerHTML = "";
+        resultImageElement.appendChild(luckImage);
     }
-  
+
     newGameBtn.style.display = "block";
-  }
-  
-  
+}
+
+// Function to display the feedback message
+function displayFeedbackMessage(message) {
+    feedbackMessage.textContent = message;
+    feedbackMessage.style.display = "block";
+}
+
 // Function to shuffle an array using the Fisher-Yates algorithm
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
