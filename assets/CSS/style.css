@@ -33,7 +33,7 @@ h1 {
 
 /* style for Quote of the week section */
 
-#quote-of-the-week {
+#quote-of-the-day {
     background-color: #ffa500;
     border-radius: 10px;
     color: #fff;
@@ -45,21 +45,21 @@ h1 {
     text-align: center;
 }
 
-#quote-of-the-week h2 {
+#quote-of-the-day h2 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-#quote-of-the-week h2 span {
+#quote-of-the-day h2 span {
     color: #122D4A;
 }
 
-#quote-of-the-week h2 em {
+#quote-of-the-day h2 em {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.quote-text-week {
+.quote-text-day {
     font-size: 18px;
     font-style: italic;
 }

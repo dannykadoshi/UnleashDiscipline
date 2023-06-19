@@ -37,7 +37,7 @@ function generateRandomQuote() {
 const quoteText = document.getElementById('quote-text');
 
 // Get quote container elements
-const quoteOfWeekText = document.querySelector('.quote-text-week');
+const quoteOfWeekText = document.querySelector('.quote-text-day');
 const quoteAuthor = document.getElementById('quote-author');
 
 // Get new quote button element
