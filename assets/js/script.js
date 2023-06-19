@@ -1,4 +1,13 @@
 /*jshint esversion: 6 */
+
+// JavaScript for Main Page
+const quizButton = document.getElementById('quiz-btn');
+
+quizButton.addEventListener('click', () => {
+  // Redirect to Quiz Page
+  window.location.href = 'quiz.html';
+});
+
 // Define an array of quotes for the random quotes generator.
 let quotes = [
     {
