@@ -1,19 +1,24 @@
 /*  jshint esversion: 11 */
-// JavaScript for Main Page
-const quizButton = document.getElementById('quiz-btn');
 
+/* main variables to control the random quotes generator and quote of the day */
+const quizButton = document.getElementById('quiz-btn');
 quizButton.addEventListener('click', () => {
+
   // Redirect to Quiz Page
   window.location.href = 'quiz.html';
 });
 
-// Function to add quotation marks to the quote text
+/**
+ * Function to add quotation marks to the quote text
+ */
 function addQuotationMarks() {
     const text = quoteText.textContent;
     quoteText.textContent = `"${text}"`;
 }
 
-// Function to generate a random quote excluding Andy Frisella
+/**
+ * Function to generate a random quote excluding Andy Frisella author
+ */
 function generateRandomQuote() {
     let nonAndyQuotes = quotes.filter((quote) => quote.author !== 'Andy Frisella');
 
@@ -49,8 +54,9 @@ const copyBtn = document.getElementById('copy-btn');
 // Get notification message element
 const notification = document.getElementById('notification');
 
-// Function to generate the quote of the week (Andy Frisella quotes)
-
+/**
+ * Function to generate the quote of the week (Only Andy Frisella's quotes)
+ */
 function generateQuoteOfWeek() {
     let andyQuotes = quotes.filter((quote) => quote.author === 'Andy Frisella');
 
@@ -74,7 +80,9 @@ function generateQuoteOfWeek() {
     generateRandomQuote();
 }
 
-// Helper function to get the week number of a given date
+/**
+ * Helper function to get the week number of a given day
+ */
 function getWeekNumber(date) {
     const onejan = new Date(date.getFullYear(), 0, 1);
     const millisecondsInWeek = 7 * 24 * 60 * 60 * 1000;
@@ -104,17 +112,19 @@ copyBtn.addEventListener('click', function () {
     copyToClipboard(textToCopy);
     console.log('Text copied to clipboard: ' + textToCopy);
 
-    // Show notification message
+    // Show notification message when copy buttom is clicked
     notification.textContent = 'Copied to clipboard successfully!';
     notification.classList.add('show');
 
-    // Hide notification message after 3 seconds
+    // Hide copy notification message after 3 seconds
     setTimeout(function () {
         notification.classList.remove('show');
     }, 3000);
 });
 
-// Function to share the quote and author to Twitter
+/**
+ * Function to share the quote and author to Twitter
+ */
 function shareToTwitter() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
@@ -132,7 +142,9 @@ function shareToTwitter() {
     window.open(shareLink, '_blank');
 }
 
-// Function to share the quote and author to WhatsApp
+/**
+ * Function to share the quote and author to Whatsapp
+ */
 function shareToWhatsApp() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
@@ -148,7 +160,9 @@ function shareToWhatsApp() {
     window.open(shareLink, '_blank');
 }
 
-// Function to share the quote and author to Facebook
+/**
+ * Function to share the quote and author to Facebook
+ */
 function shareToFacebook() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
@@ -166,7 +180,9 @@ function shareToFacebook() {
     window.open(shareLink, '_blank');
 }
 
-// Function to share the quote and author to LinkedIn
+/**
+ * Function to share the quote and author to Linkedin
+ */
 function shareToLinkedIn() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
@@ -184,7 +200,9 @@ function shareToLinkedIn() {
     window.open(shareLink, '_blank');
 }
 
-// Function to share the quote and author to Pinterest
+/**
+ * Function to share the quote and author to Pinterest
+ */
 function shareToPinterest() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
@@ -202,7 +220,9 @@ function shareToPinterest() {
     window.open(shareLink, '_blank');
 }
 
-// Function to share the quote and author via email
+/**
+ * Function to share the quote and author to Email
+ */
 function shareViaEmail() {
     const quote = quoteText.textContent;
     const author = quoteAuthor.textContent;
@@ -234,10 +254,9 @@ document.getElementById('pinterest-icon').addEventListener('click', shareToPinte
 // Event listener for the email icon
 document.getElementById('email-icon').addEventListener('click', shareViaEmail);
 
-// Get the timer element
-const timerElement = document.getElementById('timer');
-
-// Function to update the timer and generate a new quote of the day
+/**
+ * Function to update the timer and generate a new quote of the day
+ */
 function updateTimer() {
     // Get the current date and time
     const now = new Date();

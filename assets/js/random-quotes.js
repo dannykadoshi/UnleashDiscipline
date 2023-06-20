@@ -1,4 +1,5 @@
 /*  jshint esversion: 11 */
+
 // Define an array of quotes for the random quotes generator.
 let quotes = [
     {

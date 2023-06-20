@@ -10,6 +10,7 @@ const numQuestions = 10; // Number of questions in each game
 let currentQuestion = 0;
 let score = 0;
 let questionPool = []; // Pool of questions for each game
+let playerName; 
 
 function loadQuestion() {
     const question = questionPool[currentQuestion];
