@@ -42,7 +42,7 @@ function generateRandomQuote() {
 const quoteText = document.getElementById('quote-text');
 
 // Get quote container elements
-const quoteOfWeekText = document.querySelector('.quote-text-day');
+const quoteOfDayText = document.querySelector('.quote-text-day');
 const quoteAuthor = document.getElementById('quote-author');
 
 // Get new quote button element
@@ -57,7 +57,7 @@ const notification = document.getElementById('notification');
 /**
  * Function to generate the quote of the week (Only Andy Frisella's quotes)
  */
-function generateQuoteOfWeek() {
+function generateQuoteOfDay() {
     let andyQuotes = quotes.filter((quote) => quote.author === 'Andy Frisella');
 
     // Get the current week number
@@ -67,11 +67,11 @@ function generateQuoteOfWeek() {
     let quoteIndex = (currentWeekNumber - 1) % andyQuotes.length;
 
     // Get the quote for the current week
-    let quoteOfTheWeek = andyQuotes[quoteIndex];
+    let quoteOfTheDay = andyQuotes[quoteIndex];
 
     // Set the quote text and author for the quote of the week
-    quoteOfWeekText.textContent = `"${quoteOfTheWeek.text}"`;
-    quoteAuthor.textContent = quoteOfTheWeek.author;
+    quoteOfDayText.textContent = `"${quoteOfTheDay.text}"`;
+    quoteAuthor.textContent = quoteOfTheDay.author;
 
     // Add quotation marks after setting the quote text
     addQuotationMarks();
@@ -90,7 +90,7 @@ function getWeekNumber(date) {
 }
 
 // Start updating the quote of the week
-generateQuoteOfWeek();
+generateQuoteOfDay();
 
 // Generate a random quote when the new quote button is clicked
 newQuoteBtn.addEventListener('click', generateRandomQuote);
