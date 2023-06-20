@@ -123,22 +123,31 @@ function showResult() {
     if (score >= numQuestions * 0.6) {
         resultMessageElement.textContent = "Wow! You killed it 🎉";
         resultMessageElement.classList.add("wow");
-    
+
         const wowImage = document.createElement("img");
         wowImage.src = "https://i.ibb.co/Tvj42zT/congratulations.png";
         wowImage.alt = "Quote You've shown incredible dedication and knowledge. Don't stop now, because you're doing awesome!";
         resultImageElement.innerHTML = "";
         resultImageElement.appendChild(wowImage);
+
+        // Add responsive styling
+        wowImage.style.maxWidth = "500px";
+        wowImage.style.maxHeight = "500px";
     } else {
         resultMessageElement.textContent = "Better luck next time ☘️";
         resultMessageElement.classList.add("luck");
-    
+
         const luckImage = document.createElement("img");
         luckImage.src = "https://i.ibb.co/gDq2yTr/better-luck.png";
         luckImage.alt = "Quote about never giving up displayed on a background with white flower";
         resultImageElement.innerHTML = "";
         resultImageElement.appendChild(luckImage);
-    }    
+
+        // Add responsive styling
+        luckImage.style.maxWidth = "500px";
+        luckImage.style.maxHeight = "500px";
+    }
+
 
     newGameBtn.style.display = "block";
 }
