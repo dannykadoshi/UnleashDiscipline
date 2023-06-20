@@ -131,8 +131,8 @@ function showResult() {
         resultImageElement.appendChild(wowImage);
 
         // Add responsive styling
-        wowImage.style.maxWidth = "500px";
-        wowImage.style.maxHeight = "500px";
+        wowImage.style.maxWidth = "100%";
+        wowImage.style.maxHeight = "auto";
     } else {
         resultMessageElement.textContent = "Better luck next time ☘️";
         resultMessageElement.classList.add("luck");
@@ -144,8 +144,8 @@ function showResult() {
         resultImageElement.appendChild(luckImage);
 
         // Add responsive styling
-        luckImage.style.maxWidth = "500px";
-        luckImage.style.maxHeight = "500px";
+        luckImage.style.maxWidth = "100%";
+        luckImage.style.maxHeight = "auto";
     }
 
 

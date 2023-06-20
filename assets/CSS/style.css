@@ -164,7 +164,7 @@ h1 {
     border-radius: 20px;
     margin-bottom: 80px;
     height: auto;
-    max-width: 1000px;
+    max-width: 90%;
     padding: 2rem;
 }
 
@@ -437,6 +437,7 @@ h3 {
     text-transform: uppercase;
 }
 
+
 @keyframes graduation {
     0% {
         transform: scale(1);
@@ -533,4 +534,17 @@ ul#options {
     .social-media a {
         margin: 5px 0;
     }
+
+    #result-message {
+        font-size: 24px;
+    }
+
+    #result-score {
+        font-size: 24px;
+    }
+
+    .result-image {
+        max-width: 80%;
+    }
 }
+
