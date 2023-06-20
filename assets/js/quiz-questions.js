@@ -232,16 +232,6 @@ const guessWhoSaid = [
       correct: "William Penn"
     },
     {
-      question: "“Most talk about 'super-geniuses' is nonsense. I have found that when 'stars' drop out, successors are usually at hand to fill their places, and the successors are merely men who have learned by application and self-discipline to get full production from an average, normal brain.”",
-      options: [
-        "Charles M. Schwab",
-        "Grenville Kleiser",
-        "Thucydides",
-        "Hellen Keller"
-      ],
-      correct: "Charles M. Schwab"
-    },
-    {
       question: "“Success doesn't just happen. You have to be intentional about it, and that takes discipline.”",
       options: [
         "John C. Maxwell",
@@ -250,16 +240,6 @@ const guessWhoSaid = [
         "E.M. Gray"
       ],
       correct: "John C. Maxwell"
-    },
-    {
-      question: "“Discipline is the foundation of a successful and happy life.”",
-      options: [
-        "Anonymous",
-        "Mortimer J. Adler",
-        "Plato",
-        "Hellen Keller"
-      ],
-      correct: "Anonymous"
     },
     {
       question: "“True freedom is impossible without a mind made free by discipline.”",
@@ -280,16 +260,6 @@ const guessWhoSaid = [
         "Robert Kiyosaki"
       ],
       correct: "Thucydides"
-    },
-    {
-      question: "“You will never have a greater or lesser dominion than that over yourself…the height of a man's success is gauged by his self-mastery; the depth of his failure by his self-abandonment. …And this law is the expression of eternal justice. He who cannot establish dominion over himself will have no dominion over others.”",
-      options: [
-        "Leonardo da Vinci",
-        "Marcus Aurelius",
-        "Napoleon Hill",
-        "Robert J. Ringer"
-      ],
-      correct: "Leonardo da Vinci"
     },
     {
       question: "“The first and greatest victory is to conquer self.”",
@@ -482,16 +452,6 @@ const guessWhoSaid = [
       correct: "William Penn"
     },
     {
-      question: "“Most talk about 'super-geniuses' is nonsense. I have found that when 'stars' drop out, successors are usually at hand to fill their places, and the successors are merely men who have learned by application and self-discipline to get full production from an average, normal brain.”",
-      options: [
-        "Charles M. Schwab",
-        "Grenville Kleiser",
-        "Thucydides",
-        "Hellen Keller"
-      ],
-      correct: "Charles M. Schwab"
-    },
-    {
       question: "“Success doesn't just happen. You have to be intentional about it, and that takes discipline.”",
       options: [
         "John C. Maxwell",
@@ -500,16 +460,6 @@ const guessWhoSaid = [
         "E.M. Gray"
       ],
       correct: "John C. Maxwell"
-    },
-    {
-      question: "“Discipline is the foundation of a successful and happy life.”",
-      options: [
-        "Anonymous",
-        "Mortimer J. Adler",
-        "Plato",
-        "Hellen Keller"
-      ],
-      correct: "Anonymous"
     },
     {
       question: "“True freedom is impossible without a mind made free by discipline.”",
@@ -530,16 +480,6 @@ const guessWhoSaid = [
         "Robert Kiyosaki"
       ],
       correct: "Thucydides"
-    },
-    {
-      question: "“You will never have a greater or lesser dominion than that over yourself…the height of a man's success is gauged by his self-mastery; the depth of his failure by his self-abandonment. …And this law is the expression of eternal justice. He who cannot establish dominion over himself will have no dominion over others.”",
-      options: [
-        "Leonardo da Vinci",
-        "Marcus Aurelius",
-        "Napoleon Hill",
-        "Robert J. Ringer"
-      ],
-      correct: "Leonardo da Vinci"
     },
     {
       question: "“The first and greatest victory is to conquer self.”",
