@@ -163,19 +163,20 @@ h1 {
     cursor: pointer;
     font-size: 17px;
     font-weight: bold;
+    letter-spacing: 1px;
     padding: 10px 20px;
-    margin-top: 40px;
+    margin: 40px 0 0 10px;
     text-transform: uppercase;
 }
 
 #new-quote-btn {
-    background-color: #ff6f00;
+    background-color: #c0392b;
     color: #fff;
     margin-right: 5px;
 }
 
 #copy-btn {
-    background-color: #2196f3;
+    background-color: #FF8C00;
     color: #fff;
 }
 
