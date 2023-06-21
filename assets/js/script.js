@@ -54,31 +54,48 @@ const copyBtn = document.getElementById('copy-btn');
 // Get notification message element
 const notification = document.getElementById('notification');
 
-/**
- * Function to generate the quote of the week (Only Andy Frisella's quotes)
- */
- function generateQuoteOfDay() {
+// Function to generate the quote of the day (Only Andy Frisella's quotes)
+function generateQuoteOfDay() {
     let andyQuotes = quotes.filter((quote) => quote.author === 'Andy Frisella');
 
-    // Get the current day of the week
-    let currentDay = new Date().getDay();
+    // Get the current date and time
+    let currentDate = new Date();
 
-    // Calculate the index based on the current day
-    let quoteIndex = currentDay % andyQuotes.length;
+    // Set the target time for the quote update (12:00 AM)
+    let targetTime = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        currentDate.getDate(),
+        0, 0, 0
+    );
 
-    // Get the quote for the current day
-    let quoteOfTheDay = andyQuotes[quoteIndex];
+    // Check if the current time is past the target time
+    if (currentDate > targetTime) {
+        // Get the quote for the current day
+        let quoteIndex = currentDate.getDay() % andyQuotes.length;
+        let quoteOfTheDay = andyQuotes[quoteIndex];
 
-    // Set the quote text and author for the quote of the day
-    quoteOfDayText.textContent = `"${quoteOfTheDay.text}"`;
-    quoteAuthor.textContent = quoteOfTheDay.author;
+        // Set the quote text and author for the quote of the day
+        quoteOfDayText.textContent = `"${quoteOfTheDay.text}"`;
+        quoteAuthor.textContent = quoteOfTheDay.author;
 
-    // Add quotation marks after setting the quote text
-    addQuotationMarks();
+        // Add quotation marks after setting the quote text
+        addQuotationMarks();
 
-    // Generate a random quote excluding Andy Frisella
-    generateRandomQuote();
+        // Generate a random quote excluding Andy Frisella
+        generateRandomQuote();
+    }
+
+    // Calculate the time difference until the next day
+    let timeDifference = targetTime.getTime() + 24 * 60 * 60 * 1000 - currentDate.getTime();
+
+    // Schedule the next quote update at the target time of the next day
+    setTimeout(generateQuoteOfDay, timeDifference);
 }
+
+// Start updating the quote of the day
+generateQuoteOfDay();
+
 
 
 /**
