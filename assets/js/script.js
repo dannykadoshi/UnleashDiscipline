@@ -4,8 +4,8 @@
 const quizButton = document.getElementById('quiz-btn');
 quizButton.addEventListener('click', () => {
 
-  // Redirect to Quiz Page
-  window.location.href = 'quiz.html';
+    // Redirect to Quiz Page
+    window.location.href = 'quiz.html';
 });
 
 /**
@@ -57,19 +57,19 @@ const notification = document.getElementById('notification');
 /**
  * Function to generate the quote of the week (Only Andy Frisella's quotes)
  */
-function generateQuoteOfDay() {
+ function generateQuoteOfDay() {
     let andyQuotes = quotes.filter((quote) => quote.author === 'Andy Frisella');
 
-    // Get the current week number
-    let currentWeekNumber = getWeekNumber(new Date());
+    // Get the current day of the week
+    let currentDay = new Date().getDay();
 
-    // Calculate the index based on the current week number
-    let quoteIndex = (currentWeekNumber - 1) % andyQuotes.length;
+    // Calculate the index based on the current day
+    let quoteIndex = currentDay % andyQuotes.length;
 
-    // Get the quote for the current week
+    // Get the quote for the current day
     let quoteOfTheDay = andyQuotes[quoteIndex];
 
-    // Set the quote text and author for the quote of the week
+    // Set the quote text and author for the quote of the day
     quoteOfDayText.textContent = `"${quoteOfTheDay.text}"`;
     quoteAuthor.textContent = quoteOfTheDay.author;
 
@@ -79,6 +79,7 @@ function generateQuoteOfDay() {
     // Generate a random quote excluding Andy Frisella
     generateRandomQuote();
 }
+
 
 /**
  * Helper function to get the week number of a given day
@@ -255,37 +256,92 @@ document.getElementById('pinterest-icon').addEventListener('click', shareToPinte
 document.getElementById('email-icon').addEventListener('click', shareViaEmail);
 
 /**
- * Function to update the timer and generate a new quote of the day
+ * Function to generate rating system for the stars
  */
-function updateTimer() {
-    // Get the current date and time
-    const now = new Date();
 
-    // Get the next day
-    const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-    tomorrow.setHours(0, 0, 0, 0);
+// Get the rating container and stars
+const ratingContainer = document.querySelector('.rating');
+const stars = ratingContainer.getElementsByClassName('star');
 
-    // Calculate the remaining time in milliseconds
-    const remainingTime = tomorrow.getTime() - now.getTime();
+// Get the rating value display element
+const ratingValueElement = document.getElementById('rating-value');
 
-    // Calculate the remaining hours, minutes, and seconds
-    const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+// Get the feedback message element
+const feedbackMessageElement = document.createElement('p');
+feedbackMessageElement.classList.add('feedback-message');
 
-    // Update the timer elements with the corresponding values
-    document.getElementById('timer-days').innerHTML = `<span class="timer-text">Next quote in: </span>`;
-    document.getElementById('timer-countdown').innerHTML = `<span class="timer-component">${hours}h ${minutes}m ${seconds}s</span>`;
+// Initialize the rating value
+let ratingValue = 0;
 
-    // Generate a new quote of the day when the timer reaches 00:00:00
-    if (hours === 0 && minutes === 0 && seconds === 0) {
-        generateQuoteOfDay();
-    }
+// Add click event listener to each star
+for (let i = 0; i < stars.length; i++) {
+  const star = stars[i];
+  
+  star.addEventListener('click', function() {
+    // Get the selected rating value from the star
+    const selectedValue = parseInt(star.getAttribute('data-value'));
 
-    // Update the timer every second
-    setTimeout(updateTimer, 1000);
+    // Update the rating value
+    ratingValue = selectedValue;
+
+    // Update the rating value display
+    ratingValueElement.textContent = `Rating: ${ratingValue}`;
+
+    // Update the star states
+    updateStarStates(selectedValue);
+
+    // Show feedback message
+    showFeedbackMessage();
+  });
 }
 
-// Call the updateTimer function to start the timer
-updateTimer();
+// Function to update the star states
+function updateStarStates(selectedValue) {
+  for (let i = 0; i < stars.length; i++) {
+    const star = stars[i];
+    
+    if (i < selectedValue) {
+      star.classList.add('selected');
+    } else {
+      star.classList.remove('selected');
+    }
+  }
+}
 
+// Show feedback message
+function showFeedbackMessage() {
+  feedbackMessageElement.textContent = 'Thanks for your rating!';
+  ratingContainer.appendChild(feedbackMessageElement);
+}
+
+// Send the rating value to the server
+function sendRatingToServer(ratingValue) {
+    // You can use AJAX to send the rating value to the server and update the database
+    // Here's a basic example using fetch API
+    fetch('/rate-quote', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ rating: ratingValue })
+    })
+        .then(response => {
+            if (response.ok) {
+                // Rating successfully submitted
+                console.log('Rating submitted');
+            } else {
+                // Error handling if rating submission fails
+                console.error('Failed to submit rating');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
+
+// Disable further rating by removing event listeners
+function disableRating() {
+    for (let i = 0; i < stars.length; i++) {
+        stars[i].removeEventListener('click', handleRating);
+    }
+}

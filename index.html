@@ -29,6 +29,7 @@
 </head>
 
 <!-- Header containing website logo-->
+
 <body>
     <header>
         <nav>
@@ -43,17 +44,30 @@
     <!-- Section that displays the "Quote of the week"-->
     <section id="quote-of-the-day">
         <h2><span>Fueling Success:</span> <em>Andy Frisella's Daily Edition</em></h2>
-        <p class="quote-text-day"></p>
-        <p id="timer"><span id="timer-days"></span><span id="timer-countdown"></span></p>
+        <div class="quote-container">
+            <p class="quote-text-day"></p>
+            <div class="rating-container">
+                <h2>Rate this quote:</h2>
+                <div class="rating">
+                    <span class="star" data-value="1"><i class="fas fa-star"></i></span>
+                    <span class="star" data-value="2"><i class="fas fa-star"></i></span>
+                    <span class="star" data-value="3"><i class="fas fa-star"></i></span>
+                    <span class="star" data-value="4"><i class="fas fa-star"></i></span>
+                    <span class="star" data-value="5"><i class="fas fa-star"></i></span>
+                    <p id="rating-value">Rating: 0</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Main content body for the random quiz-->
+    <!-- Main content body for the random quotes-->
     <div class="main-container">
         <h1> Empowering Quotes <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
         <div id="quote-container">
             <p id="quote-text"></p>
             <p id="quote-author"></p>
         </div>
+        
         <!-- Buttons for generating new quote, copy and Access to the quiz-->
         <button id="new-quote-btn">New Quote</button>
         <button id="copy-btn">Copy</button>
@@ -93,6 +107,7 @@
     </footer>
 
     <!-- JavaScript link-->
+    <script src="assets/js/ajax.js"></script>
     <script src="assets/js/random-quotes.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
