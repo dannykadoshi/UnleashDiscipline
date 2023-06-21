@@ -199,7 +199,7 @@ const rules = [
     "Click CLOSE to close the rules and start your game",
 ];
 
-// Function to create the rules list
+// Function to create the rules list for the quiz
 function createRulesList() {
     const rulesList = document.getElementById("rules-list");
 
@@ -215,12 +215,15 @@ function createRulesList() {
 // Close button event listener
 document.getElementById("close-btn").addEventListener("click", function () {
     document.getElementById("rules-section").style.display = "none";
+    document.getElementsByClassName("main-container")[0].style.display = "block";
 });
 
 // Event listener for the Rules button
 document.getElementById("rules-btn").addEventListener("click", function () {
     document.getElementById("rules-section").style.display = "block";
+    document.getElementsByClassName("main-container")[0].style.display = "none";
 });
+
 
 // Show the "Back Home" button on the initial page
 const backHomeBtn = document.getElementById("back-home-btn");
