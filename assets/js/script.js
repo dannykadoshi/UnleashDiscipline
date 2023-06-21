@@ -256,12 +256,12 @@ document.getElementById('pinterest-icon').addEventListener('click', shareToPinte
 document.getElementById('email-icon').addEventListener('click', shareViaEmail);
 
 /**
- * Function to generate rating system for the stars
+ * Function to generate rating system for the hearts rating
  */
 
-// Get the rating container and stars
+// Get the rating container and hearts
 const ratingContainer = document.querySelector('.rating');
-const stars = ratingContainer.getElementsByClassName('star');
+const hearts = ratingContainer.getElementsByClassName('heart');
 
 // Get the rating value display element
 const ratingValueElement = document.getElementById('rating-value');
@@ -273,13 +273,13 @@ feedbackMessageElement.classList.add('feedback-message');
 // Initialize the rating value
 let ratingValue = 0;
 
-// Add click event listener to each star
-for (let i = 0; i < stars.length; i++) {
-  const star = stars[i];
+// Add click event listener to each heart
+for (let i = 0; i < hearts.length; i++) {
+  const heart = hearts[i];
   
-  star.addEventListener('click', function() {
-    // Get the selected rating value from the star
-    const selectedValue = parseInt(star.getAttribute('data-value'));
+  heart.addEventListener('click', function() {
+    // Get the selected rating value from the heart
+    const selectedValue = parseInt(heart.getAttribute('data-value'));
 
     // Update the rating value
     ratingValue = selectedValue;
@@ -287,23 +287,23 @@ for (let i = 0; i < stars.length; i++) {
     // Update the rating value display
     ratingValueElement.textContent = `Rating: ${ratingValue}`;
 
-    // Update the star states
-    updateStarStates(selectedValue);
+    // Update the heart states
+    updateHeartStates(selectedValue);
 
     // Show feedback message
     showFeedbackMessage();
   });
 }
 
-// Function to update the star states
-function updateStarStates(selectedValue) {
-  for (let i = 0; i < stars.length; i++) {
-    const star = stars[i];
+// Function to update the heart states
+function updateHeartStates(selectedValue) {
+  for (let i = 0; i < hearts.length; i++) {
+    const heart = hearts[i];
     
     if (i < selectedValue) {
-      star.classList.add('selected');
+      heart.classList.add('selected');
     } else {
-      star.classList.remove('selected');
+      heart.classList.remove('selected');
     }
   }
 }
@@ -341,7 +341,7 @@ function sendRatingToServer(ratingValue) {
 
 // Disable further rating by removing event listeners
 function disableRating() {
-    for (let i = 0; i < stars.length; i++) {
-        stars[i].removeEventListener('click', handleRating);
+    for (let i = 0; i < hearts.length; i++) {
+        hearts[i].removeEventListener('click', handleRating);
     }
 }

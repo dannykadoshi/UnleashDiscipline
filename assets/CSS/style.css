@@ -39,6 +39,7 @@ h1 {
     color: #fff;
     padding: 10px;
     margin-bottom: 20px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,17 +122,30 @@ h1 {
     cursor: pointer;
 }
 
-.star {
+.heart {
     display: inline-block;
-    font-size: 30px;
+    font-size: 40px;
+    color: #ED5737;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .heart:hover {
+    transform: scale(1.2);
+  }
+  
+  .heart:before {
+    content: "\f004";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #fff;
-    cursor: pointer;
-}
-
-.star:hover,
-.star.selected {
-    background-color: gold;
-}
+    transform: scale(0.8);
+    filter: blur(1px);
+    z-index: -1;
+  }
 
 .feedback-message {
     margin-top: 10px;
