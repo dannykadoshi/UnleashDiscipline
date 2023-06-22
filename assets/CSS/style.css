@@ -274,7 +274,8 @@ footer {
 }
 
 .copyright {
-    font-size: 10px;
+    font-size: 12px;
+    text-transform: none;
 }
 
 /* Notification styling for the copy button */
