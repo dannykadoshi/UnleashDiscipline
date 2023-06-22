@@ -327,7 +327,7 @@ function updateHeartStates(selectedValue) {
 
 // Show feedback message
 function showFeedbackMessage() {
-  feedbackMessageElement.textContent = 'Thanks for your rating!';
+  feedbackMessageElement.textContent = 'Thanks for your feedback!';
   ratingContainer.appendChild(feedbackMessageElement);
 }
 

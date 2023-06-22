@@ -284,7 +284,8 @@ footer {
     color: #333;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 25px;
+    margin: 25px auto; 
+    max-width: 400px; 
 }
 
 #notification.show {
@@ -393,11 +394,14 @@ footer {
 
 .feedback {
     display: none;
-    color: #ffa500;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 25px auto; 
+    max-width: 400px; 
 }
+
 
 #score {
     color: #fff;

@@ -28,7 +28,7 @@ function loadQuestion() {
         optionsElement.appendChild(button);
     });
 
-    playerNameElement.textContent = `Welcome ${playerName}!`;
+    playerNameElement.textContent = `Welcome ${playerName}👋`;
     scoreElement.textContent = `Score: ${score}/${numQuestions}`;
 }
 
