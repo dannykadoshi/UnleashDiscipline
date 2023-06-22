@@ -164,7 +164,7 @@ h1 {
 }
 
 #copy-btn {
-    background-color: #ff8c00;
+    background-color: #FF8C00;
     color: #fff;
 }
 
@@ -461,13 +461,6 @@ footer {
     margin-top: 5px;
     width: 250px;
     text-align: center;
-    text-transform: uppercase;
-}
-
-h3 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
