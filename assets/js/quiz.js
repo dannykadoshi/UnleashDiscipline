@@ -52,7 +52,7 @@ function startGame() {
     playerName = document.getElementById("name").value.trim();
 
     if (playerName === "") {
-        displayFeedbackMessage("Hold up! No anonymous heroes allowed. Please enter your name before embarking on the adventure!");
+        displayFeedbackMessage("Attention! Game initiation requires a designated name! Reveal it and embark on this journey!");
         return;
     }
 
