@@ -96,17 +96,6 @@ function generateQuoteOfDay() {
 // Start updating the quote of the day
 generateQuoteOfDay();
 
-
-
-/**
- * Helper function to get the week number of a given day
- */
-function getWeekNumber(date) {
-    const onejan = new Date(date.getFullYear(), 0, 1);
-    const millisecondsInWeek = 7 * 24 * 60 * 60 * 1000;
-    return Math.ceil(((date - onejan) / millisecondsInWeek) + onejan.getDay() / 7);
-}
-
 // Start updating the quote of the week
 generateQuoteOfDay();
 
@@ -290,75 +279,43 @@ feedbackMessageElement.classList.add('feedback-message');
 // Initialize the rating value
 let ratingValue = 0;
 
-// Add click event listener to each heart
-for (let i = 0; i < hearts.length; i++) {
-  const heart = hearts[i];
-  
-  heart.addEventListener('click', function() {
-    // Get the selected rating value from the heart
-    const selectedValue = parseInt(heart.getAttribute('data-value'));
-
-    // Update the rating value
-    ratingValue = selectedValue;
-
-    // Update the rating value display
-    ratingValueElement.textContent = `Rating: ${ratingValue}`;
-
-    // Update the heart states
-    updateHeartStates(selectedValue);
-
-    // Show feedback message
-    showFeedbackMessage();
-  });
-}
-
 // Function to update the heart states
 function updateHeartStates(selectedValue) {
-  for (let i = 0; i < hearts.length; i++) {
-    const heart = hearts[i];
-    
-    if (i < selectedValue) {
-      heart.classList.add('selected');
-    } else {
-      heart.classList.remove('selected');
+    for (let i = 0; i < hearts.length; i++) {
+      const heart = hearts[i];
+  
+      if (i < selectedValue) {
+        heart.classList.add('selected');
+      } else {
+        heart.classList.remove('selected');
+      }
     }
   }
-}
-
-// Show feedback message
-function showFeedbackMessage() {
-  feedbackMessageElement.textContent = 'Thanks for your feedback!';
-  ratingContainer.appendChild(feedbackMessageElement);
-}
-
-// Send the rating value to the server
-function sendRatingToServer(ratingValue) {
-    // You can use AJAX to send the rating value to the server and update the database
-    // Here's a basic example using fetch API
-    fetch('/rate-quote', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ rating: ratingValue })
-    })
-        .then(response => {
-            if (response.ok) {
-                // Rating successfully submitted
-                console.log('Rating submitted');
-            } else {
-                // Error handling if rating submission fails
-                console.error('Failed to submit rating');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-}
-
-// Disable further rating by removing event listeners
-function disableRating() {
-    for (let i = 0; i < hearts.length; i++) {
-        hearts[i].removeEventListener('click', handleRating);
-    }
-}
+  
+  // Show feedback message
+  function showFeedbackMessage() {
+    feedbackMessageElement.textContent = 'Rating received! Your feedback is valuable to us.';
+    ratingContainer.appendChild(feedbackMessageElement);
+  }
+  
+  // Add click event listener to each heart
+  for (let i = 0; i < hearts.length; i++) {
+    let heart = hearts[i];
+  
+    heart.addEventListener('click', function() {
+      // Get the selected rating value from the heart
+      let selectedValue = parseInt(heart.getAttribute('data-value'));
+  
+      // Update the rating value
+      ratingValue = selectedValue;
+  
+      // Update the rating value display
+      ratingValueElement.textContent = `Rating: ${ratingValue}`;
+  
+      // Update the heart states
+      updateHeartStates(selectedValue);
+  
+      // Show feedback message
+      showFeedbackMessage();
+    });
+  }
