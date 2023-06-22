@@ -261,6 +261,7 @@ document.getElementById('pinterest-icon').addEventListener('click', shareToPinte
 // Event listener for the email icon
 document.getElementById('email-icon').addEventListener('click', shareViaEmail);
 
+
 /**
  * Function to generate rating system for the hearts rating
  */
