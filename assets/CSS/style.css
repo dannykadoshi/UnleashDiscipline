@@ -35,10 +35,10 @@ h1 {
 /* style for Quote of the week section */
 
 #quote-of-the-day {
-    background-color: #ffa500;
+    background-color: #D97600;
     border-radius: 10px;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     max-width: 1000px;
     display: flex;
@@ -55,6 +55,7 @@ h1 {
 
 #quote-of-the-day h2 span {
     color: #122D4A;
+    
 }
 
 #quote-of-the-day h2 em {
@@ -64,23 +65,6 @@ h1 {
 .quote-text-day {
     font-size: 18px;
     font-style: italic;
-}
-
-#timer {
-    font-size: 16px;
-    color: #122D4A;
-    margin-top: 10px;
-    text-transform: uppercase;
-}
-
-#timer-days {
-    color: #12284c;
-    font-weight: bold;
-}
-
-#timer-countdown {
-    color: #fff;
-    font-weight: bold;
 }
 
 /* Quote Display */
@@ -127,7 +111,7 @@ h1 {
 .heart {
     display: inline-block;
     font-size: 40px;
-    color: #ED5737;
+    color: #c0392b;
     transition: transform 0.2s ease-in-out;
     position: relative;
     margin-right: 10px;
@@ -141,10 +125,8 @@ h1 {
     content: "\f004";
     font-family: "FontAwesome";
     position: absolute;
-    top: 0;
-    left: 0;
     color: #fff;
-    transform: scale(0.8);
+    transform: scale(1.2);
     filter: blur(1px);
     z-index: -1;
   }
