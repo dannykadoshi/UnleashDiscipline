@@ -12,12 +12,14 @@ body {
     padding: 0;
     text-align: center;
 }
+
 /* Colour palette for website */
 header img {
     height: auto;
     margin-bottom: 30px;
     width: 400px;
 }
+
 h1 {
     color: #ffa500;
     font-family: 'Montserrat', sans-serif;
@@ -28,6 +30,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
 }
+
 /* style for Quote of the week section */
 #quote-of-the-day {
     background-color: #FF8C00;
@@ -41,18 +44,22 @@ h1 {
     align-items: center;
     text-align: center;
 }
+
 #quote-of-the-day h2 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 #quote-of-the-day h2 span {
     color: #122D4A;
-    
+
 }
+
 #quote-of-the-day h2 em {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .quote-text-day {
     color: #12284c;
     font-size: 18px;
@@ -60,6 +67,7 @@ h1 {
     font-weight: bold;
     margin-top: 40px;
 }
+
 /* Quote Display */
 #quote-conteiner {
     background-color: #fff;
@@ -68,6 +76,7 @@ h1 {
     padding: 10px;
     letter-spacing: 1px;
 }
+
 #quote-text {
     color: #fff;
     font-size: 24px;
@@ -75,27 +84,32 @@ h1 {
     margin-bottom: 5px;
     text-transform: uppercase;
 }
+
 #quote-author {
     color: #FFC845;
     font-size: 16px;
     font-style: italic;
     text-align: center;
 }
+
 /* Rating system Display */
 .rating-container {
     margin: 50px 0 20px;
 }
+
 .rating-container h2 {
     font-style: italic;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: #fff;
 }
+
 .rating {
     display: inline-block;
     font-size: 0;
     cursor: pointer;
 }
+
 .heart {
     display: inline-block;
     font-size: 40px;
@@ -103,13 +117,13 @@ h1 {
     transition: transform 0.2s ease-in-out;
     position: relative;
     margin-right: 10px;
-  }
-  
-  .heart:hover {
+}
+
+.heart:hover {
     transform: scale(1.2);
-  }
-  
-  .heart:before {
+}
+
+.heart:before {
     content: "\f004";
     font-family: "FontAwesome";
     position: absolute;
@@ -117,12 +131,14 @@ h1 {
     transform: scale(1.2);
     filter: blur(1px);
     z-index: -1;
-  }
+}
+
 .feedback-message {
     margin-top: 10px;
     color: #fff;
     font-size: 20px;
 }
+
 /* Buttons */
 #new-quote-btn,
 #copy-btn,
@@ -138,6 +154,7 @@ h1 {
     margin: 40px 0 0 10px;
     text-transform: uppercase;
 }
+
 #new-quote-btn {
     background-color: #c0392b;
     color: #fff;
@@ -154,23 +171,29 @@ h1 {
     background-color: #122D4A;
     color: #fff;
 }
+
 #new-quote-btn:hover {
     background-color: #FFC845;
 }
+
 #copy-btn:hover {
     background-color: #FFC845;
 }
+
 #quiz-btn:hover {
     background-color: #FFC845;
 }
+
 /* Colour palette for website */
 .nav-menu a {
     color: #12284c;
 }
+
 .button {
     background-color: #ffa500;
     color: #ffffff;
 }
+
 .main-container {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
@@ -181,24 +204,30 @@ h1 {
     max-width: 90%;
     padding: 2rem;
 }
+
 .main-container h1 i {
     color: #ED5737;
 }
+
 /* Heartbeat animation for the Heading icon */
 @keyframes heartbeat {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.3);
     }
+
     100% {
         transform: scale(1);
     }
 }
+
 #heartbeat-icon {
     animation: heartbeat 1.5s infinite;
 }
+
 /* Footer */
 footer {
     background-color: #12284ce1;
@@ -209,25 +238,31 @@ footer {
     text-transform: uppercase;
     width: 100%;
 }
+
 .social-media {
     margin-bottom: 1rem;
 }
+
 .social-media a {
     color: #fff;
     margin: 0 0.5rem;
     font-size: 40px;
 }
+
 .social-media a:hover {
     color: #ffa500;
 }
+
 .mission-statement {
     font-size: 14px;
     margin-bottom: 0.5rem;
 }
+
 .copyright {
     font-size: 12px;
     text-transform: none;
 }
+
 /* Notification styling for the copy button */
 #notification {
     display: none;
@@ -235,26 +270,31 @@ footer {
     color: #333;
     padding: 10px;
     border-radius: 5px;
-    margin: 25px auto; 
-    max-width: 400px; 
+    margin: 25px auto;
+    max-width: 400px;
 }
+
 #notification.show {
     display: block;
 }
+
 /* Social media icons to share quotes */
 #social-media-icons {
     margin-top: 10px;
 }
+
 .social-media-icon {
     display: inline-block;
     margin-right: 5px;
     font-size: 30px;
     color: #fff;
 }
+
 .social-media-icon:hover {
     color: #ffa500;
     cursor: pointer;
 }
+
 #share-description {
     color: #FFC845;
     font-size: 15px;
@@ -263,18 +303,21 @@ footer {
     text-shadow: 2px 2px 4px rgba(7, 7, 7, 0.5);
     text-transform: uppercase;
 }
+
 /* Quiz Section */
 #quiz-questions-section {
     display: none;
     text-align: center;
     text-transform: uppercase;
 }
+
 #question {
     color: white;
     font-size: 20px;
     font-style: italic;
     margin-bottom: 20px;
 }
+
 .option {
     display: block;
     width: 100%;
@@ -289,20 +332,25 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .option:hover {
     background-color: #122D4A;
 }
+
 .option.correct {
     background-color: #27ae60;
 }
+
 .option.incorrect {
     background-color: #c0392b;
 }
+
 #result {
     color: white;
     font-size: 18px;
     margin-top: 10px;
 }
+
 .result-score {
     font-size: 30px;
     font-weight: bold;
@@ -310,52 +358,65 @@ footer {
     text-transform: uppercase;
     color: #fff;
 }
+
 #results-section {
     display: none;
 }
+
 #back-home-btn {
     display: none;
 }
+
 #player-info {
     font-size: 30px;
     margin-bottom: 10px;
 }
+
 #player-name {
     color: #fff;
     font-weight: bold;
 }
+
 .feedback {
     display: none;
     background-color: #f2f2f2;
     color: #333;
     padding: 10px;
     border-radius: 5px;
-    margin: 25px auto; 
-    max-width: 400px; 
+    margin: 25px auto;
+    max-width: 400px;
 }
+
 #score {
     color: #fff;
     font-weight: bold;
     font-size: 30px;
 }
+
 .start-button {
     background-color: #c0392b;
 }
+
 .rules-button {
     background-color: #FF8C00;
 }
+
 .home-button {
     background-color: #122D4A;
 }
+
 .new-game-button {
     background-color: #c0392b;
 }
+
 .back-home-button {
     background-color: #122D4A;
 }
+
 .return-home-button {
     background-color: #122D4A;
 }
+
 .quiz-buttons button {
     color: #fff;
     border: none;
@@ -369,21 +430,26 @@ footer {
     margin: 10px 10px 0 0;
     text-transform: uppercase;
 }
+
 .quiz-buttons button:hover {
     background-color: #FFC845;
 }
+
 .quiz-container {
     text-align: center;
 }
+
 #name-container {
     border-radius: 4px;
     margin-bottom: 1.5rem;
     padding: 10px;
 }
+
 #name-container label {
     color: #fff;
     font-size: 18px;
 }
+
 #name {
     padding: 10px;
     font-size: 16px;
@@ -405,40 +471,50 @@ h3 {
 .quiz-buttons {
     margin-top: 2rem;
 }
+
 .quiz-section p {
     margin: 0;
     margin-bottom: 1rem;
 }
+
 .quiz-section #result {
     font-size: 20px;
     font-weight: bold;
 }
+
 .quiz-section #score {
     font-size: 18px;
 }
+
 .quiz-section #timer {
     font-size: 18px;
     margin-top: 10px;
     text-transform: uppercase;
 }
+
 @keyframes graduation {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.3);
     }
+
     100% {
         transform: scale(1);
     }
 }
+
 #graduation-icon {
     animation: heartbeat 1.5s infinite;
 }
+
 /* Quiz Rules Section */
 #rules-section {
     display: none;
 }
+
 #rules-section .rules-header {
     text-align: center;
     color: #ffa500;
@@ -449,9 +525,11 @@ h3 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
 }
+
 #rules-section .rules-list li {
-    padding-left: 20px; 
-  } 
+    padding-left: 20px;
+}
+
 .rules-container {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
@@ -462,11 +540,13 @@ h3 {
     max-width: 1000px;
     color: #fff;
 }
+
 .rules-list li {
     margin-bottom: 1rem;
     font-size: 18px;
     text-align: left;
 }
+
 #close-btn {
     background-color: #122D4A;
     color: #fff;
@@ -480,9 +560,11 @@ h3 {
     margin-top: 2rem;
     text-transform: uppercase;
 }
+
 #close-btn:hover {
     background-color: #FFC845;
 }
+
 /* PAGE 404 STYLING */
 .response-page {
     background-color: rgba(29, 36, 12, 0.66);
@@ -494,6 +576,7 @@ h3 {
     max-width: 75%;
     padding: 2rem;
 }
+
 .response-page p {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -502,6 +585,7 @@ h3 {
     margin-bottom: 40px;
     text-transform: uppercase;
 }
+
 .response-page .back-home-page {
     background-color: #122D4A;
     color: #fff;
@@ -513,35 +597,44 @@ h3 {
     text-decoration: none;
     text-transform: uppercase;
 }
+
 .back-home-page:hover {
     background-color: #FFC845;
 }
+
 .image-error {
     max-height: 70%;
     max-width: 90%;
 }
+
 /* Media querie for screen bellow 375px */
 @media screen and (max-width: 375px) {
     header img {
         width: 325px;
     }
+
     .social-media {
         flex-direction: column;
         align-items: center;
         margin-bottom: 0;
     }
+
     #footer-socials {
         margin-bottom: 10px;
     }
+
     .social-media a {
         margin: 5px 0;
     }
+
     #result-message {
         font-size: 24px;
     }
+
     #result-score {
         font-size: 24px;
     }
+
     .result-image {
         max-width: 80%;
     }
