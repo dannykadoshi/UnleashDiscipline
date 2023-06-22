@@ -282,40 +282,45 @@ let ratingValue = 0;
 // Function to update the heart states
 function updateHeartStates(selectedValue) {
     for (let i = 0; i < hearts.length; i++) {
-      const heart = hearts[i];
-  
-      if (i < selectedValue) {
-        heart.classList.add('selected');
-      } else {
-        heart.classList.remove('selected');
-      }
+        const heart = hearts[i];
+
+        if (i < selectedValue) {
+            heart.classList.add('selected');
+        } else {
+            heart.classList.remove('selected');
+        }
     }
-  }
-  
-  // Show feedback message
-  function showFeedbackMessage() {
+}
+
+// Show feedback message
+function showFeedbackMessage() {
     feedbackMessageElement.textContent = 'Thanks for your feedback! 👍🏻';
     ratingContainer.appendChild(feedbackMessageElement);
-  }
-  
-  // Add click event listener to each heart
-  for (let i = 0; i < hearts.length; i++) {
+
+    // Set a timeout to remove the feedback message after 3 seconds
+    setTimeout(function () {
+        feedbackMessageElement.remove();
+    }, 3000);
+}
+
+// Add click event listener to each heart
+for (let i = 0; i < hearts.length; i++) {
     let heart = hearts[i];
-  
-    heart.addEventListener('click', function() {
-      // Get the selected rating value from the heart
-      let selectedValue = parseInt(heart.getAttribute('data-value'));
-  
-      // Update the rating value
-      ratingValue = selectedValue;
-  
-      // Update the rating value display
-      ratingValueElement.textContent = `Rating: ${ratingValue}`;
-  
-      // Update the heart states
-      updateHeartStates(selectedValue);
-  
-      // Show feedback message
-      showFeedbackMessage();
+
+    heart.addEventListener('click', function () {
+        // Get the selected rating value from the heart
+        let selectedValue = parseInt(heart.getAttribute('data-value'));
+
+        // Update the rating value
+        ratingValue = selectedValue;
+
+        // Update the rating value display
+        ratingValueElement.textContent = `Rating: ${ratingValue}`;
+
+        // Update the heart states
+        updateHeartStates(selectedValue);
+
+        // Show feedback message
+        showFeedbackMessage();
     });
-  }
+}
