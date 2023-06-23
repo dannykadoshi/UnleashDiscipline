@@ -1,10 +1,10 @@
-/* Overall layout  */
+/* Overall layout for the website */
 body {
     align-items: center;
     background: url('../images/background3.webp') no-repeat center center;
     display: flex;
-    font-family: 'Open Sans', sans-serif;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
     justify-content: space-between;
     letter-spacing: 2px;
     margin: 0;
@@ -15,13 +15,6 @@ body {
 
 fieldset {
     border: none;
-}
-
-/* Colour palette for website */
-header img {
-    height: auto;
-    margin-bottom: 30px;
-    width: 400px;
 }
 
 h1 {
@@ -35,14 +28,22 @@ h1 {
     text-transform: uppercase;
 }
 
-/* Style for the Burger menu */
+/* Header styling for all the HTML pages */
+/* Style for the logo */
+header img {
+    height: auto;
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+/* Style for the header menu */
 .menu {
+    align-items: center;
     display: flex;
+    justify-content: center;
     list-style: none;
     margin: 0;
-    padding-bottom: 30px;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 30px;    
 }
 
 .menu li {
@@ -50,11 +51,11 @@ h1 {
 }
 
 .menu a {
-    text-decoration: none;
     color: #12284c;
-    text-transform: uppercase;
     font-weight: bold;
-    transition: color 0.3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;    
 }
 
 .menu a:hover {
@@ -69,69 +70,18 @@ h1 {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .menu-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
-
-    .menu {
-        display: none;
-        position: absolute;
-        font-size: 13px;
-    }
-
-    .menu-container li {
-        justify-content: center;
-        padding-right: 50px;
-    }
-
-    .burger-menu-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        width: 30px;
-        height: 25px;
-        cursor: pointer;
-        padding-right: 30px;
-        margin-bottom: 20px;
-    }
-
-    .bar {
-        width: 100%;
-        height: 2px;
-        background-color: #000;
-        transition: transform 0.3s ease;
-    }
-
-    .burger-menu-icon.open .bar:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
-    }
-
-    .burger-menu-icon.open .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burger-menu-icon.open .bar:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
-    }
-}
-
-/* style for Quote of the week section */
+/* style for Quote of the day Andy's Frisella limited edition section */
 #quote-of-the-day {
-    background-color: #FF8C00;
+    align-items: center;
+    background-color: #ff8c00;
     border-radius: 10px;
     color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;    
 }
 
 #quote-of-the-day h2 {
@@ -141,7 +91,7 @@ h1 {
 }
 
 #quote-of-the-day h2 span {
-    color: #122D4A;
+    color: #122d4a;
 
 }
 
@@ -161,9 +111,9 @@ h1 {
 #quote-conteiner {
     background-color: #fff;
     border: 2px solid #ccc;
+    letter-spacing: 1px;
     margin-bottom: 2rem;
     padding: 10px;
-    letter-spacing: 1px;
 }
 
 #quote-text {
@@ -175,37 +125,37 @@ h1 {
 }
 
 #quote-author {
-    color: #FFC845;
+    color: #ffc845;
     font-size: 16px;
     font-style: italic;
     text-align: center;
 }
 
-/* Rating system Display */
+/* Quote of the day rating system display */
 .rating-container {
     margin: 50px 0 20px;
 }
 
 .rating-container h2 {
+    color: #fff;
     font-style: italic;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
 }
 
 .rating {
+    cursor: pointer;
     display: inline-block;
     font-size: 0;
-    cursor: pointer;
 }
 
 .heart {
+    color: #c0392b;
     display: inline-block;
     font-size: 40px;
-    color: #c0392b;
-    transition: transform 0.2s ease-in-out;
-    position: relative;
     margin-right: 10px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;    
 }
 
 .heart:hover {
@@ -213,22 +163,22 @@ h1 {
 }
 
 .heart:before {
+    color: #fff;
     content: "\f004";
+    filter: blur(1px);
     font-family: "FontAwesome";
     position: absolute;
-    color: #fff;
     transform: scale(1.2);
-    filter: blur(1px);
-    z-index: -1;
+    z-index: -1;    
 }
 
 .feedback-message {
-    margin-top: 10px;
     color: #fff;
     font-size: 20px;
+    margin-top: 10px;    
 }
 
-/* Buttons */
+/* Buttons for the Main page index.html*/
 #new-quote-btn,
 #copy-btn,
 #quiz-btn {
@@ -239,9 +189,9 @@ h1 {
     font-size: 17px;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 10px 20px;
     margin: 40px 0 0 10px;
-    text-transform: uppercase;
+    padding: 10px 20px;
+    text-transform: uppercase;    
 }
 
 #new-quote-btn {
@@ -251,25 +201,25 @@ h1 {
 }
 
 #copy-btn {
-    background-color: #122D4A;
+    background-color: #122d4a;
     color: #fff;
 }
 
 #quiz-btn {
-    background-color: #122D4A;
+    background-color: #122d4a;
     color: #fff;
 }
 
 #new-quote-btn:hover {
-    background-color: #FFC845;
+    background-color: #ffc845;
 }
 
 #copy-btn:hover {
-    background-color: #FFC845;
+    background-color: #ffc845;
 }
 
 #quiz-btn:hover {
-    background-color: #FFC845;
+    background-color: #ffc845;
 }
 
 .graduation-animation {
@@ -291,7 +241,7 @@ h1 {
     }
 }
 
-/* Colour palette for website */
+/* Main content styling for index.html and quiz.html */
 .nav-menu a {
     color: #12284c;
 }
@@ -306,17 +256,17 @@ h1 {
     border: 2px solid #ccc;
     box-shadow: 5px 5px 100px #fff9e6;
     border-radius: 20px;
-    margin-bottom: 80px;
     height: auto;
+    margin-bottom: 80px;
     max-width: 90%;
     padding: 2rem;
 }
 
 .main-container h1 i {
-    color: #ED5737;
+    color: #Ed5737;
 }
 
-/* Heartbeat animation for the Heading icon */
+/* Heartbeat animation for the Heading icon at index.html */
 @keyframes heartbeat {
     0% {
         transform: scale(1);
@@ -335,7 +285,7 @@ h1 {
     animation: heartbeat 1.5s infinite;
 }
 
-/* Footer */
+/* Footer styling for all the HTML pages*/
 footer {
     background-color: #12284ce1;
     color: #fff;
@@ -352,8 +302,8 @@ footer {
 
 .social-media a {
     color: #fff;
-    margin: 0 0.5rem;
     font-size: 40px;
+    margin: 0 0.5rem;
 }
 
 .social-media a:hover {
@@ -370,13 +320,13 @@ footer {
     text-transform: none;
 }
 
-/* Notification styling for the copy button */
+/* Notification styling for the copy button at index.html*/
 #notification {
     display: none;
     background-color: #f2f2f2;
+    border-radius: 5px;
     color: #333;
     padding: 10px;
-    border-radius: 5px;
     margin: 25px auto;
     max-width: 400px;
 }
@@ -385,16 +335,16 @@ footer {
     display: block;
 }
 
-/* Social media icons to share quotes */
+/* Social media icons to share quotes - Located at the random quotes container  */
 #social-media-icons {
     margin-top: 10px;
 }
 
 .social-media-icon {
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 30px;
     color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 5px;    
 }
 
 .social-media-icon:hover {
@@ -403,7 +353,7 @@ footer {
 }
 
 #share-description {
-    color: #FFC845;
+    color: #ffc845;
     font-size: 15px;
     font-weight: bold;
     margin: 30px 0 20px;
@@ -411,7 +361,7 @@ footer {
     text-transform: uppercase;
 }
 
-/* Quiz Section */
+/* Quiz Section Located at quiz.html styling*/
 #quiz-questions-section {
     display: none;
     text-align: center;
@@ -426,22 +376,22 @@ footer {
 }
 
 .option {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 10px;
-    color: white;
     background-color: #ffa500;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    color: white;
     cursor: pointer;
+    display: block;
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 10px;
     transition: background-color 0.3s ease;
+    width: 100%;    
 }
 
 .option:hover {
-    background-color: #122D4A;
+    background-color: #122d4a;
 }
 
 .option.correct {
@@ -453,17 +403,17 @@ footer {
 }
 
 #result {
-    color: white;
+    color: #fff;
     font-size: 18px;
     margin-top: 10px;
 }
 
 .result-score {
+    color: #fff;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #fff;
 }
 
 #results-section {
@@ -485,13 +435,13 @@ footer {
 }
 
 .feedback {
-    display: none;
     background-color: #f2f2f2;
-    color: #333;
-    padding: 10px;
     border-radius: 5px;
+    color: #333;
+    display: none;
     margin: 25px auto;
     max-width: 400px;
+    padding: 10px;    
 }
 
 #score {
@@ -500,46 +450,34 @@ footer {
     font-size: 30px;
 }
 
-.start-button {
-    background-color: #c0392b;
-}
-
-.rules-button {
-    background-color: #122D4A;
-}
-
-.home-button {
-    background-color: #122D4A;
-}
-
+.start-button,
 .new-game-button {
     background-color: #c0392b;
 }
 
-.back-home-button {
-    background-color: #122D4A;
-}
-
+.rules-button,
+.home-button,
+.back-home-button,
 .return-home-button {
-    background-color: #122D4A;
+    background-color: #122d4a;
 }
 
 .quiz-buttons button {
-    color: #fff;
     border: none;
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
     cursor: pointer;
     font-size: 17px;
     font-weight: bold;
-    padding: 10px 20px;
     letter-spacing: 1px;
     margin: 10px 10px 0 0;
-    text-transform: uppercase;
+    padding: 10px 20px;
+    text-transform: uppercase;    
 }
 
 .quiz-buttons button:hover {
-    background-color: #FFC845;
+    background-color: #ffc845;
 }
 
 .quiz-container {
@@ -558,14 +496,14 @@ footer {
 }
 
 #name {
-    padding: 10px;
-    font-size: 16px;
+    border: 2px solid #122d4a;
     border-radius: 4px;
-    border: 2px solid #122D4A;
+    font-size: 16px;
     margin-top: 5px;
-    width: 250px;
+    padding: 10px;
     text-align: center;
     text-transform: uppercase;
+    width: 250px;    
 }
 
 h2 {
@@ -605,14 +543,14 @@ h2 {
 }
 
 #rules-section .rules-header {
-    text-align: center;
     color: #ffa500;
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 3px;
     margin-bottom: 50px;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
 
 #rules-section .rules-list li {
@@ -622,32 +560,32 @@ h2 {
 .rules-container {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
-    box-shadow: 5px 5px 100px #fff9e6;
     border-radius: 20px;
-    padding: 2rem;
+    box-shadow: 5px 5px 100px #fff9e6;
+    color: #fff;
     margin-bottom: 80px;
     max-width: 1000px;
-    color: #fff;
+    padding: 2rem;    
 }
 
 .rules-list li {
-    margin-bottom: 1rem;
     font-size: 18px;
+    margin-bottom: 1rem;
     text-align: left;
 }
 
 #close-btn {
     background-color: #122D4A;
-    color: #fff;
     border: none;
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
     cursor: pointer;
     font-size: 17px;
     font-weight: bold;
-    padding: 10px 20px;
     margin-top: 2rem;
-    text-transform: uppercase;
+    padding: 10px 20px;
+    text-transform: uppercase;    
 }
 
 #close-btn:hover {
@@ -673,7 +611,7 @@ h2 {
     }
 }
 
-/* PAGE 404 STYLING */
+/* Error page 404.html styling */
 .response-page {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
@@ -700,7 +638,7 @@ h2 {
 }
 
 /* Contact.html styling */
-/* Contact containe styling */
+/* Contact container styling */
 .contact-container {
     background-color: rgba(29, 36, 12, 0.66);
     box-shadow: 5px 5px 100px #fff9e6;
@@ -758,14 +696,14 @@ h2 {
 }
 
 #contact-inputs select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
     background-color: #fff;
+    border-radius: 5px;
     color: #12284c;
     font-size: 14px;
     margin-bottom: 16px;
+    padding: 10px;
     text-transform: uppercase;
+    width: 100%;    
 }
 
 .form-container textarea {
@@ -788,7 +726,7 @@ h2 {
 }
 
 .form-container input[type="submit"]:hover {
-    background-color: #FFC845;
+    background-color: #ffc845;
 }
 
 .required-label::before {
@@ -798,7 +736,7 @@ h2 {
     margin-right: 5px;
 }
 
-/* Thank.you page styling */
+/* Thankyou page for the contact form response*/
 .thanks-page {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
@@ -827,23 +765,23 @@ h2 {
 
 #thanks-close-btn {
     background-color: #122D4A;
-    color: #fff;
     border: none;
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
     cursor: pointer;
     font-size: 17px;
     font-weight: bold;
-    padding: 10px 20px;
     margin-top: 2rem;
-    text-transform: uppercase;
+    padding: 10px 20px;
+    text-transform: uppercase;    
 }
 
 #thanks-close-btn:hover {
-    background-color: #FFC845;
+    background-color: #ffc845;
 }
 
-/* Apply the animation to the Yin-Yang icon */
+/* Animation to the Yin-Yang icon symbol located at thankyou.html */
 .rotate-animation {
     animation: rotate 2s linear infinite;
     color: #c0392b;
@@ -859,12 +797,61 @@ h2 {
     }
 }
 
-/* Adjustments for responsiveness in smaller screens */
-
-/* Media querie for contact form */
+/* Adjustments for responsiveness in smaller screen devices */
+/* Media querie for screen below 768px*/
 @media (max-width: 768px) {
     .contact-container {
         max-width: 90%;
+    }
+
+    .menu-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;        
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        font-size: 13px;
+        padding-right: 30px;
+    }
+
+    .menu-container li {
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+    .burger-menu-icon {
+        align-items: flex-end;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        height: 25px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        width: 30px;        
+    }
+
+    .bar {
+        background-color: #000;
+        height: 2px;
+        transition: transform 0.3s ease;
+        width: 100%;        
+    }
+
+    .burger-menu-icon.open .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .burger-menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu-icon.open .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
     }
 }
 
@@ -875,8 +862,8 @@ h2 {
     }
 
     .social-media {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         margin-bottom: 0;
     }
 
