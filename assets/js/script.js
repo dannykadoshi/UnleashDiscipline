@@ -285,7 +285,7 @@ function updateHeartStates(selectedValue) {
     for (let i = 0; i < hearts.length; i++) {
         const heart = hearts[i];
 
-        if (i < selectedValue) {
+        if (i <= selectedValue) {
             heart.classList.add('selected');
         } else {
             heart.classList.remove('selected');

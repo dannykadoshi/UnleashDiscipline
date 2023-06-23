@@ -28,18 +28,30 @@
     <title>UnleashDiscipline - Challenge Quiz</title>
 </head>
 
-<!-- Header containing logo-->
-
-<body>
-    <header>
-        <nav>
-            <div class="header-container">
-                <a href="index.html">
-                    <img src="assets/images/website-logo.webp" alt="UnleashDiscipline Logo">
-                </a>
-            </div>
-        </nav>
-    </header>
+<!-- Header containing website logo and menu-->
+<header>
+    <nav>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/website-logo.webp" alt="UnleashDiscipline Logo">
+          </a>
+        </div>
+        <div class="menu-container">
+          <ul class="menu">
+            <li><a href="index.html">Main Page</a></li>
+            <li class="active"><a href="quiz.html">Quiz</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="burger-menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <!-- Main content body -->
     <div class="main-container">
@@ -129,6 +141,7 @@
     </footer>
 
     <!-- JavaScript link-->
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/quiz-questions.js"></script>
     <script src="assets/js/quiz.js"></script>
 </body>

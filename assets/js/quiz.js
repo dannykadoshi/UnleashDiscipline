@@ -241,3 +241,4 @@ document.getElementById("back-home-btn-2").addEventListener("click", function ()
 
 // Create the rules list on page load
 window.addEventListener("DOMContentLoaded", createRulesList);
+

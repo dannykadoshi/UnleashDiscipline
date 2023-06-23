@@ -31,6 +31,84 @@ h1 {
     text-transform: uppercase;
 }
 
+/* Style for the Burger menu */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #12284c;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #c0392b;
+}
+
+.menu .active a {
+    border-bottom: 1px solid #c0392b;
+}
+
+.burger-menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        font-size: 14px;
+    }
+
+    .menu-container li {
+        justify-content: center;
+        padding-left: 15px;
+    }
+
+    .burger-menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 24px;
+        height: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .bar {
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        transition: transform 0.3s ease;
+    }
+
+    .burger-menu-icon.open .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .burger-menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu-icon.open .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+
 /* style for Quote of the week section */
 #quote-of-the-day {
     background-color: #FF8C00;
