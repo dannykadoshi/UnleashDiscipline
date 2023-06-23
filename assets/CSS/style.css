@@ -237,6 +237,7 @@ h1 {
     text-transform: uppercase;
 }
 
+
 #new-quote-btn {
     background-color: #c0392b;
     color: #fff;
@@ -264,6 +265,8 @@ h1 {
 #quiz-btn:hover {
     background-color: #FFC845;
 }
+
+
 
 /* Colour palette for website */
 .nav-menu a {

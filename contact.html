@@ -52,8 +52,6 @@
     </nav>
 </header>
 
-<!-- Contact Form Section-->
-<!-- Contact Form Section -->
 <section class="contact-container">
     <h1>Share with us your Empowering Story <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
     <p>We invite you to share your empowering story of personal growth and the accomplishments you've attained by
@@ -61,8 +59,7 @@
     <p>Additionally, we'd love to hear the quote that has inspired you the most along your path of self-discipline.
         Share the words that have ignited a fire within you, pushing you to reach new heights.</p>
     <div class="form-container" id="form-container-2">
-        <form id="contact-form" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xjvqbbbv"
-            method="post">
+        <form id="contact-form">
             <fieldset id="contact-inputs">
                 <label for="full-name" class="required-label">Full Name</label>
                 <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
@@ -88,10 +85,12 @@
                     required=""></textarea>
                 <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
             </fieldset>
-            <input type="submit" value="Send Responses">
+            <input type="submit" value="Send Responses" formaction="thank-you.html">
         </form>
+        <div id="form-submission-message"></div>
     </div>
 </section>
+
 
 
 <!-- Font awesome script-->
@@ -122,7 +121,7 @@
 <!-- JavaScript link-->
 <script src="assets/js/menu.js"></script>
 <script src="assets/js/random-quotes.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/index.js"></script>
 </body>
 
 </html>
