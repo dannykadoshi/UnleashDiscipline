@@ -18,6 +18,18 @@ burgerMenuIcon.addEventListener('click', function() {
   }
 });
 
+// Add click event listener to window to close the menu when clicking outside of it
+window.addEventListener('click', function(event) {
+  // Check if the clicked element is within the menu container or its descendants
+  const isClickedInsideMenu = menuList.contains(event.target) || burgerMenuIcon.contains(event.target);
+  
+  // If the clicked element is outside the menu, hide the menu list
+  if (!isClickedInsideMenu && window.innerWidth <= 768) {
+    menuList.style.display = 'none';
+    burgerMenuIcon.classList.remove('open');
+  }
+});
+
 // Add resize event listener to show/hide the menu based on screen size
 window.addEventListener('resize', function() {
   if (window.innerWidth > 768) {
