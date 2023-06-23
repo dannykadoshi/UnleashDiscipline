@@ -237,7 +237,6 @@ h1 {
     text-transform: uppercase;
 }
 
-
 #new-quote-btn {
     background-color: #c0392b;
     color: #fff;
@@ -265,8 +264,6 @@ h1 {
 #quiz-btn:hover {
     background-color: #FFC845;
 }
-
-
 
 /* Colour palette for website */
 .nav-menu a {
@@ -754,6 +751,51 @@ h2 {
     content: "*";
     display: inline-block;
     margin-right: 5px;
+}
+
+/* Thank.you page styling */
+.thanks-page {
+    background-color: rgba(29, 36, 12, 0.66);
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 100px #fff9e6;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    max-width: 75%;
+    padding: 2rem;
+}
+
+.thanks-page p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.thanks-image {
+    height: auto;
+    width: 500px;
+    max-height: 60%;
+    max-width: 80%;
+}
+
+#thanks-close-btn {
+    background-color: #122D4A;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+#thanks-close-btn:hover {
+    background-color: #FFC845;
 }
 
 

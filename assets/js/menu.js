@@ -45,3 +45,7 @@ if (window.innerWidth > 768) {
   menuList.style.display = 'flex';
 }
 
+// Close button for thankyou page event listener
+document.getElementById("thanks-close-btn").addEventListener("click", function () {
+    window.location.href = "index.html";
+});
