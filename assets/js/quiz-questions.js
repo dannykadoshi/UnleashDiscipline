@@ -1,6 +1,8 @@
 /*  jshint esversion: 11 */
 
-// Array of questions for the Quiz
+/**
+ * Define an array of quotes and author for the quiz game
+ */
 const guessWhoSaid = [
     {
         question: "“The great master key to riches is nothing more or less than the self-discipline necessary to help you take full and complete possession of your own mind.”",

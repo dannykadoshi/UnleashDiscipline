@@ -1,3 +1,11 @@
+/*  jshint esversion: 11 */
+
+/** 
+ * Declared variables for the hamburguer menu
+ * for the header menu
+ * Activation only for smaller screens
+ */
+
 // Get the burger menu icon and menu list
 const burgerMenuIcon = document.querySelector('.burger-menu-icon');
 const menuList = document.querySelector('.menu');
@@ -44,8 +52,9 @@ window.addEventListener('resize', function() {
 if (window.innerWidth > 768) {
   menuList.style.display = 'flex';
 }
-
-// Close button for thankyou page event listener
+/** 
+ * Event listener registration for the close button at the thankyou.html page
+ */
 document.getElementById("thanks-close-btn").addEventListener("click", function () {
     window.location.href = "index.html";
 });

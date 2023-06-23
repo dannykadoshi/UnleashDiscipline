@@ -1,6 +1,10 @@
 /*  jshint esversion: 11 */
 
-// Define an array of quotes for the random quotes generator.
+/**
+ * Define an array of quotes for the random quotes generator and
+ * Quotes by Andy Frisella
+ * For both the quotes of the day container and random quotes generator container
+ */
 let quotes = [
     {
         text: '"The only way to do great work is to love what you do."',

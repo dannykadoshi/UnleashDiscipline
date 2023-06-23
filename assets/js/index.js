@@ -36,6 +36,9 @@ function generateRandomQuote() {
         quoteAuthor.textContent = "";
     }
 }
+/**
+ * Variables declarations to handle the quote container
+ */
 
 // Get the quote text element
 const quoteText = document.getElementById('quote-text');
@@ -53,7 +56,9 @@ const copyBtn = document.getElementById('copy-btn');
 // Get notification message element
 const notification = document.getElementById('notification');
 
-// Function to generate the quote of the day (Only Andy Frisella's quotes)
+/** 
+ * Function to generate the quote of the day (Only by Andy Frisella)
+ */
 function generateQuoteOfDay() {
     let andyQuotes = quotes.filter((quote) => quote.author === 'Andy Frisella');
 
@@ -95,13 +100,13 @@ function generateQuoteOfDay() {
 // Start updating the quote of the day
 generateQuoteOfDay();
 
-// Start updating the quote of the week
-generateQuoteOfDay();
-
 // Generate a random quote when the new quote button is clicked
 newQuoteBtn.addEventListener('click', generateRandomQuote);
 
-// Function to copy the quote to clipboard
+/** 
+ * Function to copy the quote to clipboard
+ * when the copy button is clicked
+ */
 function copyToClipboard(text) {
     let textArea = document.createElement('textarea');
     textArea.value = text;

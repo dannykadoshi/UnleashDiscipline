@@ -1,4 +1,8 @@
 /* jshint esversion: 11 */
+
+/**
+ * Variable declarations to handle the quiz game
+ */
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
 const resultElement = document.getElementById("result");
@@ -12,6 +16,10 @@ let score = 0;
 let questionPool = []; // Pool of questions for each game
 let playerName; 
 
+/**
+ * Function to set up questions, options, and related elements for display on the page
+ * Attaches event listeners to the options buttons to handle user interaction and scoring.
+ */
 function loadQuestion() {
     const question = questionPool[currentQuestion];
     questionElement.textContent = question.question;
@@ -32,6 +40,9 @@ function loadQuestion() {
     scoreElement.textContent = `Score: ${score}/${numQuestions}`;
 }
 
+/**
+ * Function to select random questions to the game
+ */
 function selectRandomQuestions() {
     questionPool = [];
     const totalQuestions = guessWhoSaid.length;
@@ -48,6 +59,9 @@ function selectRandomQuestions() {
     }
 }
 
+/**
+ * Function to handle the start of the game
+ */
 function startGame() {
     playerName = document.getElementById("name").value.trim();
 
@@ -68,6 +82,9 @@ function startGame() {
     loadQuestion();
 }
 
+/**
+ * Function to check the answers given by the user
+ */
 function checkAnswer(selectedButton) {
     const question = questionPool[currentQuestion];
 
@@ -109,6 +126,9 @@ function checkAnswer(selectedButton) {
     });
 }
 
+/**
+ * Function to display the results for the game
+ */
 function showResult() {
     document.getElementById("quiz-questions-section").style.display = "none";
     document.getElementById("results-section").style.display = "block";
@@ -149,17 +169,21 @@ function showResult() {
         luckImage.style.maxHeight = "auto";
     }
 
-
     newGameBtn.style.display = "block";
 }
 
-// Function to display the feedback message
+/**
+ * Function to display the feedback message once the game is finished
+ */
 function displayFeedbackMessage(message) {
     feedbackMessage.textContent = message;
     feedbackMessage.style.display = "block";
 }
 
-// Function to shuffle an array using the Fisher-Yates algorithm
+/**
+ * Function to shuffle an array using the Fisher-Yates algorithm
+ * The function make sure that the quotes get shuffled in the game
+ */
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -167,8 +191,10 @@ function shuffleArray(array) {
     }
     return array;
 }
-
-// Event listeners
+/**
+ * Event listeners to handle the buttons press and also the Enter key press
+ */
+// Event listeners for the buttons
 document.getElementById("start-btn").addEventListener("click", startGame);
 document.getElementById("new-game-btn").addEventListener("click", startGame);
 document.getElementById("back-home-btn").addEventListener("click", function () {
@@ -185,7 +211,9 @@ document.getElementById("name").addEventListener("keypress", function (event) {
     }
 });
 
-// Rules content
+/**
+ * Variable declaration for the Rules of the game
+ */
 const rules = [
     "Enter your name (mandatory field)",
     "Click START GAME",
@@ -199,7 +227,9 @@ const rules = [
     "Click CLOSE to close the rules and start your game",
 ];
 
-// Function to create the rules list for the quiz
+/**
+ * Function to create the rules list for the quiz
+ */
 function createRulesList() {
     const rulesList = document.getElementById("rules-list");
 
@@ -212,18 +242,22 @@ function createRulesList() {
     });
 }
 
-// Close button event listener
+// Close button event listener, located at the rules container
 document.getElementById("close-btn").addEventListener("click", function () {
     document.getElementById("rules-section").style.display = "none";
     document.getElementsByClassName("main-container")[0].style.display = "block";
 });
 
-// Event listener for the Rules button
+// Event listener for the Rules button Located at the quiz main container
 document.getElementById("rules-btn").addEventListener("click", function () {
     document.getElementById("rules-section").style.display = "block";
     document.getElementsByClassName("main-container")[0].style.display = "none";
 });
 
+/**
+ * Provides functionality to the 'Back Home' button(s)
+ * by redirecting the user to the index.html page when clicked. 
+ */
 
 // Show the "Back Home" button on the initial page
 const backHomeBtn = document.getElementById("back-home-btn");
