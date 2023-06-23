@@ -30,63 +30,99 @@
 <!-- Header containing website logo and menu-->
 <header>
     <nav>
-      <div class="header-container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="assets/images/website-logo.webp" alt="UnleashDiscipline Logo">
-          </a>
-        </div>
-        <div class="menu-container">
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li  class="active"><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="burger-menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-    <!-- Contact Form Section-->
-    <section class="contact-container">
-        <h1>Share with us your Empowering Story <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
-        <p>We invite you to share your empowering story of personal growth and the accomplishments you've attained by immersing yourself in the world of self-discipline.</p>
-        <p>Additionally, we'd love to hear the quote that has inspired you the most along your path of self-discipline. Share the words that have ignited a fire within you, pushing you to reach new heights.</p>
-    </section>
-
-    <!-- Font awesome script-->
-    <script src="https://kit.fontawesome.com/50b3ac31b9.js" crossorigin="anonymous"></script>
-
-    <footer>
-        <div class="footer-content">
-            <p>Inspiring and empowering individuals to embrace discipline and achieve success in their personal growth
-                and healthy lifestyle journey.</p>
-            <div class="social-media">
-                <h2 id="footer-socials">Follow Our Social Journey</h2>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="Click on the instagram icon to access our account"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank" aria-label="Click on the facebook icon to access our account"><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/" target="_blank" aria-label="Click on the Intagram icon to access our account"><i class="fab fa-twitter"></i></a>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/website-logo.webp" alt="UnleashDiscipline Logo">
+                </a>
             </div>
-            <div class="mission-copyright">
-                <div class="mission-statement">
-                    <p class="copyright">© 2023 UnleashDiscipline. Website designed and developed by Danni Browne as
-                        part of the Code Institute Diploma in Full Stack Software Development.</p>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger-menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
             </div>
         </div>
-    </footer>
+    </nav>
+</header>
 
-    <!-- JavaScript link-->
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/random-quotes.js"></script>
-    <script src="assets/js/script.js"></script>
+<!-- Contact Form Section-->
+<!-- Contact Form Section -->
+<section class="contact-container">
+    <h1>Share with us your Empowering Story <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
+    <p>We invite you to share your empowering story of personal growth and the accomplishments you've attained by
+        immersing yourself in the world of self-discipline.</p>
+    <p>Additionally, we'd love to hear the quote that has inspired you the most along your path of self-discipline.
+        Share the words that have ignited a fire within you, pushing you to reach new heights.</p>
+    <div class="form-container">
+        <form id="contact-form" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xjvqbbbv"
+            method="post">
+            <fieldset id="contact-inputs">
+                <label for="full-name" class="required-label">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+                <label for="email-address" class="required-label">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+                <label for="inspirational-quote">1. What quote inspired you the most in your journey of
+                    self-discipline?</label>
+                <input type="text" name="message" id="inspirational-quote" placeholder="Enter your favourite quote here">
+                <fieldset id="contact-selects">
+                    <label for="quality" class="required-label">2. Are you enjoying our website?</label>
+                    <select name="quality" id="quality" required="">
+                        <option value="" selected="" disabled="">Choose</option>
+                        <option value="1">Strongly Agree</option>
+                        <option value="3">Agree</option>
+                        <option value="5">Neutral</option>
+                        <option value="7">Disagree</option>
+                        <option value="9">Strongly Disagree</option>
+                    </select>
+                </fieldset>
+                <label for="message" class="required-label">Share your inspirational success story with us or send us your suggestions</label>
+                <textarea rows="3" name="message" id="message"
+                    placeholder="Share your empowering journey with us! How have our website's quotes fueled your self-discipline and motivated you towards personal empowerment? Your feedback and story are invaluable to our community!"
+                    required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+            </fieldset>
+            <input type="submit" value="Send Responses">
+        </form>
+    </div>
+</section>
+
+
+<!-- Font awesome script-->
+<script src="https://kit.fontawesome.com/50b3ac31b9.js" crossorigin="anonymous"></script>
+
+<footer>
+    <div class="footer-content">
+        <p>Inspiring and empowering individuals to embrace discipline and achieve success in their personal growth
+            and healthy lifestyle journey.</p>
+        <div class="social-media">
+            <h2 id="footer-socials">Follow Our Social Journey</h2>
+            <a href="https://www.instagram.com/" target="_blank"
+                aria-label="Click on the instagram icon to access our account"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"
+                aria-label="Click on the facebook icon to access our account"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"
+                aria-label="Click on the Intagram icon to access our account"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="mission-copyright">
+            <div class="mission-statement">
+                <p class="copyright">© 2023 UnleashDiscipline. Website designed and developed by Danni Browne as
+                    part of the Code Institute Diploma in Full Stack Software Development.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript link-->
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/random-quotes.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
