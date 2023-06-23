@@ -31,108 +31,107 @@
 <!-- Header containing website logo and menu-->
 <header>
     <nav>
-      <div class="header-container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="assets/images/website-logo.webp" alt="UnleashDiscipline Logo">
-          </a>
-        </div>
-        <div class="menu-container">
-          <ul class="menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="burger-menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-    <!-- Section that displays the "Quote of the week"-->
-    <section id="quote-of-the-day">
-        <h2><span>Fueling Success:</span> <em>Andy Frisella's Daily Edition</em></h2>
-        <div class="quote-container">
-            <p class="quote-text-day"></p>
-            <div class="rating-container">
-                <h2>Rate this quote:</h2>
-                <div class="rating">
-                    <span class="heart" data-value="1"><i class="fas fa-heart"></i></span>
-                    <span class="heart" data-value="2"><i class="fas fa-heart"></i></span>
-                    <span class="heart" data-value="3"><i class="fas fa-heart"></i></span>
-                    <span class="heart" data-value="4"><i class="fas fa-heart"></i></span>
-                    <span class="heart" data-value="5"><i class="fas fa-heart"></i></span>
-                    <p id="rating-value">Rating: 0</p>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/website-logo.webp" alt="UnleashDiscipline Logo">
+                </a>
+            </div>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger-menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
+</header>
 
-    <!-- Main content body for the random quotes-->
-    <div class="main-container">
-        <h1> Empowering Quotes <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
-        <div id="quote-container">
-            <p id="quote-text"></p>
-            <p id="quote-author"></p>
+<!-- Section that displays the "Quote of the day"-->
+<section id="quote-of-the-day">
+    <h2><span>Fueling Success:</span> <em>Andy Frisella's Daily Edition</em></h2>
+    <div class="quote-container">
+        <p class="quote-text-day"></p>
+        <div class="rating-container">
+            <h2>Rate this quote:</h2>
+            <div class="rating">
+                <span class="heart" data-value="1"><i class="fas fa-heart"></i></span>
+                <span class="heart" data-value="2"><i class="fas fa-heart"></i></span>
+                <span class="heart" data-value="3"><i class="fas fa-heart"></i></span>
+                <span class="heart" data-value="4"><i class="fas fa-heart"></i></span>
+                <span class="heart" data-value="5"><i class="fas fa-heart"></i></span>
+                <p id="rating-value">Rating: 0</p>
+            </div>
         </div>
+    </div>
+</section>
 
-        <!-- Buttons for generating new quote, copy and Access to the quiz-->
-        <button id="new-quote-btn">New Quote</button>
-        <button id="copy-btn">Copy</button>
-        <button id="quiz-btn">Intellect Booster Quiz</button>
-        <div id="social-media-icons">
-            <h2 id="share-description">Spread the Positivity</h2>
-            <a href="#" class="social-media-icon" id="facebook-icon"
-                aria-label="Share our discipline quotes on Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-media-icon" id="twitter-icon" aria-label="Share our discipline quotes on
-            Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-media-icon" id="whatsapp-icon" aria-label="Share our discipline quotes on
-            WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-media-icon" id="linkedin-icon"
-                aria-label="Share our discipline quotes on LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-media-icon" id="pinterest-icon" aria-label="Share our discipline quotes on
-            Pinterest"><i class="fab fa-pinterest"></i></a>
-            <a href="#" class="social-media-icon" id="email-icon" aria-label="Share our discipline quotes by Email"><i
-                    class="fas fa-envelope"></i></a>
-
-        </div>
-        <div id="notification"></div>
+<!-- Main content body for the random quotes-->
+<div class="main-container">
+    <h1> Empowering Quotes <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
+    <div id="quote-container">
+        <p id="quote-text"></p>
+        <p id="quote-author"></p>
     </div>
 
-    <!-- Font awesome script-->
-    <script src="https://kit.fontawesome.com/50b3ac31b9.js" crossorigin="anonymous"></script>
+    <!-- Buttons for generating new quote, copy and Access to the quiz-->
+    <button id="new-quote-btn">New Quote</button>
+    <button id="copy-btn">Copy</button>
+    <button id="quiz-btn">Intellect Booster Quiz</button>
+    <div id="social-media-icons">
+        <h2 id="share-description">Spread the Positivity</h2>
+        <a href="#" class="social-media-icon" id="facebook-icon" aria-label="Share our discipline quotes on Facebook"><i
+                class="fab fa-facebook"></i></a>
+        <a href="#" class="social-media-icon" id="twitter-icon" aria-label="Share our discipline quotes on
+            Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-media-icon" id="whatsapp-icon" aria-label="Share our discipline quotes on
+            WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-media-icon" id="linkedin-icon" aria-label="Share our discipline quotes on LinkedIn"><i
+                class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-media-icon" id="pinterest-icon" aria-label="Share our discipline quotes on
+            Pinterest"><i class="fab fa-pinterest"></i></a>
+        <a href="#" class="social-media-icon" id="email-icon" aria-label="Share our discipline quotes by Email"><i
+                class="fas fa-envelope"></i></a>
+    </div>
+    <div id="notification"></div>
+</div>
 
-    <!-- Footer containing social media links, Website Mission and Copyright-->
-    <footer>
-        <div class="footer-content">
-            <p>Inspiring and empowering individuals to embrace discipline and achieve success in their personal growth
-                and healthy lifestyle journey.</p>
-            <div class="social-media">
-                <h2 id="footer-socials">Follow Our Social Journey</h2>
-                <a href="https://www.instagram.com/" target="_blank"
-                    aria-label="Click on the instagram icon to access our account"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"
-                    aria-label="Click on the facebook icon to access our account"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/" target="_blank"
-                    aria-label="Click on the Intagram icon to access our account"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="mission-copyright">
-                <div class="mission-statement">
-                    <p class="copyright">© 2023 UnleashDiscipline. Website designed and developed by Danni Browne as
-                        part of the Code Institute Diploma in Full Stack Software Development.</p>
-                </div>
+<!-- Font awesome script-->
+<script src="https://kit.fontawesome.com/50b3ac31b9.js" crossorigin="anonymous"></script>
+
+<!-- Footer containing social media links, Website Mission and Copyright-->
+<footer>
+    <div class="footer-content">
+        <p>Inspiring and empowering individuals to embrace discipline and achieve success in their personal growth
+            and healthy lifestyle journey.</p>
+        <div class="social-media">
+            <h2 id="footer-socials">Follow Our Social Journey</h2>
+            <a href="https://www.instagram.com/" target="_blank"
+                aria-label="Click on the instagram icon to access our account"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"
+                aria-label="Click on the facebook icon to access our account"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"
+                aria-label="Click on the Intagram icon to access our account"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="mission-copyright">
+            <div class="mission-statement">
+                <p class="copyright">© 2023 UnleashDiscipline. Website designed and developed by Danni Browne as
+                    part of the Code Institute Diploma in Full Stack Software Development.</p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- JavaScript link-->
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/random-quotes.js"></script>
-    <script src="assets/js/index.js"></script>
+<!-- JavaScript link-->
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/random-quotes.js"></script>
+<script src="assets/js/index.js"></script>
 </body>
 
 </html>
