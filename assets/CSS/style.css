@@ -605,7 +605,6 @@ h2 {
     box-shadow: 5px 5px 100px #fff9e6;
     border-radius: 20px;
     margin-bottom: 80px;
-    max-height: 75%;
     max-width: 75%;
     padding: 2rem;
 }
@@ -620,9 +619,12 @@ h2 {
 }
 
 .image-error {
+    height: auto;
+    width: 700px;
     max-height: 70%;
     max-width: 90%;
 }
+
 
 /* Contact.html styling */
 /* Contact container styling */
