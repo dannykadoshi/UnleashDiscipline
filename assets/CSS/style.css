@@ -700,7 +700,7 @@ h2 {
 }
 
 .form-container input[type="submit"] {
-    background-color: #12284c;
+    background-color: #c0392b;
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -723,6 +723,25 @@ h2 {
     content: "*";
     display: inline-block;
     margin-right: 5px;
+}
+
+#contact-back-btn {
+    background-color: #122D4A;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;    
+}
+
+#contact-back-btn:hover {
+    background-color: #ffc845;
 }
 
 /* Thankyou page for the contact form response*/
@@ -841,6 +860,10 @@ h2 {
 
     .burger-menu-icon.open .bar:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
+    }
+
+    #contact-back-btn {
+        margin: 5px 0 40px;
     }
 }
 
