@@ -1,3 +1,5 @@
+/*  jshint esversion: 11 */
+
 /** 
  * Event listener to the Back home button located at the contact.html page
  * Clicking the button will trigger the event listener to navigate back to the home page
