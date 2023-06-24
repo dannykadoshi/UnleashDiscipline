@@ -72,39 +72,73 @@ header img {
 
 /* style for Quote of the day Andy's Frisella limited edition section */
 #quote-of-the-day {
-    align-items: center;
-    background-color: #ff8c00;
+    background-color: rgba(251, 142, 8, 0.889);
+    border-radius: 20px;
     border-radius: 10px;
+    border: 2px solid #fbac12;
+    box-shadow: 5px 5px 100px #fff9e6;
     color: #fff;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    max-width: 1000px;
+    max-width: 850px;
     padding: 20px;
     text-align: center;    
 }
 
-#quote-of-the-day h2 {
-    font-size: 20px;
+#quote-of-the-day h1 {
+    color:  #fff;
+    font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-#quote-of-the-day h2 span {
-    color: #122d4a;
-
+#quote-of-the-day h1 span {
+    color: #333333;
+    text-shadow: none;
 }
 
-#quote-of-the-day h2 em {
+#quote-of-the-day h1 em {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+#quote-of-the-day h2 {
+    color: #333333;
+    padding-top: 20px;
+}
+
 .quote-text-day {
-    color: #12284c;
+    color: #f4f4f4;
     font-size: 18px;
     font-style: italic;
     font-weight: bold;
     margin-top: 40px;
+}
+
+/* Styling for rating the quote of the day*/
+.rating {
+    display: inline-block;
+  }
+  
+  .heart {
+    color: #c0392b;
+    cursor: pointer;
+    font-size: 35px;
+  }
+
+  .rating .heart:hover {
+    color: #8c001a;
+    transition: color 0.2s ease-in-out;
+}
+
+  
+  .heart.active {
+    color: #008080;
+  }
+  
+  #rating-value {
+    text-transform: uppercase;
+    color: #333333;
 }
 
 /* Quote Display */
@@ -129,53 +163,6 @@ header img {
     font-size: 16px;
     font-style: italic;
     text-align: center;
-}
-
-/* Quote of the day rating system display */
-.rating-container {
-    margin: 50px 0 20px;
-}
-
-.rating-container h2 {
-    color: #fff;
-    font-style: italic;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.rating {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0;
-}
-
-.heart {
-    color: #c0392b;
-    display: inline-block;
-    font-size: 40px;
-    margin-right: 10px;
-    position: relative;
-    transition: transform 0.2s ease-in-out;    
-}
-
-.heart:hover {
-    transform: scale(1.2);
-}
-
-.heart:before {
-    color: #fff;
-    content: "\f004";
-    filter: blur(1px);
-    font-family: "FontAwesome";
-    position: absolute;
-    transform: scale(1.2);
-    z-index: -1;    
-}
-
-.feedback-message {
-    color: #fff;
-    font-size: 20px;
-    margin-top: 10px;    
 }
 
 /* Buttons for the Main page index.html*/
@@ -889,3 +876,4 @@ h2 {
         max-width: 80%;
     }
 }
+

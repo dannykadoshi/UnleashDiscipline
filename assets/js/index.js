@@ -271,63 +271,45 @@ document.getElementById('email-icon').addEventListener('click', shareViaEmail);
 /**
  * Function to generate rating system for the hearts rating
  */
-
-// Get the rating container and hearts
+// Get the rating container and all the heart elements
 const ratingContainer = document.querySelector('.rating');
-const hearts = ratingContainer.getElementsByClassName('heart');
-
-// Get the rating value display element
-const ratingValueElement = document.getElementById('rating-value');
-
-// Get the feedback message element
-const feedbackMessageElement = document.createElement('p');
-feedbackMessageElement.classList.add('feedback-message');
-
-// Initialize the rating value
-let ratingValue = 0;
-
-// Function to update the heart states
-function updateHeartStates(selectedValue) {
-    for (let i = 0; i < hearts.length; i++) {
-        const heart = hearts[i];
-
-        if (i <= selectedValue) {
-            heart.classList.add('selected');
-        } else {
-            heart.classList.remove('selected');
-        }
-    }
-}
-
-// Show feedback message
-function showFeedbackMessage() {
-    feedbackMessageElement.textContent = 'Thanks for your feedback! 👍🏻';
-    ratingContainer.appendChild(feedbackMessageElement);
-
-    // Set a timeout to remove the feedback message after 3 seconds
-    setTimeout(function () {
-        feedbackMessageElement.remove();
-    }, 3000);
-}
+const hearts = ratingContainer.querySelectorAll('.heart');
 
 // Add click event listener to each heart
-for (let i = 0; i < hearts.length; i++) {
-    let heart = hearts[i];
+hearts.forEach((heart) => {
+  heart.addEventListener('click', handleHeartClick);
+});
 
-    heart.addEventListener('click', function () {
-        // Get the selected rating value from the heart
-        let selectedValue = parseInt(heart.getAttribute('data-value'));
-
-        // Update the rating value
-        ratingValue = selectedValue;
-
-        // Update the rating value display
-        ratingValueElement.textContent = `Rating: ${ratingValue}`;
-
-        // Update the heart states
-        updateHeartStates(selectedValue);
-
-        // Show feedback message
-        showFeedbackMessage();
+// Handle heart click event
+function handleHeartClick(event) {
+    const selectedHeart = event.currentTarget;
+    const selectedValue = selectedHeart.getAttribute('data-value');
+  
+    // Update rating value
+    const ratingValue = document.getElementById('rating-value');
+    ratingValue.textContent = `Rating: ${selectedValue}/5`;
+  
+    // Add 'active' class to selected heart and all previous hearts
+    hearts.forEach((heart) => {
+      const heartValue = heart.getAttribute('data-value');
+      if (heartValue <= selectedValue) {
+        heart.classList.add('active');
+      } else {
+        heart.classList.remove('active');
+      }
     });
-}
+  
+    // Show feedback message
+    const feedbackMessage = document.createElement('p');
+    feedbackMessage.textContent = 'Thank you! Your vote fuels the spirit of discipline and growth!';
+    ratingContainer.appendChild(feedbackMessage);
+  
+    // Reset hearts and feedback message after 4 seconds
+    setTimeout(() => {
+      hearts.forEach((heart) => {
+        heart.classList.remove('active');
+      });
+      ratingValue.textContent = 'Rating: 0/5';
+      ratingContainer.removeChild(feedbackMessage);
+    }, 4000);
+  }
