@@ -302,6 +302,7 @@ function handleHeartClick(event) {
     // Show feedback message
     const feedbackMessage = document.createElement('p');
     feedbackMessage.textContent = 'Thank you! Your vote fuels the spirit of discipline and growth!';
+    feedbackMessage.classList.add('feedback-message');
     ratingContainer.appendChild(feedbackMessage);
   
     // Reset hearts and feedback message after 4 seconds
