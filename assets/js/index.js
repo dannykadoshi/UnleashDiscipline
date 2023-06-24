@@ -1,10 +1,12 @@
 /*  jshint esversion: 11 */
 
 /* main variables to control the random quotes generator and quote of the day */
-const quizButton = document.getElementById('quiz-btn');
-quizButton.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
+  const quizButton = document.getElementById('quiz-btn');
+  quizButton.addEventListener('click', () => {
     // Redirect to Quiz Page
     window.location.href = 'quiz.html';
+  });
 });
 
 /**

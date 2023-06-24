@@ -715,6 +715,7 @@ h2 {
 .form-container input[type="submit"] {
     background-color: #12284c;
     border: none;
+    border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: #fff;
     cursor: pointer;
