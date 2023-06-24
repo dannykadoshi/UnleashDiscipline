@@ -1,3 +1,5 @@
+  /*  jshint esversion: 11 */
+  
   /** 
    * Event listener registration for the close button at the thankyou.html page
    */

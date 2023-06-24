@@ -312,5 +312,5 @@ function handleHeartClick(event) {
       });
       ratingValue.textContent = 'Rating: 0/5';
       ratingContainer.removeChild(feedbackMessage);
-    }, 4000);
+    }, 5000);
   }
