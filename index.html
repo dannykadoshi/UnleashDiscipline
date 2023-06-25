@@ -31,7 +31,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 
     <title>UnleashDiscipline - Random Quote Generator</title>
 </head>
@@ -81,33 +80,37 @@
 </section>
 
 <!-- Main content body for the random quotes-->
-<div class="main-container">
-    <h1> Empowering Quotes <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
-    <div id="quote-container">
-        <p id="quote-text"></p>
-        <p id="quote-author"></p>
-    </div>
+<div class="main-container" id="main-container-random-quiz">
+    <div id="random-quote-container">
+        <h1> Empowering Quotes <i id="heartbeat-icon" class="fas fa-heartbeat"></i></h1>
+        <div id="quote-container">
+            <p id="quote-text"></p>
+            <p id="quote-author"></p>
+        </div>
 
-    <!-- Buttons for generating new quote, copy and Access to the quiz-->
-    <button id="new-quote-btn">New Quote</button>
-    <button id="copy-btn">Copy</button>
-    <button id="quiz-btn">Quote Quest</button>
-    <div id="social-media-icons">
-        <h2 id="share-description">Spread the Positivity</h2>
-        <a href="#" class="social-media-icon" id="facebook-icon" aria-label="Share our discipline quotes on Facebook"><i
-                class="fab fa-facebook"></i></a>
-        <a href="#" class="social-media-icon" id="twitter-icon" aria-label="Share our discipline quotes on
+        <!-- Buttons for generating new quote, copy and Access to the quiz-->
+        <div id="random-quotes-btn">
+            <button id="new-quote-btn">New Quote</button>
+            <button id="copy-btn">Copy</button>
+            <button id="quiz-btn">Quote Quest</button>
+        </div>
+        <div id="social-media-icons">
+            <h2 id="share-description">Spread the Positivity</h2>
+            <a href="#" class="social-media-icon" id="facebook-icon"
+                aria-label="Share our discipline quotes on Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-media-icon" id="twitter-icon" aria-label="Share our discipline quotes on
             Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-media-icon" id="whatsapp-icon" aria-label="Share our discipline quotes on
+            <a href="#" class="social-media-icon" id="whatsapp-icon" aria-label="Share our discipline quotes on
             WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="social-media-icon" id="linkedin-icon" aria-label="Share our discipline quotes on LinkedIn"><i
-                class="fab fa-linkedin"></i></a>
-        <a href="#" class="social-media-icon" id="pinterest-icon" aria-label="Share our discipline quotes on
+            <a href="#" class="social-media-icon" id="linkedin-icon"
+                aria-label="Share our discipline quotes on LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-media-icon" id="pinterest-icon" aria-label="Share our discipline quotes on
             Pinterest"><i class="fab fa-pinterest"></i></a>
-        <a href="#" class="social-media-icon" id="email-icon" aria-label="Share our discipline quotes by Email"><i
-                class="fas fa-envelope"></i></a>
+            <a href="#" class="social-media-icon" id="email-icon" aria-label="Share our discipline quotes by Email"><i
+                    class="fas fa-envelope"></i></a>
+        </div>
+        <div id="notification"></div>
     </div>
-    <div id="notification"></div>
 </div>
 
 <!-- Font awesome script-->

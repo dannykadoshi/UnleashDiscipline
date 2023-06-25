@@ -75,10 +75,6 @@ let quotes = [
         author: "Gene Tunney"
     },
     {
-        text: "You're going to have to let it hurt. Let it suck. The harder you work, the better you will look. Your appearance isn't parallel to how heavy you lift, it's parallel to how hard you work.",
-        author: "Joe Mangianello"
-    },
-    {
         text: "Most people fail, not because of lack of desire, but, because of lack of commitment.",
         author: "Vince Lombardi"
     },
@@ -103,16 +99,8 @@ let quotes = [
         author: "Carli Lloyd"
     },
     {
-        text: "Enduring means accepting. Accepting things as they are and not as you would wish them to be, and then looking ahead, not behind.",
-        author: "Rafael Nadal"
-    },
-    {
         text: "If you want something you've never had, you must be willing to do something you've never done.",
         author: "Thomas Jefferson"
-    },
-    {
-        text: "The resistance that you fight physically in the gym and the resistance that you fight in life can only build a strong character.",
-        author: "Arnold Schwarzenegger"
     },
     {
         text: "Continuous improvement is better than delayed perfection.",
@@ -161,10 +149,6 @@ let quotes = [
     {
         text: "You must expect things of yourself before you can do them.",
         author: "Michael Jordan"
-    },
-    {
-        text: "The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.",
-        author: "Arnold Schwarzenegger"
     },
     {
         text: "If you fail to prepare, you're prepared to fail.",
@@ -247,10 +231,6 @@ let quotes = [
         author: "Alex Morgan"
     },
     {
-        text: "Your health account, your bank account, they're the same thing. The more you put in, the more you can take out. Exercise is king and nutrition is queen. Together you have a kingdom.",
-        author: "Jack LaLanne"
-    },
-    {
         text: "Don't dream of winning. Train for it!",
         author: "Mo Farah"
     },
@@ -311,10 +291,6 @@ let quotes = [
         author: "Joseph Pilates"
     },
     {
-        text: "If you take time to realize what your dream is and what you really want in life — no matter what it is, whether it's sports or in other fields — you have to realize that there is always work to do, and you want to be the hardest working person in whatever you do, and you put yourself in a position to be successful. And you have to have a passion about what you do.",
-        author: "Stephen Curry"
-    },
-    {
         text: "You shall gain, but you shall pay with sweat, blood, and vomit.",
         author: "Pavel Tsatsouline"
     },
@@ -325,10 +301,6 @@ let quotes = [
     {
         text: "Get ready, be prepared. So when opportunities finally show themselves, you'll be able to own them.",
         author: "Hannah Gabriels"
-    },
-    {
-        text: "You dream. You plan. You reach. There will be obstacles. There will be doubters. There will be mistakes. But with hard work, with belief, with confidence and trust in yourself and those around you, there are no limits.",
-        author: "Michael Phelps"
     },
     {
         text: "Be Humble. Be Hungry. And always be the hardest worker in the room.",
@@ -365,10 +337,6 @@ let quotes = [
     {
         text: "Discipline is the bridge between goals and accomplishments.",
         author: "Jim Rohn"
-    },
-    {
-        text: "We all have dreams. But in order to make dreams come into reality, it takes an awful lot of determination, dedication, self-discipline, and effort.",
-        author: "Jesse Owens"
     },
     {
         text: "Nothing will work unless you do.",

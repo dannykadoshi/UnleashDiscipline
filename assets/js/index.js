@@ -126,7 +126,7 @@ copyBtn.addEventListener('click', function () {
     console.log('Text copied to clipboard: ' + textToCopy);
 
     // Show notification message when copy buttom is clicked
-    notification.textContent = 'Copied to clipboard successfully!';
+    notification.textContent = 'Copied successfully!';
     notification.classList.add('show');
 
     // Hide copy notification message after 3 seconds

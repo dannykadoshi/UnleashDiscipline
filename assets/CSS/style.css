@@ -80,9 +80,9 @@ header img {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    max-width: 850px;
     padding: 20px;
-    text-align: center;
+    width: 890px;
+    max-width: 85vw;
 }
 
 #quote-of-the-day h1 {
@@ -252,9 +252,12 @@ header img {
     box-shadow: 5px 5px 100px #fff9e6;
     border-radius: 20px;
     height: auto;
-    margin-bottom: 80px;
-    max-width: 90%;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 890px;
+    max-width: 85vw;
 }
 
 .main-container h1 i {
@@ -403,6 +406,10 @@ footer {
     margin-top: 10px;
 }
 
+#result-image {
+    margin-bottom: 30px;
+}
+
 .result-score {
     color: #fff;
     font-size: 30px;
@@ -413,6 +420,8 @@ footer {
 
 #results-section {
     display: none;
+    min-height: 600px;
+    max-width: 90vw;
 }
 
 #back-home-btn {
@@ -451,6 +460,11 @@ footer {
     background-color: #c0392b;
 }
 
+#new-game-btn,
+#back-home-buttom-2 {
+    margin-left: 3rem;
+}
+
 .rules-button,
 .home-button,
 .back-home-button,
@@ -467,7 +481,7 @@ footer {
     font-size: 17px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 10px 10px 0 0;
+
     padding: 10px 20px;
     text-transform: uppercase;
 }
@@ -536,6 +550,8 @@ h2 {
 /* Quiz Rules Section */
 #rules-section {
     display: none;
+    max-width: 800px;
+
 }
 
 #rules-section .rules-header {
@@ -612,9 +628,11 @@ h2 {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
     box-shadow: 5px 5px 100px #fff9e6;
-    border-radius: 20px;
-    margin-bottom: 80px;
-    padding: 2rem;
+    min-height: 600px;
+    width: 900px;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 90vw;
 }
 
 .response-page p {
@@ -637,11 +655,13 @@ h2 {
 /* Contact container styling */
 .contact-container {
     background-color: rgba(29, 36, 12, 0.66);
+    border: 2px solid #ccc;
     box-shadow: 5px 5px 100px #fff9e6;
-    border-radius: 20px;
-    margin-bottom: 80px;
-    max-width: 60%;
-    padding: 2rem;
+    min-height: 600px;
+    width: 900px;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 90vw;
 }
 
 .contact-container p {
@@ -760,10 +780,11 @@ h2 {
     background-color: rgba(29, 36, 12, 0.66);
     border: 2px solid #ccc;
     box-shadow: 5px 5px 100px #fff9e6;
-    border-radius: 20px;
-    margin-bottom: 80px;
-    max-width: 75%;
-    padding: 2rem;
+    min-height: 600px;
+    width: 900px;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 90vw;
 }
 
 .thanks-page p {
@@ -914,6 +935,7 @@ h2 {
 /* Leaderboard section for the quiz at quiz.html */
 #leaderboard-section {
     display: none;
+    max-width: 800px;
 }
 
 .leaderboard-container {
