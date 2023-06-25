@@ -614,7 +614,6 @@ h2 {
     box-shadow: 5px 5px 100px #fff9e6;
     border-radius: 20px;
     margin-bottom: 80px;
-    max-width: 75%;
     padding: 2rem;
 }
 
@@ -633,7 +632,6 @@ h2 {
     max-height: 70%;
     max-width: 90%;
 }
-
 
 /* Contact.html styling */
 /* Contact container styling */
@@ -913,9 +911,7 @@ h2 {
     }
 }
 
-/* Quiz leaderboard section */
-
-
+/* Leaderboard section for the quiz at quiz.html */
 #leaderboard-section {
     display: none;
 }
@@ -959,11 +955,11 @@ h2 {
 }
 
 #leaderboard-table {
-    width: 100%;
     border-collapse: separate;
     margin-bottom: 20px;
     background-color: #f2f2f2;
     font-weight: bold;
+    justify-content: center;
 }
 
 #leaderboard-table th,
@@ -981,7 +977,7 @@ h2 {
 }
 
 #leaderboard-table tr:nth-child(even) {
-    background-color: #f0d484;
+    background-color: #f0d384ae;
 }
 
 #close-leaderboard-btn {
