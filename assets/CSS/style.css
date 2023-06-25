@@ -991,22 +991,35 @@ h2 {
 }
 
 .leaderboard-icon-animation {
-    color: #c0392b; 
-  }
-  
-  /* Heartbeat animation */
-  @keyframes heartbeat {
+    color: #c0392b;
+}
+
+.leaderboard-text {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+/* Heartbeat animation */
+@keyframes heartbeat {
     from {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
+
     to {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  .leaderboard-icon-animation {
+}
+
+.leaderboard-icon-animation {
     animation: heartbeat 1.5s infinite;
-  }
+}
