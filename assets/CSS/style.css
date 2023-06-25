@@ -446,7 +446,8 @@ footer {
 }
 
 .start-button,
-.new-game-button {
+.new-game-button,
+.return-quiz-button {
     background-color: #c0392b;
 }
 
