@@ -7,6 +7,62 @@
  */
 let quotes = [
     {
+        text: "Your consistency must outlast the world's ignorance of who you truly are.",
+        author: "Dr. Billy Alsbrooks"
+    },
+    {
+        text: "Instead of conforming, stay consistent",
+        author: "Scarlet Jei Saoirse"
+    },
+    {
+        text: "Being consistent in your behaviour is a great way to build trust.",
+        author: "Germany Kent"
+    },
+    {
+        text: "A foolish consistency is the hobgoblin of little minds, adored by little statesmen and philosophers and divines.",
+        author: "Ralph Waldo Emerson"
+    },
+    {
+        text: "The secret to winning is constant, consistent management.",
+        author: "Tom Landry"
+    },
+    {
+        text: "The secret of success is constancy of purpose.",
+        author: "Benjamin Disraeli"
+    },
+    {
+        text: "Consistency is contrary to nature, contrary to life. The only completely consistent people are the dead.",
+        author: "Aldous Huxley"
+    },
+    {
+        text: "Consistency is the foundation of virtue.",
+        author: "Francis Bacon"
+    },
+    {
+        text: "Consistency is the last refuge of the unimaginative.",
+        author: "Oscar Wilde"
+    },
+    {
+        text: "It's not what we do once in a while that shapes our lives. It's what we do consistently.",
+        author: "Anthony Robbins"
+    },
+    {
+        text: "Consistency is the most overrated of all human virtues... I'm someone who changes his mind all the time.",
+        author: "Malcolm Gladwell"
+    },
+    {
+        text: "Success isn't always about greatness. It's about consistency, as consistent hard work leads to success, greatness will come.",
+        author: "Dwayne Johnson"
+    },
+    {
+        text: "Small disciplines repeated with consistency every day lead to great achievements gained slowly over time.",
+        author: "John C. Maxwell, 'The 15 Invaluable Laws Of Growth: Live Them And Reach Your Potential'"
+    },
+    {
+        text: "For changes to be of any true value, they've got to be lasting and consistent.",
+        author: "Tony Robbins"
+    },
+    {
         text: '"The only way to do great work is to love what you do."',
         author: "Steve Jobs"
     },
@@ -397,10 +453,6 @@ let quotes = [
     {
         text: "The price of excellence is discipline.",
         author: "William Arthur Ward"
-    },
-    {
-        text: "Self-discipline starts with the mastery of your thoughts. If you don't control what you think, you can't control what you do.",
-        author: ""
     },
     {
         text: "Discipline is choosing between what you want now and what you want most.",

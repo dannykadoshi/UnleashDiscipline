@@ -5,16 +5,6 @@
  */
 const guessWhoSaid = [
     {
-        question: "“The great master key to riches is nothing more or less than the self-discipline necessary to help you take full and complete possession of your own mind.”",
-        options: [
-            "Napoleon Hill",
-            "Theodore Roosevelt",
-            "Dwayne 'The Rock' Johnson",
-            "Lou Holtz"
-        ],
-        correct: "Napoleon Hill"
-    },
-    {
         question: "“With self-discipline, most anything is possible.”",
         options: [
             "Theodore Roosevelt",
@@ -35,16 +25,6 @@ const guessWhoSaid = [
         correct: "Dwayne 'The Rock' Johnson"
     },
     {
-        question: "“Winners embrace hard work. They love the discipline of it, the trade-off they're making to win. Losers, on the other hand, see it as a punishment. And that's the difference.”",
-        options: [
-            "Lou Holtz",
-            "Darren Hardy",
-            "Jim Rohn",
-            "Charles M. Schwab"
-        ],
-        correct: "Lou Holtz"
-    },
-    {
         question: "“A disciplined mind leads to happiness, and an undisciplined mind leads to suffering.”",
         options: [
             "Dalai Lama",
@@ -63,16 +43,6 @@ const guessWhoSaid = [
             "Nikola Tesla"
         ],
         correct: "George Washington"
-    },
-    {
-        question: "“The successful person has the habit of doing the things failures don't like to do. They don't like doing them either necessarily. But their disliking is subordinated to the strength of their purpose.”",
-        options: [
-            "E.M. Gray",
-            "John C. Maxwell",
-            "Dwayne 'The Rock' Johnson",
-            "Jim Rohn"
-        ],
-        correct: "E.M. Gray"
     },
     {
         question: "“The only discipline that lasts is self-discipline.”",
@@ -295,16 +265,6 @@ const guessWhoSaid = [
         correct: "Brian Tracy"
     },
     {
-        question: "“You will never change your life until you change something you do daily. The secret of your success is found in your daily routine.”",
-        options: [
-            "John C. Maxwell",
-            "Dwayne 'The Rock' Johnson",
-            "Adam Sicinski",
-            "Gary Keller"
-        ],
-        correct: "John C. Maxwell"
-    },
-    {
         question: "“Discipline yourself, and others won't need to.”",
         options: [
             "John Wooden",
@@ -643,5 +603,305 @@ const guessWhoSaid = [
             "George Washington"
         ],
         correct: "Robert Kiyosaki"
+    },
+    {
+        question: "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+        options: [
+            "Winston S. Churchill",
+            "Robert Kiyosaki",
+            "J.K. Rowling",
+            "Maya Angelou"
+        ],
+        correct: "Winston S. Churchill"
+    },
+    {
+        question: "It is better to fail in originality than to succeed in imitation.",
+        options: [
+            "Herman Melville",
+            "Stephen King",
+            "Leo Tolstoy",
+            "Jane Austen"
+        ],
+        correct: "Herman Melville"
+    },
+    {
+        question: "The road to success and the road to failure are almost exactly the same.",
+        options: [
+            "Colin R. Davis",
+            "William Shakespeare",
+            "Emily Dickinson",
+            "Mark Twain"
+        ],
+        correct: "Colin R. Davis"
+    },
+    {
+        question: "Success usually comes to those who are too busy looking for it.",
+        options: [
+            "Henry David Thoreau",
+            "Albert Einstein",
+            "Virginia Woolf",
+            "F. Scott Fitzgerald"
+        ],
+        correct: "Henry David Thoreau"
+    },
+    {
+        question: "Success is getting what you want, happiness is wanting what you get.",
+        options: [
+            "W. P. Kinsella",
+            "J.R.R. Tolkien",
+            "Charles Dickens",
+            "Ernest Hemingway"
+        ],
+        correct: "W. P. Kinsella"
+    },
+    {
+        question: "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+        options: [
+            "Winston Churchill",
+            "Nelson Mandela",
+            "Abraham Lincoln",
+            "Martin Luther King Jr."
+        ],
+        correct: "Winston Churchill"
+    },
+    {
+        question: "Don't let yesterday take up too much of today.",
+        options: [
+            "Will Rogers",
+            "Theodore Roosevelt",
+            "Walt Disney",
+            "Steve Jobs"
+        ],
+        correct: "Will Rogers"
+    },
+    {
+        question: "Opportunity is missed by most people because it is dressed in overalls and looks like work.",
+        options: [
+            "Thomas Edison",
+            "Leonardo da Vinci",
+            "Pablo Picasso",
+            "Vincent van Gogh"
+        ],
+        correct: "Thomas Edison"
+    },
+    {
+        question: "Setting goals is the first step in turning the invisible into the visible.",
+        options: [
+            "Tony Robbins",
+            "Elon Musk",
+            "Warren Buffett",
+            "Jeff Bezos"
+        ],
+        correct: "Tony Robbins"
+    },
+    {
+        question: "Women challenge the status quo because we are never it.",
+        options: [
+            "Cindy Gallop",
+            "Sheryl Sandberg",
+            "Melinda Gates",
+            "Oprah Winfrey"
+        ],
+        correct: "Cindy Gallop"
+    },
+    {
+        question: "We don't just sit around and wait for other people. We just make, and we do.",
+        options: [
+            "Arlan Hamilton",
+            "Bill Gates",
+            "Richard Branson",
+            "Mark Zuckerberg"
+        ],
+        correct: "Arlan Hamilton"
+    },
+    {
+        question: "Think like a queen. A queen is not afraid to fail. Failure is another stepping stone to greatness.",
+        options: [
+            "Oprah Winfrey",
+            "Michelle Obama",
+            "Ellen DeGeneres",
+            "Serena Williams"
+        ],
+        correct: "Oprah Winfrey"
+    },
+    {
+        question: "Weight loss doesn't begin in the gym with a dumbbell; it starts in your head with a decision.",
+        options: [
+            "Toni Sorenson",
+            "Michelle Obama",
+            "Serena Williams",
+            "Ellen DeGeneres"
+        ],
+        correct: "Toni Sorenson"
+    },
+    {
+        question: "Weight loss requires determination, consistency and hard work.",
+        options: [
+            "Invajy",
+            "Tony Robbins",
+            "Richard Branson",
+            "Elon Musk"
+        ],
+        correct: "Invajy"
+    },
+    {
+        question: "The journey to stronger muscles passes through sore muscles.",
+        options: [
+            "Invajy",
+            "Bill Gates",
+            "Warren Buffett",
+            "Jeff Bezos"
+        ],
+        correct: "Invajy"
+    },
+    {
+        question: "Success is the sum of small efforts, repeated day-in and day-out.",
+        options: [
+            "Robert Collier",
+            "Napoleon Hill",
+            "Zig Ziglar",
+            "Brian Tracy"
+        ],
+        correct: "Robert Collier"
+    },
+    {
+        question: "Champions keep playing until they get it right.",
+        options: [
+            "Billie Jean King",
+            "Roger Federer",
+            "Michael Jordan",
+            "Usain Bolt"
+        ],
+        correct: "Billie Jean King"
+    },
+    {
+        question: "If you aren't going all the way, why go at all?",
+        options: [
+            "Joe Namath",
+            "Tom Brady",
+            "LeBron James",
+            "Lionel Messi"
+        ],
+        correct: "Joe Namath"
+    },
+    {
+        question: "Every day, in every way, I am getting better and better.",
+        options: [
+            "Emilie Coue",
+            "Louise Hay",
+            "Wayne Dyer",
+            "Deepak Chopra"
+        ],
+        correct: "Emilie Coue"
+    },
+    {
+        question: "Just believe in yourself. Even if you don't, pretend that you do and, at some point, you will.",
+        options: [
+            "Venus Williams",
+            "Serena Williams",
+            "Simone Biles",
+            "Misty Copeland"
+        ],
+        correct: "Venus Williams"
+    },
+    {
+        question: "A habit cannot be tossed out the window; it must be coaxed down the stairs a step at a time.",
+        options: [
+            "Mark Twain",
+            "Albert Einstein",
+            "William Shakespeare",
+            "Emily Dickinson"
+        ],
+        correct: "Mark Twain"
+    },
+    {
+        question: "And once you understand that habits can change, you have the freedom and the responsibility to remake them.",
+        options: [
+            "Charles Duhigg",
+            "Malcolm Gladwell",
+            "Daniel Kahneman",
+            "Steven Pinker"
+        ],
+        correct: "Charles Duhigg"
+    },
+    {
+        question: "Discipline is choosing between what you want now and what you want most.",
+        options: [
+            "Abraham Lincoln",
+            "George Washington",
+            "Thomas Jefferson",
+            "Benjamin Franklin"
+        ],
+        correct: "Abraham Lincoln"
+    },
+    {
+        question: "Drop by drop is the water pot filled.",
+        options: [
+            "Buddha",
+            "Lao Tzu",
+            "Confucius",
+            "Dalai Lama"
+        ],
+        correct: "Buddha"
+    },
+    {
+        question: "First forget inspiration. Habit is more dependable. Habit will sustain you whether you're inspired or not.",
+        options: [
+            "Octavia Butler",
+            "Margaret Atwood",
+            "Ursula K. Le Guin",
+            "Toni Morrison"
+        ],
+        correct: "Octavia Butler"
+    },
+    {
+        question: "Good habits are worth being fanatical about.",
+        options: [
+            "John Irving",
+            "Haruki Murakami",
+            "J.K. Rowling",
+            "Ernest Hemingway"
+        ],
+        correct: "John Irving"
+    },
+    {
+        question: "Good habits formed at youth make all the difference.",
+        options: [
+            "Aristotle",
+            "Plato",
+            "Socrates",
+            "Homer"
+        ],
+        correct: "Aristotle"
+    },
+    {
+        question: "Habit is the intersection of knowledge (what to do), skill (how to do), and desire (want to do).",
+        options: [
+            "Stephen R. Covey",
+            "Brian Tracy",
+            "Robin Sharma",
+            "Tony Robbins"
+        ],
+        correct: "Stephen R. Covey"
+    },
+    {
+        question: "Habits change into character.",
+        options: [
+            "Ovid",
+            "Virgil",
+            "Horace",
+            "Cicero"
+        ],
+        correct: "Ovid"
+    },
+    {
+        question: "Happiness is a habit—cultivate it.",
+        options: [
+            "Elbert Hubbard",
+            "Ralph Waldo Emerson",
+            "Henry David Thoreau",
+            "Walt Whitman"
+        ],
+        correct: "Elbert Hubbard"
     }
 ];
