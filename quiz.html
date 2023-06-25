@@ -31,116 +31,133 @@
 <!-- Header containing website logo and menu-->
 <header>
     <nav>
-      <div class="header-container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="assets/images/website-logo.webp" alt="UnleashDiscipline Logo">
-          </a>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/website-logo.webp" alt="UnleashDiscipline Logo">
+                </a>
+            </div>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger-menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
         </div>
-        <div class="menu-container">
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="quiz.html">Quiz</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="burger-menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
-      </div>
     </nav>
-  </header>
+</header>
 
-    <!-- Main content body -->
-    <div class="main-container">
-        <!-- Quiz container -->
-        <div class="quiz-container">
-            <h1>The quiz to test your quotes knowledge <i id="graduation-icon" class="fas fa-graduation-cap graduation-animation"></i>
-            </h1>
-            <div id="name-container">
-                <input type="text" id="name" placeholder="Enter Your Name">
-                <div id="feedback-message" class="feedback"></div>
+<!-- Main content body -->
+<div class="main-container">
+    <!-- Quiz container -->
+    <div class="quiz-container">
+        <h1>The quiz to test your quotes knowledge <i id="graduation-icon"
+                class="fas fa-graduation-cap graduation-animation"></i>
+        </h1>
+        <div id="name-container">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <div id="feedback-message" class="feedback"></div>
+        </div>
+
+        <!-- Quiz initial screen containing buttons -->
+        <div id="ready-container">
+            <h2>Are you ready to be challenged?</h2>
+            <div class="quiz-buttons">
+                <button id="start-btn" class="start-button">Start Game</button>
+                <button id="rules-btn" class="rules-button">Rules</button>
+                <button id="leaderboard-btn" class="leaderboard-button">Leaderboard</button>
+                <button id="back-home-btn" class="home-button">Back Home</button>
             </div>
+        </div>
 
-            <!-- Quiz initial screen containing buttons -->
-            <div id="ready-container">
-                <h2>Are you ready to be challenged?</h2>
-                <div class="quiz-buttons">
-                    <button id="start-btn" class="start-button">Start Game</button>
-                    <button id="rules-btn" class="rules-button">Rules</button>
-                    <button id="back-home-btn" class="home-button">Back Home</button>
-                </div>
-            </div>
-
-            <!-- Quiz questionaire -->
-            <div id="quiz-questions-section">
-                <div id="question-container">
-                    <div id="quiz">
-                        <div id="player-info">
-                            <span id="player-name"></span>
-                        </div>
-                        <span id="score"></span>
-                        <h2 id="question">questions</h2>
-                        <ul id="options"></ul>
-                        <p id="result"></p>
+        <!-- Quiz questionaire -->
+        <div id="quiz-questions-section">
+            <div id="question-container">
+                <div id="quiz">
+                    <div id="player-info">
+                        <span id="player-name"></span>
                     </div>
-                </div>
-                <div class="quiz-buttons">
-                    <button id="new-game-btn" class="new-game-button">New Game</button>
-                    <button id="back-home-btn-2" class="back-home-button">Back Home</button>
-
+                    <span id="score"></span>
+                    <h2 id="question">questions</h2>
+                    <ul id="options"></ul>
+                    <p id="result"></p>
                 </div>
             </div>
+            <div class="quiz-buttons">
+                <button id="new-game-btn" class="new-game-button">New Game</button>
+                <button id="back-home-btn-2" class="back-home-button">Back Home</button>
+            </div>
+        </div>
 
-            <!-- Quiz results page including score and image -->
-            <div id="results-section" class="quiz-buttons">
-                <h1 id="result-message">Result Message</h1>
-                <div id="result-score"></div>
-                <div id="result-image"></div>
-                <button id="return-btn" class="return-home-button">Return Home</button>
+
+        <!-- Quiz results page including score and image -->
+        <div id="results-section" class="quiz-buttons">
+            <h1 id="result-message">Result Message</h1>
+            <div id="result-score"></div>
+            <div id="result-image"></div>
+            <button id="return-btn" class="return-home-button">Return Home</button>
+        </div>
+    </div>
+</div>
+
+<!-- Quiz Rules Section -->
+<div id="rules-section">
+    <div class="rules-container">
+        <h1 class="rules-header">Rules <i class="fas fa-exclamation-circle warning-icon-animation"></i></h1>
+        <ol id="rules-list" class="rules-list"></ol>
+        <button id="close-btn">Close</button>
+    </div>
+</div>
+
+<!-- Leaderboard Section -->
+<div id="leaderboard-section">
+    <div class="leaderboard-container">
+      <h1 class="leaderboard-header">Leaderboard <i class="fas fa-trophy leaderboard-icon-animation"></i></h1>
+      <table id="leaderboard-table">
+        <tbody id="leaderboard-list">
+          <!-- Leaderboard entries will be dynamically added here -->
+        </tbody>
+      </table>
+      <button id="close-leaderboard-btn">Close</button>
+      <button id="clear-leaderboard-btn">Clear</button>
+    </div>
+  </div>
+
+<!-- Font awesome script-->
+<script src="https://kit.fontawesome.com/50b3ac31b9.js" crossorigin="anonymous"></script>
+
+<footer>
+    <div class="footer-content">
+        <p>Inspiring and empowering individuals to embrace discipline and achieve success in their personal growth
+            and healthy lifestyle journey.</p>
+        <div class="social-media">
+            <h2 id="footer-socials">Follow Our Social Journey</h2>
+            <a href="https://www.instagram.com/" target="_blank"
+                aria-label="Click on the instagram icon to access our account"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"
+                aria-label="Click on the facebook icon to access our account"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"
+                aria-label="Click on the Intagram icon to access our account"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="mission-copyright">
+            <div class="mission-statement">
+                <p class="copyright">© 2023 UnleashDiscipline. Website designed and developed by Danni Browne as
+                    part of the Code Institute Diploma in Full Stack Software Development.</p>
             </div>
         </div>
     </div>
+</footer>
 
-    <!-- Quiz Rules Section -->
-    <div id="rules-section">
-        <div class="rules-container">
-            <h1 class="rules-header">Rules <i class="fas fa-exclamation-circle warning-icon-animation"></i></h1>
-            <ol id="rules-list" class="rules-list"></ol>
-            <button id="close-btn">Close</button>
-        </div>
-    </div>
-
-    <!-- Font awesome script-->
-    <script src="https://kit.fontawesome.com/50b3ac31b9.js" crossorigin="anonymous"></script>
-
-    <footer>
-        <div class="footer-content">
-            <p>Inspiring and empowering individuals to embrace discipline and achieve success in their personal growth
-                and healthy lifestyle journey.</p>
-            <div class="social-media">
-                <h2 id="footer-socials">Follow Our Social Journey</h2>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="Click on the instagram icon to access our account"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank" aria-label="Click on the facebook icon to access our account"><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/" target="_blank" aria-label="Click on the Intagram icon to access our account"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="mission-copyright">
-                <div class="mission-statement">
-                    <p class="copyright">© 2023 UnleashDiscipline. Website designed and developed by Danni Browne as
-                        part of the Code Institute Diploma in Full Stack Software Development.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript link-->
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/quiz-questions.js"></script>
-    <script src="assets/js/quiz.js"></script>
+<!-- JavaScript link-->
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/quiz-questions.js"></script>
+<script src="assets/js/quiz.js"></script>
 </body>
 
 </html>
