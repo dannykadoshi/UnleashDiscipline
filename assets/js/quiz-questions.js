@@ -105,16 +105,6 @@ const guessWhoSaid = [
         correct: "Jim Rohn"
     },
     {
-        question: "“There is no easy way. There is only hard work, late nights, early mornings, practice, rehearsal, repetition, study, sweat, blood, toil, frustration, and discipline.”",
-        options: [
-            "Jocko Willink",
-            "Marcus Aurelius",
-            "George Washington",
-            "Lou Holtz"
-        ],
-        correct: "Jocko Willink"
-    },
-    {
         question: "“We must all suffer one of two things: the pain of discipline or the pain of regret and disappointment.”",
         options: [
             "Jim Rohn",

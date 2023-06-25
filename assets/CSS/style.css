@@ -28,6 +28,10 @@ h1 {
     text-transform: uppercase;
 }
 
+ul {
+    padding: 0;
+}
+
 /* Header styling for all the HTML pages */
 /* Style for the logo */
 header img {
@@ -158,6 +162,11 @@ header img {
     padding: 10px;
 }
 
+.quote-container-vs {
+    height: 300px;
+    padding-top: 50px;
+}
+
 #quote-text {
     color: #fff;
     font-size: 24px;
@@ -184,7 +193,7 @@ header img {
     font-size: 17px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 40px 0 0 10px;
+    margin: 10px 0 0 10px;
     padding: 10px 20px;
     text-transform: uppercase;
 }
@@ -373,6 +382,10 @@ footer {
     margin-bottom: 20px;
 }
 
+#questionaire-question {
+    height: 150px;
+}
+
 .option {
     background-color: #ffa500;
     border: none;
@@ -460,7 +473,6 @@ footer {
     background-color: #c0392b;
 }
 
-#new-game-btn,
 #back-home-buttom-2 {
     margin-left: 3rem;
 }
