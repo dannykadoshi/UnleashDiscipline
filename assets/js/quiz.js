@@ -82,20 +82,13 @@ function startGame() {
     loadQuestion();
 }
 
-/**
- * Function to check the answers given by the user
- */
 function checkAnswer(selectedButton) {
     const question = questionPool[currentQuestion];
 
     if (selectedButton.textContent === question.correct) {
         score++;
-        resultElement.textContent = "WOW, THAT'S CORRECT!";
-        resultElement.classList.add("correct");
         selectedButton.classList.add("correct");
     } else {
-        resultElement.textContent = "WRONG ANSWER!";
-        resultElement.classList.add("incorrect");
         selectedButton.classList.add("incorrect");
         const correctButton = Array.from(optionsElement.getElementsByClassName("option")).find(
             (btn) => btn.textContent === question.correct
@@ -104,8 +97,6 @@ function checkAnswer(selectedButton) {
     }
 
     setTimeout(() => {
-        resultElement.textContent = "";
-        resultElement.classList.remove("correct", "incorrect");
         selectedButton.classList.remove("correct", "incorrect");
         const buttons = Array.from(optionsElement.getElementsByClassName("option"));
         buttons.forEach((button) => {
@@ -118,13 +109,14 @@ function checkAnswer(selectedButton) {
         } else {
             showResult();
         }
-    }, 1500);
+    }, 3000);
 
     const buttons = Array.from(optionsElement.getElementsByClassName("option"));
     buttons.forEach((button) => {
         button.disabled = true;
     });
 }
+
 
 /**
  * Function to display the results for the game
@@ -220,9 +212,9 @@ document.getElementById("back-home-btn").addEventListener("click", function () {
     window.location.href = "index.html";
 });
 
-document.getElementById("return-quiz-btn").addEventListener("click", function() {
+document.getElementById("return-quiz-btn").addEventListener("click", function () {
     window.location.href = "quiz.html";
-  });
+});
 document.getElementById("return-btn").addEventListener("click", function () {
     window.location.href = "index.html";
 });
@@ -244,10 +236,10 @@ const rules = [
     "Read the question carefully and select your answer",
     "If your answer is correct it will turn green",
     "If your answer is incorrect, it will turn red, and the correct answer will be displayed in green",
-    "The next question will be displayed automatically after 2 seconds",
+    "The next question will be displayed automatically after 3 seconds",
     "Your result will be displayed at the end of question 10",
-    "Select Home to go back to the main page",
-    "Click CLOSE to close the rules and start your game",
+    "Select Home to go back to the main page, or press Return to quiz button if you want to try again",
+    "Good luck and keep up the good work",
 ];
 
 /**
