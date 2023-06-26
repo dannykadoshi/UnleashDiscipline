@@ -101,7 +101,8 @@ header img {
     text-shadow: none;
 }
 
-#quote-of-the-day h1 em {
+#quote-of-the-day h2 em {
+    color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
