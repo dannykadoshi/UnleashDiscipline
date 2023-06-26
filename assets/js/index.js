@@ -132,7 +132,7 @@ copyBtn.addEventListener('click', function () {
     // Hide copy notification message after 3 seconds
     setTimeout(function () {
         notification.classList.remove('show');
-    }, 3000);
+    }, 2000);
 });
 
 /**

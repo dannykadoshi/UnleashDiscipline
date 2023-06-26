@@ -154,14 +154,6 @@ header img {
 }
 
 /* Quote Display */
-#quote-conteiner {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-    padding: 10px;
-}
-
 .quote-container-vs {
     height: 320px;
     padding-top: 50px;
@@ -204,48 +196,19 @@ header img {
     margin-right: 5px;
 }
 
-#copy-btn {
-    background-color: #122d4a;
-    color: #fff;
-}
-
+#copy-btn,
 #quiz-btn {
     background-color: #122d4a;
     color: #fff;
 }
 
-#new-quote-btn:hover {
-    background-color: #ffc845;
-}
-
-#copy-btn:hover {
-    background-color: #ffc845;
-}
-
+#new-quote-btn:hover,
+#copy-btn:hover,
 #quiz-btn:hover {
     background-color: #ffc845;
 }
 
-.graduation-animation {
-    animation: heartbeat 1.5s infinite;
-    color: #c0392b;
-}
-
-@keyframes heartbeat {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.3);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Main content styling for index.html and quiz.html */
+/* Menu nav and Main container */
 .nav-menu a {
     color: #12284c;
 }
@@ -292,6 +255,26 @@ header img {
     animation: heartbeat 1.5s infinite;
 }
 
+/* Heartbeat animation for the graduation icon at quiz.html */
+.graduation-animation {
+    animation: heartbeat 1.5s infinite;
+    color: #c0392b;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Footer styling for all the HTML pages*/
 footer {
     background-color: #12284ce1;
@@ -335,7 +318,7 @@ footer {
     color: #fff;
     padding: 10px;
     margin: 25px auto;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 #notification.show {

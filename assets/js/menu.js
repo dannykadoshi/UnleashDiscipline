@@ -2,7 +2,6 @@
 
 /** 
  * Declared variables for the hamburguer menu
- * for the header menu
  * Activation only for smaller screens
  */
 
