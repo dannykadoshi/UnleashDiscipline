@@ -5,7 +5,6 @@
  */
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
-const resultElement = document.getElementById("result");
 const playerNameElement = document.getElementById("player-name");
 const scoreElement = document.getElementById("score");
 const feedbackMessage = document.getElementById("feedback-message");
@@ -37,7 +36,7 @@ function loadQuestion() {
     });
 
     playerNameElement.textContent = `Welcome ${playerName}👋`;
-    scoreElement.textContent = `Score: ${score}/${numQuestions}`;
+    scoreElement.textContent = `Correct Answers: ${score}/${numQuestions}`;
 }
 
 /**
