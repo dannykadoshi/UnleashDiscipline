@@ -96,11 +96,15 @@ Here are the results for each JavaScript file:
 
 <img width="1119" alt="quiz js" src="https://github.com/dannykadoshi/UnleashDiscipline/assets/129149596/9858aad7-dfc3-4890-bb67-08496cdcf24e">
 
+- `contact.js`
+- All code passed the JSHint analysis, indicating that there were no issues or errors detected in this file.
+
+<img width="951" alt="contact js" src="https://github.com/dannykadoshi/UnleashDiscipline/assets/129149596/cbc523d3-a526-45a3-aa5e-02f8df7e93c5">
 ---
 
 ### Lighthouse
 
-I used Chrome Developer Tools' Lighthouse to test the Performance, Accessibility, Best practices and SEO of the website.
+I used Chrome Developer Tools' Lighthouse to test the Performance, Accessibility, Best practices, and SEO of the website.
 
 * Main Page
   * Desktop
