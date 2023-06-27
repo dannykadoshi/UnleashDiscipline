@@ -139,7 +139,7 @@ function showResult() {
     const resultImageElement = document.getElementById("result-image");
     const newGameBtn = document.getElementById("new-game-btn");
 
-    resultScoreElement.textContent = `You got ${score} points out of ${numQuestions}!`;
+    resultScoreElement.textContent = `You got ${score} correct answer out of ${numQuestions}!`;
     resultScoreElement.classList.add("result-score");
 
     if (score >= numQuestions * 0.6) {
