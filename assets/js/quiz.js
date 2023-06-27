@@ -6,6 +6,7 @@
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
 const playerNameElement = document.getElementById("player-name");
+const resultElement = document.getElementById("result");
 const scoreElement = document.getElementById("score");
 const feedbackMessage = document.getElementById("feedback-message");
 
@@ -14,6 +15,10 @@ let currentQuestion = 0;
 let score = 0;
 let questionPool = []; // Pool of questions for each game
 let playerName;
+
+function updateResult(result) {
+    resultElement.textContent = result;
+  }
 
 /**
  * Function to set up questions, options, and related elements for display on the page
@@ -81,41 +86,45 @@ function startGame() {
     loadQuestion();
 }
 
+// Function to check the answer
 function checkAnswer(selectedButton) {
     const question = questionPool[currentQuestion];
 
     if (selectedButton.textContent === question.correct) {
-        score++;
-        selectedButton.classList.add("correct");
+      score++;
+      resultElement.classList.add("correct");
+      selectedButton.classList.add("correct");
     } else {
-        selectedButton.classList.add("incorrect");
-        const correctButton = Array.from(document.getElementsByClassName("option")).find(
-            (btn) => btn.textContent === question.correct
-        );
-        correctButton.classList.add("correct");
+      resultElement.classList.add("incorrect");
+      selectedButton.classList.add("incorrect");
+      const correctButton = Array.from(optionsElement.getElementsByClassName("option")).find(
+        (btn) => btn.textContent === question.correct
+      );
+      correctButton.classList.add("correct");
     }
 
     setTimeout(() => {
-        selectedButton.classList.remove("correct", "incorrect");
-        const buttons = Array.from(document.getElementsByClassName("option"));
-        buttons.forEach((button) => {
-            button.disabled = false;
-        });
-        currentQuestion++;
+      updateResult("");
+      resultElement.classList.remove("correct", "incorrect");
+      selectedButton.classList.remove("correct", "incorrect");
+      const buttons = Array.from(optionsElement.getElementsByClassName("option"));
+      buttons.forEach((button) => {
+        button.disabled = false;
+      });
+      currentQuestion++;
 
-        if (currentQuestion < numQuestions) {
-            loadQuestion();
-        } else {
-            showResult();
-        }
-    }, 3000);
+      if (currentQuestion < numQuestions) {
+        loadQuestion();
+      } else {
+        showResult();
+      }
+    }, 2000);
 
-    const buttons = Array.from(document.getElementsByClassName("option"));
+    const buttons = Array.from(optionsElement.getElementsByClassName("option"));
     buttons.forEach((button) => {
-        button.disabled = true;
+      button.disabled = true;
     });
-}
-
+  }
 
 
 /**
