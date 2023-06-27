@@ -605,7 +605,7 @@ const guessWhoSaid = [
         correct: "Robert Kiyosaki"
     },
     {
-        question: "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+        question: "“Success is not final; failure is not fatal: It is the courage to continue that counts.”",
         options: [
             "Winston S. Churchill",
             "Robert Kiyosaki",
@@ -615,17 +615,17 @@ const guessWhoSaid = [
         correct: "Winston S. Churchill"
     },
     {
-        question: "It is better to fail in originality than to succeed in imitation.",
+        question: "“It is better to fail in originality than to succeed in imitation.”",
         options: [
             "Herman Melville",
             "Stephen King",
             "Leo Tolstoy",
             "Jane Austen"
         ],
-        correct: "Herman Melville"
+        correct: "“Herman Melville"
     },
     {
-        question: "The road to success and the road to failure are almost exactly the same.",
+        question: "“The road to success and the road to failure are almost exactly the same.”",
         options: [
             "Colin R. Davis",
             "William Shakespeare",
@@ -635,7 +635,7 @@ const guessWhoSaid = [
         correct: "Colin R. Davis"
     },
     {
-        question: "Success usually comes to those who are too busy looking for it.",
+        question: "“Success usually comes to those who are too busy looking for it.”",
         options: [
             "Henry David Thoreau",
             "Albert Einstein",
@@ -645,7 +645,7 @@ const guessWhoSaid = [
         correct: "Henry David Thoreau"
     },
     {
-        question: "Success is getting what you want, happiness is wanting what you get.",
+        question: "“Success is getting what you want, happiness is wanting what you get.”",
         options: [
             "W. P. Kinsella",
             "J.R.R. Tolkien",
@@ -655,17 +655,17 @@ const guessWhoSaid = [
         correct: "W. P. Kinsella"
     },
     {
-        question: "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+        question: "“The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.”",
         options: [
             "Winston Churchill",
             "Nelson Mandela",
             "Abraham Lincoln",
             "Martin Luther King Jr."
         ],
-        correct: "Winston Churchill"
+        correct: "“Winston Churchill"
     },
     {
-        question: "Don't let yesterday take up too much of today.",
+        question: "“Don't let yesterday take up too much of today.”",
         options: [
             "Will Rogers",
             "Theodore Roosevelt",
@@ -675,7 +675,7 @@ const guessWhoSaid = [
         correct: "Will Rogers"
     },
     {
-        question: "Opportunity is missed by most people because it is dressed in overalls and looks like work.",
+        question: "“Opportunity is missed by most people because it is dressed in overalls and looks like work.”",
         options: [
             "Thomas Edison",
             "Leonardo da Vinci",
@@ -685,7 +685,7 @@ const guessWhoSaid = [
         correct: "Thomas Edison"
     },
     {
-        question: "Setting goals is the first step in turning the invisible into the visible.",
+        question: "“Setting goals is the first step in turning the invisible into the visible.”",
         options: [
             "Tony Robbins",
             "Elon Musk",
@@ -695,17 +695,17 @@ const guessWhoSaid = [
         correct: "Tony Robbins"
     },
     {
-        question: "Women challenge the status quo because we are never it.",
+        question: "“Women challenge the status quo because we are never it.”",
         options: [
             "Cindy Gallop",
             "Sheryl Sandberg",
             "Melinda Gates",
             "Oprah Winfrey"
         ],
-        correct: "Cindy Gallop"
+        correct: "“Cindy Gallop"
     },
     {
-        question: "We don't just sit around and wait for other people. We just make, and we do.",
+        question: "We don't just sit around and wait for other people. We just make, and we do.”",
         options: [
             "Arlan Hamilton",
             "Bill Gates",
@@ -715,7 +715,7 @@ const guessWhoSaid = [
         correct: "Arlan Hamilton"
     },
     {
-        question: "Think like a queen. A queen is not afraid to fail. Failure is another stepping stone to greatness.",
+        question: "“Think like a queen. A queen is not afraid to fail. Failure is another stepping stone to greatness.”",
         options: [
             "Oprah Winfrey",
             "Michelle Obama",
@@ -725,7 +725,7 @@ const guessWhoSaid = [
         correct: "Oprah Winfrey"
     },
     {
-        question: "Weight loss doesn't begin in the gym with a dumbbell; it starts in your head with a decision.",
+        question: "“Weight loss doesn't begin in the gym with a dumbbell; it starts in your head with a decision.”",
         options: [
             "Toni Sorenson",
             "Michelle Obama",
@@ -735,7 +735,7 @@ const guessWhoSaid = [
         correct: "Toni Sorenson"
     },
     {
-        question: "Weight loss requires determination, consistency and hard work.",
+        question: "“Weight loss requires determination, consistency and hard work.”",
         options: [
             "Invajy",
             "Tony Robbins",
@@ -745,7 +745,7 @@ const guessWhoSaid = [
         correct: "Invajy"
     },
     {
-        question: "The journey to stronger muscles passes through sore muscles.",
+        question: "“The journey to stronger muscles passes through sore muscles.”",
         options: [
             "Invajy",
             "Bill Gates",
@@ -755,7 +755,7 @@ const guessWhoSaid = [
         correct: "Invajy"
     },
     {
-        question: "Success is the sum of small efforts, repeated day-in and day-out.",
+        question: "“Success is the sum of small efforts, repeated day-in and day-out.”",
         options: [
             "Robert Collier",
             "Napoleon Hill",
@@ -765,7 +765,7 @@ const guessWhoSaid = [
         correct: "Robert Collier"
     },
     {
-        question: "Champions keep playing until they get it right.",
+        question: "“Champions keep playing until they get it right.”",
         options: [
             "Billie Jean King",
             "Roger Federer",
@@ -775,7 +775,7 @@ const guessWhoSaid = [
         correct: "Billie Jean King"
     },
     {
-        question: "If you aren't going all the way, why go at all?",
+        question: "“If you aren't going all the way, why go at all?”",
         options: [
             "Joe Namath",
             "Tom Brady",
@@ -785,7 +785,7 @@ const guessWhoSaid = [
         correct: "Joe Namath"
     },
     {
-        question: "Every day, in every way, I am getting better and better.",
+        question: "“Every day, in every way, I am getting better and better.”",
         options: [
             "Emilie Coue",
             "Louise Hay",
@@ -795,7 +795,7 @@ const guessWhoSaid = [
         correct: "Emilie Coue"
     },
     {
-        question: "Just believe in yourself. Even if you don't, pretend that you do and, at some point, you will.",
+        question: "“Just believe in yourself. Even if you don't, pretend that you do and, at some point, you will.”",
         options: [
             "Venus Williams",
             "Serena Williams",
@@ -805,7 +805,7 @@ const guessWhoSaid = [
         correct: "Venus Williams"
     },
     {
-        question: "A habit cannot be tossed out the window; it must be coaxed down the stairs a step at a time.",
+        question: "“A habit cannot be tossed out the window; it must be coaxed down the stairs a step at a time.”",
         options: [
             "Mark Twain",
             "Albert Einstein",
@@ -815,7 +815,7 @@ const guessWhoSaid = [
         correct: "Mark Twain"
     },
     {
-        question: "And once you understand that habits can change, you have the freedom and the responsibility to remake them.",
+        question: "“And once you understand that habits can change, you have the freedom and the responsibility to remake them.”",
         options: [
             "Charles Duhigg",
             "Malcolm Gladwell",
@@ -825,7 +825,7 @@ const guessWhoSaid = [
         correct: "Charles Duhigg"
     },
     {
-        question: "Discipline is choosing between what you want now and what you want most.",
+        question: "“Discipline is choosing between what you want now and what you want most.”",
         options: [
             "Abraham Lincoln",
             "George Washington",
@@ -835,7 +835,7 @@ const guessWhoSaid = [
         correct: "Abraham Lincoln"
     },
     {
-        question: "Drop by drop is the water pot filled.",
+        question: "“Drop by drop is the water pot filled.”",
         options: [
             "Buddha",
             "Lao Tzu",
@@ -845,7 +845,7 @@ const guessWhoSaid = [
         correct: "Buddha"
     },
     {
-        question: "First forget inspiration. Habit is more dependable. Habit will sustain you whether you're inspired or not.",
+        question: "“First forget inspiration. Habit is more dependable. Habit will sustain you whether you're inspired or not.”",
         options: [
             "Octavia Butler",
             "Margaret Atwood",
@@ -855,7 +855,7 @@ const guessWhoSaid = [
         correct: "Octavia Butler"
     },
     {
-        question: "Good habits are worth being fanatical about.",
+        question: "“Good habits are worth being fanatical about.”",
         options: [
             "John Irving",
             "Haruki Murakami",
@@ -865,7 +865,7 @@ const guessWhoSaid = [
         correct: "John Irving"
     },
     {
-        question: "Good habits formed at youth make all the difference.",
+        question: "“Good habits formed at youth make all the difference.”",
         options: [
             "Aristotle",
             "Plato",
@@ -875,7 +875,7 @@ const guessWhoSaid = [
         correct: "Aristotle"
     },
     {
-        question: "Habit is the intersection of knowledge (what to do), skill (how to do), and desire (want to do).",
+        question: "“Habit is the intersection of knowledge (what to do), skill (how to do), and desire (want to do).”",
         options: [
             "Stephen R. Covey",
             "Brian Tracy",
@@ -885,7 +885,7 @@ const guessWhoSaid = [
         correct: "Stephen R. Covey"
     },
     {
-        question: "Habits change into character.",
+        question: "“Habits change into character.”",
         options: [
             "Ovid",
             "Virgil",
@@ -895,7 +895,7 @@ const guessWhoSaid = [
         correct: "Ovid"
     },
     {
-        question: "Happiness is a habit—cultivate it.",
+        question: "“Happiness is a habit—cultivate it.”",
         options: [
             "Elbert Hubbard",
             "Ralph Waldo Emerson",

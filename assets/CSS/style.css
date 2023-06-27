@@ -28,6 +28,14 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
 ul {
     padding: 0;
 }
@@ -89,30 +97,20 @@ header img {
     max-width: 85vw;
 }
 
-#quote-of-the-day h1 {
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#quote-of-the-day h1 span {
-    color: #333333;
-    text-shadow: none;
-}
-
 #quote-of-the-day h2 em {
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #quote-of-the-day h2 {
     color: #333333;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 20px;
 }
 
 .quote-text-day {
-    color: #f4f4f4;
+    color: #fff;
     font-size: 18px;
     font-style: italic;
     font-weight: bold;
@@ -370,6 +368,25 @@ footer {
     height: 150px;
 }
 
+#quiz-header,
+.leaderboard-header,
+#result-message {
+    color: #ffa500;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+#ready-header {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
 .option {
     background-color: #ffa500;
     border: none;
@@ -446,9 +463,11 @@ footer {
 }
 
 #score {
-    color: #fff;
+    color: #122d4a;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(195, 119, 19, 0.553);
 }
 
 .start-button,
@@ -511,12 +530,6 @@ footer {
     width: 250px;
 }
 
-h2 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
 
 .quiz-buttons {
     margin-top: 2rem;
