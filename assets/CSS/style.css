@@ -692,7 +692,7 @@ footer {
     display: block;
     font-size: 17px;
     margin: 10px;
-    width: 100%;
+    max-width: 95%;
 }
 
 .form-container input[type="text"],
