@@ -18,7 +18,7 @@ let playerName;
 
 function updateResult(result) {
     resultElement.textContent = result;
-  }
+}
 
 /**
  * Function to set up questions, options, and related elements for display on the page
@@ -91,40 +91,42 @@ function checkAnswer(selectedButton) {
     const question = questionPool[currentQuestion];
 
     if (selectedButton.textContent === question.correct) {
-      score++;
-      resultElement.classList.add("correct");
-      selectedButton.classList.add("correct");
+        score++;
+        resultElement.classList.add("correct");
+        selectedButton.classList.add("correct");
     } else {
-      resultElement.classList.add("incorrect");
-      selectedButton.classList.add("incorrect");
-      const correctButton = Array.from(optionsElement.getElementsByClassName("option")).find(
-        (btn) => btn.textContent === question.correct
-      );
-      correctButton.classList.add("correct");
+        resultElement.classList.add("incorrect");
+        selectedButton.classList.add("incorrect");
+        const correctButton = Array.from(optionsElement.getElementsByClassName("option")).find(
+            (btn) => btn.textContent === question.correct
+        );
+        if (correctButton) {
+            correctButton.classList.add("correct");
+        }
     }
 
     setTimeout(() => {
-      updateResult("");
-      resultElement.classList.remove("correct", "incorrect");
-      selectedButton.classList.remove("correct", "incorrect");
-      const buttons = Array.from(optionsElement.getElementsByClassName("option"));
-      buttons.forEach((button) => {
-        button.disabled = false;
-      });
-      currentQuestion++;
+        updateResult("");
+        resultElement.classList.remove("correct", "incorrect");
+        selectedButton.classList.remove("correct", "incorrect");
+        const buttons = Array.from(optionsElement.getElementsByClassName("option"));
+        buttons.forEach((button) => {
+            button.disabled = false;
+        });
+        currentQuestion++;
 
-      if (currentQuestion < numQuestions) {
-        loadQuestion();
-      } else {
-        showResult();
-      }
+        if (currentQuestion < numQuestions) {
+            loadQuestion();
+        } else {
+            showResult();
+        }
     }, 2000);
 
     const buttons = Array.from(optionsElement.getElementsByClassName("option"));
     buttons.forEach((button) => {
-      button.disabled = true;
+        button.disabled = true;
     });
-  }
+}
 
 
 /**
