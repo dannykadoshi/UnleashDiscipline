@@ -89,7 +89,7 @@ function checkAnswer(selectedButton) {
         selectedButton.classList.add("correct");
     } else {
         selectedButton.classList.add("incorrect");
-        const correctButton = Array.from(optionsElement.getElementsByClassName("option")).find(
+        const correctButton = Array.from(document.getElementsByClassName("option")).find(
             (btn) => btn.textContent === question.correct
         );
         correctButton.classList.add("correct");
@@ -97,7 +97,7 @@ function checkAnswer(selectedButton) {
 
     setTimeout(() => {
         selectedButton.classList.remove("correct", "incorrect");
-        const buttons = Array.from(optionsElement.getElementsByClassName("option"));
+        const buttons = Array.from(document.getElementsByClassName("option"));
         buttons.forEach((button) => {
             button.disabled = false;
         });
@@ -110,11 +110,12 @@ function checkAnswer(selectedButton) {
         }
     }, 3000);
 
-    const buttons = Array.from(optionsElement.getElementsByClassName("option"));
+    const buttons = Array.from(document.getElementsByClassName("option"));
     buttons.forEach((button) => {
         button.disabled = true;
     });
 }
+
 
 
 /**
