@@ -227,13 +227,12 @@ In order to enhance the typography of the website, I have utilized Google Fonts 
 * **Quiz Headers:** `Montserrat`
   * Montserrat is a modern and elegant sans-serif font that adds a sleek and professional look to the website headers.
 
-  ![Montserrat](/Docs/Montserrat-font.png)
+<img width="853" alt="Montserrat-font" src="https://github.com/dannykadoshi/UnleashDiscipline/assets/129149596/64e179e8-75fb-4ce0-9e6a-78e0aeab7c47">
 
 * **Other Elements:** `Open Sans`
   * For all other elements on the page such as Quotes of the Day, Quotes Generator, Footer, and more, I have opted for the Open Sans font. Open Sans is a versatile and widely used sans-serif font known for its readability and simplicity. It provides a clean and contemporary appearance to the text throughout these sections.
 
-  ![OpenSans](/Docs/Open-sans-font.png)
-
+<img width="866" alt="Open-sans-font" src="https://github.com/dannykadoshi/UnleashDiscipline/assets/129149596/a2a409e7-696e-42a1-badc-78663dd797c3">
 
 ### Colour Scheme
 
