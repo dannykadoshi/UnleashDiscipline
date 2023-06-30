@@ -579,10 +579,6 @@ let quotes = [
         author: "Andy Frisella"
     },
     {
-        text: "Maybe I shouldn't have dreamed so much. Maybe I shouldn't have worked all those crazy hours. Maybe I should have been more realistic. I mean… it doesn't even have cupholders (Andy's Lamborghini).",
-        author: "Andy Frisella"
-    },
-    {
         text: "Remember the days you prayed for the things you have now.",
         author: "Andy Frisella"
     },
@@ -612,6 +608,242 @@ let quotes = [
     },
     {
         text: "They told me I'd never get this far. They were right, I got further.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Instead of thinking how hard your journey is, think how great your story will be.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "99% of people let others' opinions and beliefs keep them from ever living the life they want.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "You'll never do that; the four most motivating words in the English language.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Dream so big that everyone thinks you're crazy.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Every valuable lesson you learn in life will come from you failing.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "You can't cut down a tree with a single swing of an axe.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "If you really want people to believe in you, then go out and build something great.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Your mind and focus are far more powerful than you could ever comprehend.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "They told me that I'd never get this far. They were right; I got further.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Inside of every self-made man is a poor kid who followed his dreams.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The only route in life that pays well is the hard route. The struggle, the pain, the frustration, and the overcoming of those things. And not only does it pay, it fulfills you as well.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Big dreams don't cost any more than little ones.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "You're the only one who knows, in your heart of hearts, if you are really giving it all you have. You are the only one who knows what you're capable of — and the only one who can elevate your effort relative to your own standard.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "There are no super humans, just humans. And what one man can do, another can do.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "When you truly grasp and understand that your time on earth is limited everything becomes infinitely more valuable.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "There are two types of people in this world: anchors and propellers.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "History forgets whiners but remembers winners.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "If you're willing to be bad at sh*t, you will have the last laugh on the people who didn't believe in you.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "When you start to realize that you have to become first, and then you'll receive...it becomes real easy.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The only person that limits you stares back at you in the mirror every single day.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "A lot of people think this: 'What if I do all this work and what if it does not happen?' No, if you make a plan and you do the work, it will happen, there is no question.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "It's okay to want to quit...as long as you don't.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "It's not luck, it's not magic, it's not circumstances. It's developing a great plan and executing on it, day in and day out until the visions in your head become a reality.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Lots of people are wanting everything, but doing nothing.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The easy route never pays well.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The truth of the matter is this; the world owes you nothing. You want something? Go get it.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "It's really easy to talk yourself into quitting. But when you keep in mind why you started and what your goals are, your chances of making it increases tremendously.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "When we get excited about something, we have natural energy that pushes us through. But what happens when that energy fades? Well, most people f**king quit.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Here's the messed up part about quitting when things get hard; they're about to get easier.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Things are the hardest right before they get better. Things are the most frustrating right before they get better. It's hard to remember that when you're in the middle of it, but they are.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The toughest, darkest parts of any journey are right before sh*t gets fun.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Nobody's going to believe in you until you've already done it. The work is going to come before the belief.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "There is no what if. If you do the work on a worthy plan the result will be there.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "I'm a regular dude who made a daily list of critical tasks that needed to get done, and I did them.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Want to be happy...to have self-esteem...to build confidence? Want to develop new skills? It's simple...keep the promises you make to yourself.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Every day is a win or a loss.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "What you're doing in the short term to make yourself comfortable is killing your potential.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "When you're trying to avoid the hard things in life, you're actively choosing to be mediocre. You're actively choosing to move further away from what you want in life.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Nothing great is given, it's earned.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The only thing relevant to your success is your actions.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "What you think about, dream about, talk about, and focus on will become your life.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Check your ego at the door if you want to ever be successful.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The biggest mistake you can make in life is thinking you have all the time in the world.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "If you want to be successful in business, you have to be okay with looking like an idiot for a really long time.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "The reason nine out of ten businesses fail isn't because there's something wrong with business, it's because there's something wrong with people's mindset.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Honest gratitude is one of the biggest accelerators for future success.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "There's something you're good at, you're just not putting a value on it.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "I've learned how to look at every single loss as an opportunity to win more.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Everything you see, touch, or use in your daily life started as just a single thought.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Don't let the constant pursuit of and drive for success keep you from appreciating and being grateful for what you have now.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Yes, finding success is going to require you to make sacrifices and be uncomfortable.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "That pain; that struggle; that hardship; they give you the skills you need to become a motherf**king champion.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "When most people think of success they think of money, cars, houses and material things. And regardless of what some will say...there is nothing wrong with desiring any of those things. However, that's not success.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Most people in life wait. They put off the things they truly want to be in their heart for tomorrow; the mystical place where 99% of all dreams, human achievement, and potential greatness go to die.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Successful people all do one thing that you don't do...they live with intent in every action that they take.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Free your mind to dream. Free your heart to believe it's possible.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Successful people not only run towards problems. They work to anticipate problems and correct them before everyone else knows there is a problem.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "Being a leader who lets sh*t slide, isn't being a leader at all.",
+        author: "Andy Frisella"
+    },
+    {
+        text: "There are two types of people in this world: anchors and propellers.",
         author: "Andy Frisella"
     }
 
