@@ -146,7 +146,7 @@ If the user gets 6 or more right answers they pass the quiz, If they get 5 or fe
 
 ### Contact Page
 
-The contact form is enclosed within a section element with the class "contact-container." It serves as the main container for the contact form and related content. Most fields are mandatory, with the exception of the second question.
+The contact form is enclosed within a section element with the class "contact-container." It serves as the main container for the contact form and related content. All the fields are mandatory, before the form can be successfully submited.
 
 * **Empowering Story Sharing:** The contact form provides users with a platform to share their empowering stories of personal growth and accomplishments achieved through self-discipline. Users can describe their journey and the positive impact self-discipline has had on their lives.
 
