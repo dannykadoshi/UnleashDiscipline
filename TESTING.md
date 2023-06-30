@@ -1,4 +1,4 @@
-# Unleash Discipline 🏃🏻‍♀️🏃🏻‍♂️
+# UNLEASH DISCIPLINE 🏃🏻‍♀️🏃🏻‍♂️ TESTING
 
 ### Deployed Site: [Unleash Discipline](https://dannykadoshi.github.io/UnleashDiscipline/index.html)
 
